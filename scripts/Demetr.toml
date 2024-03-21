@@ -74,8 +74,7 @@ removePlayerCards.1.1.55
 setTalkLabels.-1.-1.0
 talk.<...Гном выжидательно смотрит на тебя.>
 waitForUser
-goto.0
-killPlayer"""
+goto.0"""
 InitScript = """
 setModel.b008s09m
 defaultWizForm.188.0.0"""

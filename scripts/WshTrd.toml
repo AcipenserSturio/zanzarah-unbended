@@ -46,7 +46,6 @@ talk.<
 >
 waitForUser
 goto.0
-killPlayer
 label.11
 goto.0
 label.1
@@ -60,30 +59,30 @@ setTalkLabels.-1.-1.0
 talk.<
     Всё очень просто.
     Ты покупаешь одну из шкатулок за кристаллы, а потом меняешь его на {4*случайную награду}.
-    При открытии {4*Мистической} и {4*Магической шкатулок} есть небольшой шанс, что ты получишь двойную награду...
-    поэтому ты можешь захотеть испытать свою удачу, как и многие до тебя, хе-хе.
+    Чем более дорогая шкатулка, тем выше шанс на большую награду...
+    или меньшую, хе-хе.
+    Поэтому ты можешь захотеть проверить, на твоей стороне сегодня удача или же нет.
 >
 waitForUser
 goto.0
 label.13
 setTalkLabels.-1.-1.2
-talk.<{4*Загадочная Шкатулка} может содержать: {4*Щепотка Пыльцы фей} (х10), {4*Горсть Пыльцы фей} (x5), {4*Малый Лечебный Бальзам} (x5), {4*Средний Лечебный Бальзам} (x3), {4*Лекарственные Травы} (x6), {4*Флакон Маны} (x3), {4*Лекарство} (x3), {4*Чесночный Распылитель} (x2), {4*Серебрянный Шар} (х1)>
+talk.<{4*Загадочная Шкатулка} может содержать: {4*Щепотка Пыльцы фей} (х8-12), {4*Горсть Пыльцы фей} (x4-6), {4*Малый Лечебный Бальзам} (x2-4), {4*Средний Лечебный Бальзам} (x2-3), {4*Лесные Травы} (x3-4), {4*Флакон Маны} (x2), {4*Лекарство} (x2), {4*Чесночный Распылитель} (x1), {4*Серебрянный Шар} (х1)>
 waitForUser
 setTalkLabels.-1.-1.2
-talk.<{4*Мистическая Шкатулка} может содержать: {4*Пригорошня Пыльцы фей} (x6), {4*Очищенный Нектар} (x2), {4*Большой Лечебный Бальзам} (x7), {4*Эликсир Маны} (x3), {4*Медный Редис} (x5), {4*Серебрянный Лук} (x4), {4*Золотая Морковь} (x3), {4*Золотой Шар} (x1)>
+talk.<{4*Мистическая Шкатулка} может содержать: {4*Пригорошня Пыльцы фей} (x3-9), {4*Очищенный Нектар} (x1-3), {4*Большой Лечебный Бальзам} (x3-7), {4*Эликсир Маны} (x1), {4*Медный Редис} (x3-9), {4*Серебрянный Лук} (x2-4), {4*Золотая Морковь} (x1), {4*Золотой Шар} (x1)>
 waitForUser
 setTalkLabels.-1.-1.0
-talk.<{4*Магическая Шкатулка} может содержать: {4*Насыщенный Нектар} (x1), {4*Концентрированный Нектар} (x1), {4*Лечебный Эликсир} (x5), {4*Большой Эликсир Маны} (x4), {4*Медовый Эликсир} (x6), {4*Большой Медовый Эликсир} (x4), {4*Эликсир Природы} (x3), {4*Хрустальный Шар} (x1)>
+talk.<{4*Магическая Шкатулка} может содержать: {4*Насыщенный Нектар} (x1), {4*Концентрированный Нектар} (x1), {4*Лечебный Эликсир} (x1-2), {4*Большой Эликсир Маны} (x1-3), {4*Медовый Эликсир} (x1-8), {4*Большой Медовый Эликсир} (x1-5), {4*Эликсир Стихий} (x1-7), {4*Хрустальный Шар} (x1)>
 waitForUser
 goto.0
 label.12
 goto.0
-killPlayer
 label.5
 setTalkLabels.-1.-1.2
 talk.<Ты открываешь {4*Загадочную Шкатулку}...>
 waitForUser
-gotoRandomLabel.9.50
+gotoRandomLabel.26.50
 label.50
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Серебряный Шар} (х1)!>
@@ -92,57 +91,117 @@ givePlayerCards.1.0.17
 goto.10
 label.51
 setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х8)!>
+waitForUser
+givePlayerCards.8.0.0
+goto.10
+label.52
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х9)!>
+waitForUser
+givePlayerCards.9.0.0
+goto.10
+label.53
+setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х10)!>
 waitForUser
 givePlayerCards.10.0.0
 goto.10
-label.52
+label.54
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х11)!>
+waitForUser
+givePlayerCards.11.0.0
+goto.10
+label.55
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х12)!>
+waitForUser
+givePlayerCards.12.0.0
+goto.10
+label.56
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х4)!>
+waitForUser
+givePlayerCards.4.0.1
+goto.10
+label.57
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х5)!>
 waitForUser
 givePlayerCards.5.0.1
 goto.10
-label.53
+label.58
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х5)!>
+talk.<Диалог>
 waitForUser
-givePlayerCards.10.0.11
+givePlayerCards.6.0.1
 goto.10
-label.54
+label.59
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х2)!>
+waitForUser
+givePlayerCards.2.0.11
+goto.10
+label.60
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х3)!>
+waitForUser
+givePlayerCards.3.0.11
+goto.10
+label.61
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х4)!>
+waitForUser
+givePlayerCards.4.0.11
+goto.10
+label.62
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Средний Лечебный Бальзам} (х2)!>
+waitForUser
+givePlayerCards.2.0.12
+goto.10
+label.63
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Средний Лечебный Бальзам} (х3)!>
 waitForUser
-givePlayerCards.6.0.12
+givePlayerCards.3.0.13
 goto.10
-label.55
+label.64
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Флакон Маны} (х3)!>
+talk.<Ты находишь внутри {4*Флакон Маны} (х2)!>
 waitForUser
-givePlayerCards.3.0.61
+givePlayerCards.2.0.61
 goto.10
-label.56
+label.65
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лекарство} (х3)!>
+talk.<Ты находишь внутри {4*Лекарство} (х2)!>
 waitForUser
-givePlayerCards.3.0.74
+givePlayerCards.2.0.74
 goto.10
-label.57
+label.66
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Чесночный Распылитель} (х2)!>
+talk.<Ты находишь внутри {4*Чесночный Распылитель} (х1)!>
 waitForUser
-givePlayerCards.2.0.20
+givePlayerCards.1.0.20
 goto.10
-label.58
+label.67
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лесные Травы} (х6)!>
+talk.<Ты находишь внутри {4*Лесные Травы} (х3)!>
 waitForUser
-givePlayerCards.6.0.5
+givePlayerCards.3.0.5
+goto.10
+label.68
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Лесные Травы} (х4)!>
+waitForUser
+givePlayerCards.4.0.5
 goto.10
 label.6
 setTalkLabels.-1.-1.2
 talk.<Ты открываешь {4*Мистическую Шкатулку}...>
 waitForUser
-gotoRandomLabel.80.100
+gotoRandomLabel.28.100
 label.100
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
@@ -151,483 +210,171 @@ givePlayerCards.1.0.18
 goto.10
 label.101
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х3)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.3.0.2
 goto.10
 label.102
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х4)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.4.0.2
 goto.10
 label.103
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х5)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.5.0.2
 goto.10
 label.104
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.6.0.2
 goto.10
 label.105
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х7)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.7.0.2
 goto.10
 label.106
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х8)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.8.0.2
 goto.10
 label.107
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х9)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.9.0.2
 goto.10
 label.108
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Очищенный Нектар} (х1)!>
 waitForUser
-givePlayerCards.1.0.18
+givePlayerCards.1.0.9
 goto.10
 label.109
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х2)!>
+talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
 waitForUser
-givePlayerCards.2.0.18
+givePlayerCards.2.0.9
 goto.10
 label.110
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Очищенный Нектар} (х3)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.3.0.9
 goto.10
 label.111
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х3)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.3.0.13
 goto.10
 label.112
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х4)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.4.0.13
 goto.10
 label.113
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х5)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.5.0.13
 goto.10
 label.114
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х6)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.6.0.13
 goto.10
 label.115
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.7.0.13
 goto.10
 label.116
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Эликсир Маны} (х1)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.1.0.90
 goto.10
 label.117
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х3)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.3.0.60
 goto.10
 label.118
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х4)!>
 waitForUser
-givePlayerCards.6.0.2
+givePlayerCards.4.0.60
 goto.10
 label.119
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х12)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
 waitForUser
-givePlayerCards.12.0.2
+givePlayerCards.5.0.60
 goto.10
 label.120
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х6)!>
 waitForUser
-givePlayerCards.2.0.9
+givePlayerCards.6.0.60
 goto.10
 label.121
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х7)!>
 waitForUser
-givePlayerCards.2.0.9
+givePlayerCards.7.0.60
 goto.10
 label.122
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х8)!>
 waitForUser
-givePlayerCards.2.0.9
+givePlayerCards.8.0.60
 goto.10
 label.123
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х9)!>
 waitForUser
-givePlayerCards.2.0.9
+givePlayerCards.9.0.60
 goto.10
 label.124
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Серебряный Лук} (х2)!>
 waitForUser
-givePlayerCards.2.0.9
+givePlayerCards.2.0.7
 goto.10
 label.125
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Серебряный Лук} (х3)!>
 waitForUser
-givePlayerCards.2.0.9
+givePlayerCards.3.0.7
 goto.10
 label.126
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
 waitForUser
-givePlayerCards.2.0.9
+givePlayerCards.4.0.7
 goto.10
 label.127
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Золотая Морковь} (х1)!>
 waitForUser
-givePlayerCards.2.0.9
-goto.10
-label.128
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
-waitForUser
-givePlayerCards.2.0.9
-goto.10
-label.129
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х4)!>
-waitForUser
-givePlayerCards.4.0.9
-goto.10
-label.130
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.131
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.132
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.133
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.134
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.135
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.136
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.137
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.138
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
-waitForUser
-givePlayerCards.10.0.13
-goto.10
-label.139
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х14)!>
-waitForUser
-givePlayerCards.20.0.13
-goto.10
-label.140
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.141
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.142
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.143
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.144
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.145
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.146
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.147
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.148
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
-waitForUser
-givePlayerCards.2.0.90
-goto.10
-label.149
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х6)!>
-waitForUser
-givePlayerCards.4.0.90
-goto.10
-label.150
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.151
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.152
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.153
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.154
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.155
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.156
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.157
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.158
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
-waitForUser
-givePlayerCards.5.0.60
-goto.10
-label.159
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х10)!>
-waitForUser
-givePlayerCards.10.0.60
-goto.10
-label.160
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.161
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.162
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.163
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.164
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.165
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.166
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.167
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.168
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
-waitForUser
-givePlayerCards.4.0.7
-goto.10
-label.169
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х8)!>
-waitForUser
-givePlayerCards.8.0.7
-goto.10
-label.170
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.171
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.172
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.173
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.174
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.175
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.176
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.177
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.178
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х3)!>
-waitForUser
-givePlayerCards.3.0.3
-goto.10
-label.179
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х6)!>
-waitForUser
-givePlayerCards.6.0.3
+givePlayerCards.1.0.3
 goto.10
 label.7
 setTalkLabels.-1.-1.2
 talk.<Ты открываешь {4*Магическую Шкатулку}...>
 waitForUser
-gotoRandomLabel.160.500
+gotoRandomLabel.28.500
 label.500
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
@@ -636,957 +383,165 @@ givePlayerCards.1.0.19
 goto.10
 label.501
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.1.0.88
 goto.10
 label.502
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.1.0.89
 goto.10
 label.503
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Лечебный Эликсир} (х1)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.1.0.14
 goto.10
 label.504
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Лечебный Эликсир} (х2)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.2.0.14
 goto.10
 label.505
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х1)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.1.0.91
 goto.10
 label.506
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х2)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.2.0.92
 goto.10
 label.507
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.3.0.92
 goto.10
 label.508
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х1)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.1.0.75
 goto.10
 label.509
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х2)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.2.0.75
 goto.10
 label.510
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х3)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.3.0.75
 goto.10
 label.511
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х4)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.4.0.75
 goto.10
 label.512
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х5)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.5.0.75
 goto.10
 label.513
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.6.0.75
 goto.10
 label.514
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х7)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.7.0.75
 goto.10
 label.515
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х8)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.8.0.75
 goto.10
 label.516
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х1)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.1.0.76
 goto.10
 label.517
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х2)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.2.0.76
 goto.10
 label.518
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х3)!>
 waitForUser
-givePlayerCards.1.0.19
+givePlayerCards.3.0.76
 goto.10
 label.519
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х2)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
 waitForUser
-givePlayerCards.2.0.19
+givePlayerCards.4.0.76
 goto.10
 label.520
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х5)!>
 waitForUser
-givePlayerCards.1.0.88
+givePlayerCards.5.0.76
 goto.10
 label.521
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х1)!>
 waitForUser
-givePlayerCards.1.0.88
+givePlayerCards.1.0.77
 goto.10
 label.522
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х2)!>
 waitForUser
-givePlayerCards.1.0.88
+givePlayerCards.2.0.77
 goto.10
 label.523
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х3)!>
 waitForUser
-givePlayerCards.1.0.88
+givePlayerCards.3.0.77
 goto.10
 label.524
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х4)!>
 waitForUser
-givePlayerCards.1.0.88
+givePlayerCards.4.0.77
 goto.10
 label.525
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х5)!>
 waitForUser
-givePlayerCards.1.0.88
+givePlayerCards.5.0.77
 goto.10
 label.526
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х6)!>
 waitForUser
-givePlayerCards.1.0.88
+givePlayerCards.6.0.77
 goto.10
 label.527
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х7)!>
 waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.528
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.529
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.530
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.531
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.532
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.533
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.534
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.535
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.536
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.537
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.538
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.88
-goto.10
-label.539
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х2)!>
-waitForUser
-givePlayerCards.2.0.88
-goto.10
-label.540
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.541
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.542
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.543
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.544
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.545
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.546
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.547
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.548
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.549
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.550
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.551
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.552
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.553
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.554
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.555
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.556
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.557
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.558
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
-waitForUser
-givePlayerCards.1.0.89
-goto.10
-label.559
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х2)!>
-waitForUser
-givePlayerCards.2.0.89
-goto.10
-label.560
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.561
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.562
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.563
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.564
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.565
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.566
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.567
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.568
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.569
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.570
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.571
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.572
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.573
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.574
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.575
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.576
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.577
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.578
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х5)!>
-waitForUser
-givePlayerCards.2.0.14
-goto.10
-label.579
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.4.0.14
-goto.10
-label.580
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.581
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.582
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.583
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.584
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.585
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.586
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.587
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.588
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.589
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.590
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.591
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.592
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.593
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.594
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.595
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.596
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.597
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.598
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х10)!>
-waitForUser
-givePlayerCards.3.0.91
-goto.10
-label.599
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х8)!>
-waitForUser
-givePlayerCards.6.0.91
-goto.10
-label.600
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.601
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.602
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.603
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.604
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.605
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.606
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.607
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.608
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.609
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.610
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.611
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.612
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.613
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.614
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.615
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.616
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.617
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.618
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
-waitForUser
-givePlayerCards.8.0.75
-goto.10
-label.619
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х12)!>
-waitForUser
-givePlayerCards.16.0.75
-goto.10
-label.620
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.621
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.622
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.623
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.624
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.625
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.626
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.627
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.628
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.629
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.630
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.631
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.632
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.633
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.634
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.635
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.636
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.637
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.638
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
-waitForUser
-givePlayerCards.5.0.76
-goto.10
-label.639
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х8)!>
-waitForUser
-givePlayerCards.10.0.76
-goto.10
-label.640
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.641
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.642
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.643
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.644
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.645
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.646
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.647
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.648
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.649
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.650
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.651
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.652
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.653
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.654
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.655
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.656
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.657
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.658
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х3)!>
-waitForUser
-givePlayerCards.2.0.77
-goto.10
-label.659
-setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Природы} (х6)!>
-waitForUser
-givePlayerCards.4.0.77
+givePlayerCards.7.0.77
 goto.10
 label.4
 exit"""

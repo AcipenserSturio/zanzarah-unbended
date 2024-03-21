@@ -22,7 +22,6 @@ talk.<
     Такая ничтожная сумма за врата к неуловимым богатствам и бесконечному могуществу, ты согласна на сделку?
 >
 waitForUser
-setTalkLabels.0.0.0
 label.1
 ifPlayerHasCards.100.0.4
 removePlayerCards.100.0.4

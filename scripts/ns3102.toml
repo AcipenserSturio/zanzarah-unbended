@@ -55,7 +55,6 @@ setTalkLabels.-1.-1.0
 talk.<У тебя нет никаких предметов, с оценкой которых я могу тебе помочь.>
 waitForUser
 goto.0
-killPlayer
 label.11
 ifPlayerHasCards.1.0.15
 goto.0

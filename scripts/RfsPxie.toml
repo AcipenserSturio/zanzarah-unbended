@@ -300,10 +300,12 @@ label.27
 givePlayerCards.40.0.102
 exit
 label.28
-say.<
+setTalkLabels.-1.-1.0
+talk.<
     Ты уже собрала всех пикси, Эми.
     Теперь они все надежно заперты в своих клетках.
->.#
+>
+waitForUser
 goto.0
 label.1
 exit"""

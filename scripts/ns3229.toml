@@ -15,7 +15,7 @@ waitForUser
 talk.<Скажи, все ли человеческие девушки также красивы, словно феи из сказок, или это только ты?>
 waitForUser
 setTalkLabels.-1.-1.0
-talk.<Диалог>
+talk.<...>
 waitForUser
 setNpcModifier.-1.-1.1"""
 InitScript = "setModel.x002s02"

@@ -15,7 +15,7 @@ waitForUser
 exit
 else
 setTalkLabels.-1.-1.2
-talk.<....>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
 waitForUser
 talk.<
     Ты тоже пришла из других земель?

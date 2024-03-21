@@ -30,7 +30,6 @@ talk.<
     Ты хочешь сделать это?
 >
 waitForUser
-setTalkLabels.0.0.0
 label.4
 ifPlayerHasCards.1.0.53
 removePlayerCards.1.0.53

@@ -36,6 +36,7 @@ else
 setTalkLabels.-1.-1.0
 talk.<У тебя недостаточно денег для этой покупки.>
 waitForUser
+goto.0
 label.8
 ifPlayerHasCards.450.0.4
 removePlayerCards.450.0.4
@@ -45,6 +46,7 @@ else
 setTalkLabels.-1.-1.0
 talk.<У тебя недостаточно денег для этой покупки.>
 waitForUser
+goto.0
 label.9
 ifPlayerHasCards.2125.0.4
 removePlayerCards.2125.0.4
@@ -54,12 +56,11 @@ else
 setTalkLabels.-1.-1.0
 talk.<У тебя недостаточно денег для этой покупки.>
 waitForUser
+goto.0
 label.6
 goto.0
-killPlayer
 label.10
 goto.0
-killPlayer
 label.3
 exit"""
 InitScript = "setModel.d007s03m"

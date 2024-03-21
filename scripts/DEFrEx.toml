@@ -47,7 +47,6 @@ label.9
 setTalkLabels.1.2.1
 talk.<Я могу убрать всех {4*Светлячков} из твоего инвентаря, ты согласна на это?>
 waitForUser
-setTalkLabels.0.0.0
 label.1
 ifPlayerHasCards.-1.2.143
 removePlayerCards.1.2.143
@@ -56,11 +55,9 @@ else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет {4*Светлячков}, которых я мог бы забрать у тебя.>
 waitForUser
-goto.0
-givePlayerCards.0.0.0
+goto.10
 label.2
-goto.0
-givePlayerCards.0.0.0
+goto.10
 label.12
 ifPlayerHasCards.1.2.0
 goto.4
@@ -343,7 +340,6 @@ talk.<
     Ты согласна на моё предложение?
 >
 waitForUser
-setTalkLabels.0.0.0
 label.20
 givePlayerCards.1.0.102
 tradeWizform.143
@@ -357,7 +353,6 @@ talk.<
     Ты согласна на моё предложение?
 >
 waitForUser
-setTalkLabels.0.0.0
 label.21
 givePlayerCards.2.0.102
 tradeWizform.143
@@ -371,7 +366,6 @@ talk.<
     Ты согласна на моё предложение?
 >
 waitForUser
-setTalkLabels.0.0.0
 label.22
 givePlayerCards.3.0.102
 tradeWizform.143
@@ -385,7 +379,6 @@ talk.<
     Ты согласна на моё предложение?
 >
 waitForUser
-setTalkLabels.0.0.0
 label.23
 givePlayerCards.4.0.102
 tradeWizform.143
@@ -399,7 +392,6 @@ talk.<
     Ты согласна на моё предложение?
 >
 waitForUser
-setTalkLabels.0.0.0
 label.24
 givePlayerCards.5.0.102
 tradeWizform.143

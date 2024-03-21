@@ -10,13 +10,13 @@ say.<
     Но, в отличие от обычных фей, их {4*боевые возможности} намного {4*выше}.
 >.0
 else
-say.<Диалог>.0
+say.<...>.0
 endIf
 waitForUser
 ifNpcModifierHasValue.0
 setNpcModifier.-1.-1.1
 setTalkLabels.-1.-1.2
-talk.<Диалог>
+talk.<...>
 waitForUser
 endIf
 setTalkLabels.0.1.1
@@ -28,7 +28,7 @@ label.0
 setTalkLabels.-1.-1.0
 ifPlayerHasCards.1.0.5
 removePlayerCards.1.0.5
-talk.<Диалог>
+talk.<...>
 waitForUser
 givePlayerCards.1.2.2
 exit

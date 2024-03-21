@@ -15,7 +15,7 @@ setTalkLabels.-1.-1.2
 talk.<...>
 waitForUser
 setTalkLabels.-1.-1.2
-talk.<...>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х2)!>
 waitForUser
 setTalkLabels.-1.-1.0
 talk.<

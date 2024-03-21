@@ -11,15 +11,6 @@ label.11
 say.<Добро пожаловать, Повелительница фей.>.0
 label.12
 waitForUser
-ifPlayerHasCards.1.0.25
-setTalkLabels.-1.-1.0
-talk.<
-    Вижу, у тебя теперь есть {4*наше сокровище}.
-    Вряд ли я могу тебе еще чем-нибудь помочь.
->
-waitForUser
-exit
-endIf
 ifPlayerHasCards.1.0.48
 goto.20
 else

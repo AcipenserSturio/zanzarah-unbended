@@ -1,0 +1,20 @@
+name: Validate TOML Files
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate TOML Files
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Setup feezfuzz
+        run: python -m pip install feezfuzz
+
+      - name: Validate using feezfuzz
+        run: python -m feezfuzz --test

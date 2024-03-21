@@ -1,0 +1,138 @@
+UID = "1EB60484"
+Name = "342ACD21"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<Коллекционер фей.>.0
+waitForUser
+label.0
+say.<
+    У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
+    Чем могу помочь?
+>.1
+choice.3.<Диалог>
+choice.2.<Торговля>
+choice.1.<До встречи>
+waitForUser
+label.3
+setTalkLabels.-1.-1.2
+talk.<
+    Это довольно просто.
+    У меня большое количество различных заклинаний для твоих фей.
+    Но я их не просто продаю...
+    
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Для торговли со мной тебе необходимо получить {4*специальные камеи}.
+    Ты можешь добыть их, если выиграешь в {4*дуэли фей} с другим {4*Коллекционером} или {4*Тёмным Эльфом}.
+    Но будь внимательна, каждый торговец будет спрашивать разное количество камей, и чем сильнее заклинания, тем больше тебе их потребуется.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Ты можешь найти торговцев в основных крупных поселениях - {4*Тиралине}, {4*Данморе} и {4*Монагаме} - а также в доме {4*Руфуса, Хранителя Пикси из Эндевы}.
+    Также в мире существует особый {4*четырёхлистный клевер}, знак самых выдающихся {4*Коллекционеров}, и если ты сможешь заполучить один из них, то это значительно упростит торговлю с нами, хе-хе.
+>
+waitForUser
+goto.0
+label.2
+say.<
+    У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
+    Чем могу помочь?
+>.1
+choice.8.<Вода>
+choice.7.<Пси>
+choice.6.<Лёд>
+choice.5.<Назад>
+waitForUser
+label.8
+setupGambling.1.1.124
+setupGambling.1.1.123
+setupGambling.1.1.125
+setupGambling.1.1.14
+setupGambling.1.1.13
+setupGambling.1.1.12
+setupGambling.1.1.11
+setupGambling.1.1.10
+setupGambling.1.1.70
+setupGambling.1.1.71
+setupGambling.1.1.72
+setupGambling.1.1.73
+setupGambling.1.1.74
+setupGambling.1.1.137
+setupGambling.1.1.138
+setupGambling.1.1.139
+setupGambling.1.1.140
+setupGambling.16.3.0
+waitForUser
+goto.1
+label.7
+ifPlayerHasCards.3.0.107
+setupGambling.1.1.26
+setupGambling.1.1.28
+setupGambling.1.1.29
+setupGambling.1.1.132
+setupGambling.1.1.129
+setupGambling.1.1.128
+setupGambling.1.1.27
+setupGambling.1.1.25
+setupGambling.1.1.85
+setupGambling.1.1.86
+setupGambling.1.1.143
+setupGambling.1.1.142
+setupGambling.1.1.87
+setupGambling.1.1.88
+setupGambling.1.1.89
+setupGambling.16.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*три Камеи Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.6
+ifPlayerHasCards.6.0.106
+goto.10
+else
+talk.<
+    Принеси мне {4*три Камеи Коллекционера и шесть Камей Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.10
+ifPlayerHasCards.3.0.107
+setupGambling.1.1.39
+setupGambling.1.1.38
+setupGambling.1.1.36
+setupGambling.1.1.37
+setupGambling.1.1.35
+setupGambling.1.1.95
+setupGambling.1.1.97
+setupGambling.1.1.96
+setupGambling.1.1.98
+setupGambling.1.1.97
+setupGambling.10.3.0
+waitForUser
+goto.1
+else
+talk.<
+    Принеси мне {4*три Камеи Коллекционера и шесть Камей Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.5
+goto.0
+label.1
+exit"""
+InitScript = """
+setCollision.0
+setModel.w002s02m"""
+UpdateScript = "lookAtPlayer.0.1"

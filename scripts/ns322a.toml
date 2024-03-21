@@ -1,0 +1,45 @@
+UID = "EDF3CF24"
+Name = "97688F91"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<Ага, вот, наконец, эта надоедливая человеческая девушка!>.0
+waitForUser
+changeWaypoint.-1.-1
+setTalkLabels.-1.-1.2
+talk.<
+    Я тебя давно жду.
+    Меня отправили сюда, чтобы раз и навсегда закончить твое путешествие.
+    
+>
+waitForUser
+talk.<
+    Не подумай, что мне это нравится – я ненавижу эту головокружительную высоту и постоянный яркий свет.
+    
+>
+waitForUser
+talk.<Что ж, начнем битву, я должен вернуться в свое {4*Царство Тьмы}!>
+waitForUser
+setCamera.3005
+fight.-1.-1"""
+InitScript = """
+defaultWizForm.14.0.60
+defaultWizForm.11.1.61
+defaultWizForm.61.2.61
+defaultWizForm.25.3.60
+defaultWizForm.63.4.60
+setModel.u002s02m"""
+UpdateScript = """
+label.0
+lookAtPlayer.2.1
+ifPlayerIsClose.20
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.3005
+talk.<Наконец, наконец я могу уйти...>
+waitForUser
+delay.10
+startEffect.0.-1
+removeNpc"""

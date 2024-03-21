@@ -1,0 +1,63 @@
+UID = "A1370F94"
+Name = "BDE38F91"
+TriggerScript = """
+playAnimation.13.-1
+setCamera.1000
+ifNpcModifierHasValue.1
+say.<
+    А, человек...
+    Опять!
+>.0
+else
+say.<Привет, человек.>.0
+endIf
+waitForUser
+ifPlayerHasCards.1.0.43
+setTalkLabels.-1.-1.0
+talk.<
+    Ты говоришь, что Друид ответственен за хаос в {4*Занзаре}, а не гномы?
+    В это трудно поверить.
+>
+waitForUser
+exit
+endIf
+ifPlayerHasCards.1.0.43
+setTalkLabels.-1.-1.2
+talk.<
+    Ты нашла {4*Посох Гномьего Мастера} у {4*Темных Эльфов}?
+    Я всегда знал, что гномы  — сторонники зла!
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<Любое существо, предпочитающее жить в темноте, должно быть имеет больное сознание.>
+waitForUser
+exit
+endIf
+setTalkLabels.-1.-1.0
+ifNpcModifierHasValue.0
+talk.<
+    Впервые я услышал о вас, людях, давным давно – и мало из того, что я слышал, было хорошим.
+    Вы пришли, чтобы побеспокоить наш мирный город?
+    У меня и так достаточно проблем с гномами.
+    Хотелось бы, чтоб они убрались в свои темные пещеры!
+>
+setNpcModifier.-1.-1.1
+else
+talk.<Поверь мне, человек, с гномами что-то не так — они живут в темных пещерах и избегают деревьев и лугов.>
+endIf
+waitForUser
+exit"""
+InitScript = "setModel.g301s31m"
+UpdateScript = """
+gotoRandomLabel.3.0
+label.0
+deployNpcAtTrigger.37.0
+goto.10
+label.1
+deployNpcAtTrigger.38.0
+goto.10
+label.2
+deployNpcAtTrigger.39.0
+goto.10
+label.10
+lookAtPlayer.0.1"""

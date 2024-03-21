@@ -1,0 +1,52 @@
+UID = "4FB6DD24"
+Name = "0FDF8F91"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+ifNpcModifierHasValue.0
+say.<Ох, люди в Занзара!>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Настали ужасные времена...
+    Вот теперь люди вторгаются в наш рай.
+    Как будто от {4*Темных Эльфов} мало неприятностей!
+>
+waitForUser
+setNpcModifier.-1.-1.1
+exit
+endIf
+ifPlayerHasCards.1.0.15
+say.<Привет, Повелительница фей.>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Я слышала о твоих подвигах в {4*Данморе}.
+    Кто знает, может есть еще надежда для  {4*Занзары}...
+    а может и нет.
+>
+waitForUser
+exit
+endIf
+say.<О, человек.>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Если ты действительно хочешь нам помочь, выгони {4*Темных Эльфов} из нашей деревни на болоте.
+    Так ты докажешь свои благие намерения.
+>
+waitForUser"""
+InitScript = """
+setModel.g004s03m
+movementSpeed.8"""
+UpdateScript = """
+label.0
+moveSystem.1.2
+gotoRandomLabel.3.0
+goto.0
+label.1
+playAnimation.0.30
+goto.0
+label.2
+playAnimation.11.30
+goto.0"""

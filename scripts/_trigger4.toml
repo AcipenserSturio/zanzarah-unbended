@@ -1,0 +1,35 @@
+UID = "CB368EB4"
+Name = "B18BDDB1"
+TriggerScript = """
+deployNpcAtTrigger.11.1
+setCamera.1000
+say.<
+    Что за странная идея...
+    двигать платформу отверткой!
+>.1
+playAmyVoice.trg04a
+delay.50
+say.<Это должно быть затерянное Царство Облаков.>.1
+playAmyVoice.trg04b
+setCamera.3011
+delay.40
+goto.1
+say.<
+    ...
+    у меня кружится голова...
+>.1
+playAmyVoice.trg04c
+label.1
+setCamera.3012
+delay.30
+removeNpc"""
+InitScript = """
+setNpcType.4
+setCollision.0"""
+UpdateScript = """
+label.0
+ifPlayerIsClose.155
+startPrelude
+endIf
+idle
+goto.0"""

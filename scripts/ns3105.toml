@@ -1,0 +1,44 @@
+UID = "5D6AB704"
+Name = "0FDF8F91"
+TriggerScript = """
+setCamera.1000
+ifNumberOfNpcsIs.1.B2EE3B04
+playAnimation.13.-1
+say.<Добро пожаловать.>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<Ты настоящий друг гоблинов.>
+waitForUser
+exit
+endIf
+ifPlayerHasCards.1.0.15
+playAnimation.13.-1
+say.<Добро пожаловать.>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Спасибо, что помогла нам.
+    Даже мой муж снова осмелился пройти по  мостикам.
+>
+waitForUser
+exit
+endIf
+playAnimation.12.-1
+say.<О, это ужасно.>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Мой муж никак не может успокоится.
+    Темные Эльфы напали на нас, украли у нас все, что смогли найти.
+    Мой муж так испугался...
+    
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Избавь нас от {4*Темных Эльфов} в деревне.
+    Надеюсь, он перестанет бояться.
+>
+waitForUser"""
+InitScript = "setModel.g003s03m"
+UpdateScript = "lookAtPlayer.0.1"

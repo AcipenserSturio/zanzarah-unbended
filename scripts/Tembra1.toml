@@ -1,0 +1,228 @@
+UID = "B9D44694"
+Name = "3C41C9A1"
+TriggerScript = """
+setCamera.1003
+say.<Добро пожаловать в мой магазин.>.0
+playAnimation.13.-1
+waitForUser
+label.0
+ifPlayerHasCards.1.0.102
+say.<
+    Ты пришла, чтобы что-нибудь купить?
+    Или хочешь спросить о чём-то другом?
+>.1
+choice.103.<Торговля>
+choice.102.<Обмен>
+choice.101.<До встречи>
+waitForUser
+else
+say.<
+    Ты пришла, чтобы что-нибудь купить?
+    Или хочешь спросить о чём-то другом?
+>.1
+choice.103.<Торговля>
+choice.101.<До встречи>
+waitForUser
+label.103
+tradingCurrency.C564B4A3
+tradingItem.15.9D418613
+tradingItem.20.5D6CBF93
+tradingItem.25.9ED19693
+tradingItem.20.2825B8A3
+tradingItem.30.66F10A03
+waitForUser
+goto.0
+label.102
+say.<
+    Ох, ты пришла за {4*специальным меню}...
+    Выбирай, что тебе больше нравится.
+>.3
+choice.5.<Природа>
+choice.4.<Воздух>
+choice.3.<Свет>
+choice.2.<Назад>
+waitForUser
+label.5
+say.<...>.3
+choice.9.<Воргот ({4*1 Рунический Свиток})>
+choice.8.<Коргот ({4*2 Рунических Свитка})>
+choice.7.<Силлия ({4*1 Рунический Свиток})>
+choice.6.<Далее>
+waitForUser
+label.9
+ifPlayerHasCards.1.0.102
+removePlayerCards.1.0.102
+givePlayerCards.1.2.0
+exit
+else
+goto.52
+label.8
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.1
+exit
+else
+goto.52
+label.7
+ifPlayerHasCards.1.0.102
+removePlayerCards.1.0.102
+givePlayerCards.1.2.8
+exit
+else
+goto.52
+label.6
+say.<...>.3
+choice.13.<Бонерия ({4*2 Рунических Свитка})>
+choice.12.<Кейлан ({4*1 Рунический Свиток})>
+choice.11.<Кернунн ({4*2 Рунических Свитка})>
+choice.10.<Далее>
+waitForUser
+label.13
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.9
+exit
+else
+goto.52
+label.12
+ifPlayerHasCards.1.0.102
+removePlayerCards.1.0.102
+givePlayerCards.1.2.21
+exit
+else
+goto.52
+label.11
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.22
+exit
+else
+goto.52
+label.10
+say.<...>.3
+choice.17.<Лана ({4*2 Рунических Свитка})>
+choice.16.<Лиана ({4*3 Рунических Свитка})>
+choice.15.<Адриана ({4*2 Рунических Свитка})>
+choice.14.<Назад>
+waitForUser
+label.17
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.50
+exit
+else
+goto.52
+label.16
+ifPlayerHasCards.3.0.102
+removePlayerCards.3.0.102
+givePlayerCards.1.2.51
+exit
+else
+goto.52
+label.15
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.79
+exit
+else
+goto.52
+label.14
+goto.0
+label.4
+say.<...>.3
+choice.21.<Айра ({4*3 Рунических Свитка})>
+choice.20.<Лурия ({4*4 Рунических Свитка})>
+choice.19.<Сираэль ({4*2 Рунических Свитка})>
+choice.18.<Далее>
+waitForUser
+label.21
+ifPlayerHasCards.3.0.102
+removePlayerCards.3.0.102
+givePlayerCards.1.2.14
+exit
+else
+goto.52
+label.20
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.15
+exit
+else
+goto.52
+label.19
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.65
+exit
+else
+goto.52
+label.18
+say.<...>.3
+choice.25.<Гораэль ({4*3 Рунических Свитка})>
+choice.24.<Сирелла ({4*3 Рунических Свитка})>
+choice.23.<Оттис ({4*3 Рунических Свитка})>
+choice.22.<Назад>
+waitForUser
+label.25
+ifPlayerHasCards.3.0.102
+removePlayerCards.3.0.102
+givePlayerCards.1.2.66
+exit
+else
+goto.52
+label.24
+ifPlayerHasCards.3.0.102
+removePlayerCards.3.0.102
+givePlayerCards.1.2.47
+exit
+else
+goto.52
+label.23
+ifPlayerHasCards.3.0.102
+removePlayerCards.3.0.102
+givePlayerCards.1.2.62
+exit
+else
+goto.52
+label.22
+goto.0
+label.3
+say.<...>.3
+choice.29.<Драйян ({4*4 Рунических Свитка})>
+choice.28.<Лилфлин ({4*3 Рунических Свитка})>
+choice.27.<Грейс ({4*4 Рунических Свитка})>
+choice.26.<Назад>
+waitForUser
+label.29
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.75
+exit
+else
+goto.52
+label.28
+ifPlayerHasCards.3.0.102
+removePlayerCards.3.0.102
+givePlayerCards.1.2.33
+exit
+else
+goto.52
+label.27
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.70
+exit
+else
+goto.52
+label.26
+goto.0
+label.2
+goto.0
+label.101
+exit"""
+InitScript = """
+setModel.g200s20m
+defaultWizForm.114.0.1"""
+UpdateScript = """
+deployNpcAtTrigger.8.0
+lookAtPlayer.0.1"""

@@ -1,0 +1,71 @@
+UID = "8C136A14"
+Name = "10E82091"
+TriggerScript = """
+setCamera.3000
+playAnimation.13.-1
+ifNpcModifierHasValue.1
+say.<О, опять ты!>.0
+waitForUser
+setTalkLabels.10.11.1
+talk.<Ты хочешь сейчас сразиться с моими феями?>
+waitForUser
+exit
+endIf
+setNpcModifier.-1.-1.1
+say.<
+    Что?
+    Люди в Занзаре?
+    Это зло когда-нибудь закончится?
+>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Вся земля идет прахом! Вход в наш любимый дом, {4*Монагам}, закрыт огромным валуном.
+    Гном {4*Квинлин} исчез, а ужасный {4*Темный Эльф} преградил дорогу к нашему дому.
+>
+waitForUser
+talk.<Один из них даже пытался попасть в нашу башню, потому что там я с братьями храню один из трех {4*Элементальных Ключей, ключ Воздуха}.>
+waitForUser
+talk.<Только объединив этот ключ с потерянными стихийными ключами {4*Воздуха} и {4*Природы}, ты сможешь привести в действие старый лифт и попасть в Царство Облаков.>
+waitForUser
+setTalkLabels.10.11.1
+talk.<
+    Но с тех пор, как мы охраняем башню, ты должна победить каждого из нас в {4*поединке фей}, чтобы получить ключ.
+    Не хочешь попробовать?
+>
+waitForUser
+exit
+label.10
+setCamera.1006
+fight.-1.0
+label.11
+setTalkLabels.-1.-1.0
+talk.<Хвала Друидам, а ведь я далеко не самый сильный {4*Повелитель фей}.>
+waitForUser
+exit"""
+InitScript = """
+setModel.b009s00m
+defaultWizForm.103.0.38
+defaultWizForm.77.1.39
+defaultWizForm.114.2.38
+defaultWizForm.138.3.36
+defaultWizForm.11.4.37
+spell.0.2.125
+spell.2.2.32
+spell.3.2.46"""
+UpdateScript = "lookAtPlayer.0.1"
+DefeatedScript = """
+setTalkLabels.-1.-1.0
+setCamera.3000
+talk.<
+    Ладно, ты меня победила.
+    Хм, но ты никогда не победишь моих трех братьев.
+    Иди за мной в комнату, если хочешь.
+    Я достаточно много могу рассказать.
+>
+waitForUser
+givePlayerCards.1.0.107
+changeWaypoint.-1.0
+changeWaypoint.0.1
+removeNpc"""
+VictoriousScript = "killPlayer"

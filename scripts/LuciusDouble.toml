@@ -1,0 +1,41 @@
+UID = "9053B7A4"
+Name = "79110B91"
+InitScript = """
+gotoRandomLabel.12.0
+label.0
+defaultWizForm.10.0.16
+goto.20
+label.1
+defaultWizForm.10.0.15
+goto.20
+label.2
+defaultWizForm.10.0.14
+goto.20
+label.3
+defaultWizForm.10.0.13
+goto.20
+label.4
+defaultWizForm.32.0.16
+goto.20
+label.5
+defaultWizForm.32.0.15
+goto.20
+label.6
+defaultWizForm.32.0.14
+goto.20
+label.7
+defaultWizForm.32.0.13
+goto.20
+label.8
+defaultWizForm.83.0.16
+goto.20
+label.9
+defaultWizForm.83.0.15
+goto.20
+label.10
+defaultWizForm.83.0.14
+goto.20
+label.11
+defaultWizForm.83.0.13
+goto.20
+label.20"""

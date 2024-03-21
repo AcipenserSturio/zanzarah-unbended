@@ -1,0 +1,35 @@
+UID = "155FC724"
+Name = "B18BDDB1"
+TriggerScript = """
+ifPlayerHasSpecials.1.1
+say.<У тебя уже есть фея!>.0
+waitForUser
+exit
+else
+setTalkLabels.-1.-1.2
+talk.<
+    {4*Фей Природы} можно встретить во всех уголках Занзары, и их характер сильно отличается в зависимости от предпочитаемых условий обитания.
+    Тем не менее, {4*феи Природы} имеют {4*сбалансированные атакующие и защитные способности}, а также феи {4*более универсальны в выборе возможных заклинаний}.
+>
+waitForUser
+setTalkLabels.10.11.1
+talk.<
+    Ты хочешь взять себе эту фею?
+    Ты уверена, что именно эту, а не одну из двух других?
+    {4*Люциус} разрешил тебе взять только одну из трех!
+>
+waitForUser
+exit
+label.10
+givePlayerCards.1.2.173
+setCamera.1006
+removeNpc
+exit
+label.11
+exit
+endIf"""
+InitScript = """
+setNpcType.3
+setCollision.0
+wizform.0.173.0"""
+UpdateScript = "lookAtPlayer.0.0"

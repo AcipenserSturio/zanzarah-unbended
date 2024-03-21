@@ -1,0 +1,52 @@
+UID = "86DB0D84"
+Name = "C86EAF91"
+TriggerScript = """
+playAnimation.13.-1
+say.<Эй, подожди минуточку!>.0
+setCamera.1000
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Ты можешь освободить меня от этих ужасных {4*Фей Хаоса}?
+    Они доставляют столько неприятностей! Осторожно, они исключительно сильны ...
+>
+waitForUser
+setCamera.3010
+delay.10
+setCamera.3011
+delay.10
+setCamera.1000
+setTalkLabels.0.1.1
+talk.<
+    Честно говоря – пусть это лучше останется нашей тайной, только представь себе – они подрывают мой авторитет пугала! Это не должно сойти им с рук, не так ли?
+>
+waitForUser
+label.0
+setCamera.1006
+fight.-1.1
+exit
+label.1
+setTalkLabels.0.0.0
+talk.<
+    О, вот это настоящая помощь, огромное спасибо! Если ты будешь продолжать в том же духе, то скоро станешь настоящим {4*Темным Эльфом}.
+>
+waitForUser
+exit"""
+InitScript = """
+setNpcType.4
+setModel.v001s01
+defaultWizForm.27.0.6"""
+DefeatedScript = """
+createDynamicItems.60.3.-1
+playSound.0
+setTalkLabels.-1.-1.0
+talk.<
+    Уф, спасибо.
+    Если тебе когда-нибудь понадобиться помощь, приходи ко мне.
+    Я могу пополнить  {4*запасы маны} всех твоих фей, когда захочешь!
+>
+waitForUser
+removeNpcAtTrigger.18
+removeNpcAtTrigger.16
+removeWizForms
+changeDatabase.D5C56E04"""

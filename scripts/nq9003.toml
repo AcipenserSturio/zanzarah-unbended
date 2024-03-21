@@ -1,0 +1,48 @@
+UID = "E5D77B84"
+Name = "44EB3001"
+TriggerScript = """
+setCamera.1000
+changeWaypoint.-1.-1
+say.<О, Повелительница фей из предсказания!>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Ты напрасно пришла.
+    {4*Квинлин}, Гном-Мастер, дал мне этот Посох, символ связи между {4*Темными Эльфами} и нашими братьями, {4*Гномами}.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Вместе мы определим судьбу {4*Занзары}.
+    Только ты все еще на нашем пути.
+    Но это скоро изменится...
+>
+waitForUser
+setCamera.1006
+fight.225.1"""
+InitScript = """
+setModel.u000s00m
+defaultWizForm.189.0.28
+defaultWizForm.31.1.25
+defaultWizForm.142.2.24"""
+UpdateScript = """
+label.0
+lookAtPlayer.2.1
+ifPlayerIsClose.30
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.1000
+removeNpcAtTrigger.65
+removeNpcAtTrigger.66
+removeNpcAtTrigger.68
+talk.<
+    Ты многому научилась со времени нашей встречи в {4*Данморе}, Эмми.
+    Но даже если я отдам тебе Посох {4*Квинлина}, Эльфы Тьмы в конце концов все равно одержат победу!
+>
+waitForUser
+givePlayerCards.1.0.26
+startEffect.0.-1
+removeNpc"""
+VictoriousScript = "killPlayer"

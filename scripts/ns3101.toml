@@ -1,0 +1,114 @@
+UID = "552589B4"
+Name = "C2A67EB1"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+ifPlayerHasCards.1.0.15
+say.<Привет, Эмми, спасительница деревни.>.0
+waitForUser
+else
+say.<Я ждал тебя.>.0
+waitForUser
+endIf
+ifPlayerHasCards.1.0.22
+setTalkLabels.-1.-1.2
+talk.<
+    Итак, гномы не заключали союз с {4*Темными Эльфами}?
+    Это {4*Друид} вызвал Темных Эльфов, чтобы сохранить жизнь {4*Стражу}?
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Как Друид мог принести нам такое несчастье?! Воспользуйся {4*железным ключом} и открой ворота в подземный мир.
+    Ты найдешь вход в это царство на другой стороне {4*Большого Дерева}.
+>
+waitForUser
+exit
+endIf
+ifPlayerHasCards.1.0.26
+setTalkLabels.-1.-1.0
+talk.<
+    Это правда, что гномы заключили союз с {4*Темными Эльфами}?
+    О, Боже.
+    Я, Пророк Мовит, предсказываю впереди ужасные времена!
+>
+waitForUser
+exit
+endIf
+ifNpcModifierHasValue.0
+setTalkLabels.-1.-1.0
+talk.<
+    Я {4*пророк Мовит}.
+    Я могу тебе во многом помочь, человеческое создание.
+>
+waitForUser
+setNpcModifier.-1.-1.1
+endIf
+label.4
+say.<О чем ты хочешь спросить пророка Мовита?>.1
+choice.5.<Гоблин Рафи>
+ifPlayerHasCards.1.0.15
+choice.7.<Раковина Фей>
+else
+choice.6.<Темные Эльфы>
+endIf
+choice.8.<До встречи>
+waitForUser
+label.5
+setTalkLabels.-1.-1.2
+talk.<
+    Мы, Болотные Гоблины, известны своей любовью к приключениям.
+    Многие из нас пустились открывать новые миры.
+    Самый храбрый из наших путешественников —{4* Рафи}.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    У него даже была возможность попасть в ваш мир.
+    Я думаю, что это было связано с предсказанием, найденным в древних писаниях.
+>
+waitForUser
+goto.4
+label.6
+setTalkLabels.-1.-1.2
+talk.<
+    {4*Темные Эльфы} появились из тумана на болоте и напали на нашу деревню.
+    Они разорили наши дома и украли {4*Раковину Фей}.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Раковина Фей ценный предмет, который может выманить {4*Фей Воды} из их сырых укрытий.
+    Ах, эти злобные Темные Эльфы!
+>
+waitForUser
+goto.4
+label.7
+setTalkLabels.-1.-1.2
+talk.<
+    Ты отобрала Раковину фей у {4*Темных Эльфов}?
+    Это действительно смелый поступок.
+    Возьми ее себе в знак нашей благодарности.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    С ее помощью ты найдешь {4*Фей Воды}.
+    Они в основном живут в таких сырых местах, как пруды, ручьи и водопады.
+>
+waitForUser
+goto.4
+label.8
+exit"""
+InitScript = """
+setModel.g006s00m
+movementSpeed.7"""
+UpdateScript = """
+label.0
+lookAtPlayer.-1.1
+moveSystem.1.1
+gotoRandomLabel.2.0
+goto.0
+label.1
+playAnimation.0.90
+goto.0"""

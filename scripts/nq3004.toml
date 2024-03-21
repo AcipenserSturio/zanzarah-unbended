@@ -1,0 +1,55 @@
+UID = "7982B534"
+Name = "CE6DE2A1"
+TriggerScript = """
+deployNpcAtTrigger.51.1
+setCamera.3004
+changeWaypoint.1.2
+changeWaypoint.2.3
+playAnimation.12.-1
+say.<
+    Как это возможно?
+    Как {4*человек} смог попасть в {4*Занзару}?
+>.0
+waitForUser
+setTalkLabels.1.2.1
+talk.<
+    Ты пришла сюда, чтобы помочь {4*Тёмным Эльфам} разрушить наш мир?
+    Я знаю вас, {4*людей}, в прошлом вы принесли только горе и разрушение! Если ты не сможешь победить в этой дуэли, то немедленно вернись в своей {4*человеческий мир} и никогда оттуда не возвращайся!
+>
+waitForUser
+label.1
+setCamera.1006
+fight.-1.0
+label.2
+setTalkLabels.-1.-1.0
+talk.<Ты не сможешь победить меня!>
+waitForUser
+changeWaypoint.3.2
+playAnimation.0.-1
+exit"""
+InitScript = """
+setModel.g004s03m
+defaultWizForm.69.0.3
+defaultWizForm.25.1.5
+defaultWizForm.40.2.2"""
+UpdateScript = """
+label.0
+idle
+ifTriggerIsActive.50
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.1000
+setTalkLabels.-1.-1.0
+talk.<
+    Это невозможно.
+    Ты хочешь снова забрать у нас то, что когда-то вернул нам {4*Белый Друид}?
+    Надеюсь, тебе не хватит наглости появиться на {4*Турнире Большого Дерева}...
+    Если {4*Белый Друид} узнает, что человек снова вступил в этот мир, он определённо изгонит тебя туда, откуда ты пришла!
+>
+waitForUser
+givePlayerCards.1.0.107
+changeWaypoint.3.4
+removeNpc"""
+VictoriousScript = "killPlayer"

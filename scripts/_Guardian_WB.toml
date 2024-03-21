@@ -1,0 +1,8 @@
+UID = "0A4D1424"
+Name = "A46E5421"
+InitScript = """
+defaultWizForm.500.0.61
+spell.0.0.29
+spell.0.1.84
+spell.0.2.21
+spell.0.3.89"""

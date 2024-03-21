@@ -1,0 +1,61 @@
+UID = "BD221D14"
+Name = "BDE38F91"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+ifNpcModifierHasValue.0
+say.<
+    Ой, что это за огромное существо?
+    Человек?
+>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Я скитался по лесам {4*Занзары} в поисках редких Фей Природы.
+    Мне нравятся эти маленькие зеленые существа, хотя их заклинания иногда бывают такими неприятными...
+>
+waitForUser
+talk.<
+    Ты знаешь о {4*Концентрированном Нектаре}?
+    При помощи его можно повысить опыт феи так, что она станет близка к повышению уровня.
+    А если ты используешь {4*Волшебную пыльцу фей}, то сможешь повысить уровень феи, даже не вступая в бой!
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Я слышал, что где-то в {4*Занзаре} существует эльф, знающий рецепт приготовления нектаров.
+    Но, к сожалению, я не знаю, где он может находиться...
+    поэтому возьми это в качестве подарка.
+>
+waitForUser
+givePlayerCards.1.0.9
+setNpcModifier.-1.-1.1
+exit
+else
+goto.100
+endIf
+label.100
+say.<Здесь где-то должны быть редкие феи...>.0
+waitForUser
+setTalkLabels.-1.-1.0
+ifNpcModifierHasValue.1
+talk.<
+    Хм, в этом лесу нечего искать.
+    Может попробовать где-нибудь еще...
+>
+endIf
+waitForUser
+setNpcModifier.-1.-1.1000
+exit"""
+InitScript = """
+setModel.b022s00m
+movementSpeed.13
+defaultWizForm.80.0.4"""
+UpdateScript = """
+label.0
+ifPlayerIsClose.15
+lookAtPlayer.10.1
+else
+moveSystem.1.10
+endIf
+goto.0"""

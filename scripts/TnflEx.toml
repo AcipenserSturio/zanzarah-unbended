@@ -1,0 +1,53 @@
+UID = "B0DC5C14"
+Name = "53CAF221"
+TriggerScript = """
+setCamera.1003
+playAnimation.13.-1
+say.<
+    Ещё один путешественник?
+    Ты тоже будешь надоедать мне вопросами?
+>.0
+waitForUser
+label.0
+say.<Никто не понимает, что мы видим мир не при помощи глаз...>.1
+choice.1.<Диалог>
+choice.2.<Обмен>
+choice.3.<До встречи>
+waitForUser
+label.1
+setTalkLabels.-1.-1.0
+talk.<
+    Есть вещи, которые можно найти, если знать, где их искать.
+    Тайны, сокрытые в глубинах этой земли, ждут своего раскрытия, но они не предназначены для всех ушей.
+    Именно поэтому они продолжают оставаться неизвестными.
+>
+waitForUser
+goto.0
+label.2
+setTalkLabels.4.5.1
+talk.<
+    Если у тебя есть {4*Эволюционный Камень Природы}, то я могу обменять его на {4*Тайнфола}.
+    Ты хочешь сделать это?
+>
+waitForUser
+setTalkLabels.0.0.0
+label.4
+ifPlayerHasCards.1.0.53
+removePlayerCards.1.0.53
+givePlayerCards.1.2.91
+exit
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Я не вижу, что у тебя есть {4*Эволюционный Камень Природы}.
+    Возвращайся, если ты найдёшь один из подобных.
+>
+waitForUser
+exit
+label.5
+goto.0
+label.3
+exit"""
+InitScript = """
+setNpcType.4
+setModel.g011s05m"""

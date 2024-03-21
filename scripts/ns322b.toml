@@ -1,0 +1,81 @@
+UID = "1F795CB4"
+Name = "2B4B0221"
+TriggerScript = """
+setCamera.3000
+changeWaypoint.-1.-1
+playAnimation.13.-1
+say.<Ты не должна была сюда приходить, Эмми!>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    {4*Темный Собор} — прибежище {4*Стража}, нашего защитника от человеческой погани.
+    
+>
+waitForUser
+setCamera.3002
+delay.15
+setTalkLabels.-1.-1.2
+talk.<
+    Созданный мной с помощью тупых гномов, он никогда не должен пасть.
+    Выкованный из железа и приведенный в движение магией он наблюдает за границей между мирами.
+>
+waitForUser
+setCamera.3001
+talk.<
+    С тех пор он  защищает мир эльфов от людей.
+    Его сила закрыла великий {4*портал}, так что ни одна фея не может даже взгляд бросить на человеческий мир.
+>
+waitForUser
+talk.<
+    Я принес в {4*Занзару} хаос и призвал {4*Темных Эльфов}.
+    Я не мог позволить Повелителю фей стать сильнее Стража...
+    но {4*Темные Эльфы} не справились.
+    Теперь я сам должен тебя уничтожить!
+>
+waitForUser
+fight.-1.-1"""
+InitScript = """
+defaultWizForm.74.0.61
+defaultWizForm.71.1.61
+defaultWizForm.49.2.61
+defaultWizForm.5.3.61
+defaultWizForm.52.4.61
+setModel.v000s00"""
+UpdateScript = """
+label.0
+lookAtPlayer.1.1
+ifPlayerIsClose.15
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.3000
+setTalkLabels.-1.-1.0
+talk.<Я ненавижу тебя и твоих проклятых фей!>
+waitForUser
+startEffect.0.-1
+deployNpcAtTrigger.82.0
+delay.10
+startEffect.0.83
+startEffect.0.89
+startEffect.1.84
+startEffect.1.85
+setCamera.3010
+delay.2
+startEffect.1.86
+startEffect.0.87
+delay.2
+startEffect.0.89
+delay.4
+startEffect.0.83
+startEffect.1.84
+delay.3
+startEffect.0.83
+startEffect.0.89
+delay.5
+setTalkLabels.-1.-1.0
+talk.<
+    Я еще не проиграл! Пока я могу сражаться, ты никогда не доберешься до Стража!
+>
+waitForUser
+removeNpc"""

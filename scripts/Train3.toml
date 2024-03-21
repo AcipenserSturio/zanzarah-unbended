@@ -1,0 +1,164 @@
+UID = "CDE4C594"
+Name = "6D58FDB1"
+TriggerScript = """
+playAnimation.13.-1
+setCamera.1000
+say.<Добро пожаловать.>.0
+waitForUser
+label.0
+say.<
+    Если ты пришла ради тренеровки своих фей, то тебе лучше быть готовой к вызову.
+    С этими феями что-то не так...
+>.3
+choice.4.<Диалог>
+choice.3.<Тренировка>
+choice.2.<Торговля>
+choice.1.<До встречи>
+waitForUser
+label.2
+tradingCurrency.C564B4A3
+tradingItem.10.21F89313
+tradingItem.10.140F9713
+tradingItem.15.A9C69713
+tradingItem.25.761F9713
+tradingItem.25.64979713
+waitForUser
+goto.0
+label.3
+fight.-1.0
+label.4
+setTalkLabels.-1.-1.2
+talk.<
+    Это был очень туманный день, когда я решил выйти из деревни...
+    Я давно не готовил овощное рагу с пряными травами и грибами, и за {4*Большом Деревом} их всегда можно было найти в достатке.
+     Но мой поход не заладился с самого начала - {4*дикие феи} словно обозлились на весь мир, и нападали из каждого дерева, и я не успевал использовать {4*Чесночный Распылитель} на каждую...
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Но внезапно я заметил, что на одном из берегов болот, в грязи и жиже, блестит что-то яркое.
+    Когда я подобрал это, у меня так сильно закружилась голова, словно я вдохнул споры цветущего {4*Ползучего Шиповника}...
+    Я уже думал, это была ловушка какого-то гадкого {4*Тёмного Эльфа}, но никого поблизости не было.
+    В общем, я засунул эту штуку в карман и отправился дальше, чтобы собрать грибы.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Представь моё удивление, когда я узнал, на что оказалась способна эта штука! Но теперь я боюсь выходить из деревни - может {4*Тёмные Эльфы} оставили это, чтобы следить за нами...
+    но они слишком глупые для этого...
+    В любом случае, я думаю, что мне придётся какое-то время остаться без своего рагу.
+    Или мне стоит попробовать развести свой огород за домом...
+>
+waitForUser
+goto.0
+label.1
+exit"""
+InitScript = """
+setModel.g001s01m
+gotoRandomLabel.10.12
+label.10
+defaultDeck.2.40.1
+spell.0.2.0
+spell.1.2.0
+spell.2.2.0
+spell.3.2.0
+spell.4.2.0
+goto.22
+label.11
+defaultDeck.2.40.1
+spell.0.2.5
+spell.1.2.5
+spell.2.2.5
+spell.3.2.5
+spell.4.2.5
+goto.22
+label.12
+defaultDeck.2.40.1
+spell.0.2.10
+spell.1.2.10
+spell.2.2.10
+spell.3.2.10
+spell.4.2.10
+goto.22
+label.13
+defaultDeck.2.40.1
+spell.0.2.15
+spell.1.2.15
+spell.2.2.15
+spell.3.2.15
+spell.4.2.15
+goto.22
+label.14
+defaultDeck.2.40.1
+spell.0.2.20
+spell.1.2.20
+spell.2.2.20
+spell.3.2.20
+spell.4.2.20
+goto.22
+label.15
+defaultDeck.2.40.1
+spell.0.2.25
+spell.1.2.25
+spell.2.2.25
+spell.3.2.25
+spell.4.2.25
+goto.22
+label.16
+defaultDeck.2.40.1
+spell.0.2.30
+spell.1.2.30
+spell.2.2.30
+spell.3.2.30
+spell.4.2.30
+goto.22
+label.17
+defaultDeck.2.40.1
+spell.0.2.35
+spell.1.2.35
+spell.2.2.35
+spell.3.2.35
+spell.4.2.35
+goto.22
+label.18
+defaultDeck.2.40.1
+spell.0.2.40
+spell.1.2.40
+spell.2.2.40
+spell.3.2.40
+spell.4.2.40
+goto.22
+label.19
+defaultDeck.2.40.1
+spell.0.2.45
+spell.1.2.45
+spell.2.2.45
+spell.3.2.45
+spell.4.2.45
+goto.22
+label.20
+defaultDeck.2.40.1
+spell.0.2.50
+spell.1.2.50
+spell.2.2.50
+spell.3.2.50
+spell.4.2.50
+goto.22
+label.21
+defaultDeck.2.40.1
+spell.0.2.55
+spell.1.2.55
+spell.2.2.55
+spell.3.2.55
+spell.4.2.55
+goto.22
+label.22"""
+UpdateScript = "lookAtPlayer.-1.1"
+DefeatedScript = """
+setTalkLabels.-1.-1.0
+talk.<
+    Неплохо.
+    Возвращайся ко мне, если твои феи все ещё будут нуждаться в новых тренировках.
+>
+waitForUser
+givePlayerCards.1.0.162"""

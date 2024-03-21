@@ -1,0 +1,64 @@
+UID = "C4A8C594"
+Name = "BDE38F91"
+TriggerScript = """
+playAnimation.13.-1
+setCamera.1000
+ifPlayerHasCards.0.0.16
+goto.10
+else
+say.<О, Человек опять пришел к нам.>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    У тебя есть {4*мешок для пикси}! Приятно видеть того, кто соглашается иметь дело с этими тварями! Пикси создают беспорядок, они поселяются в наших кладовках и смеются над нами.
+>
+waitForUser
+exit
+endIf
+label.10
+ifNpcModifierHasValue.0
+setNpcModifier.-1.-1.1
+say.<Помоги, великан!>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    В {4*Занзаре} наступили смутные времена.
+    Сначала появляются эти маленькие страшные эльфы, а теперь великаны вторгаются в нашу деревню...
+>
+waitForUser
+talk.<
+    Похоже, я потерял свой {4*Серебряный Шар}, когда прятался от этих {4*пикси}.
+    Ты не могла попытаться найти его?
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Он должен быть где-то в этой деревне.
+    Если ты найдёшь его, то можешь оставить его себе —{4* дикие феи} стали слишком агрессивными и {4*пикси} разбежались по всей Занзаре, поэтому за пределами {4*Эндевы} больше не так безопасно, как прежде.
+>
+waitForUser
+exit
+else
+say.<Опять ты!>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Если ты хочешь нам помочь, достань {4*мешок для пикси}.
+    Это единственный способ поймать взбунтовавшихся существ.
+>
+waitForUser
+endIf"""
+InitScript = "setModel.g301s31m"
+UpdateScript = """
+gotoRandomLabel.3.0
+label.0
+deployNpcAtTrigger.92.0
+goto.10
+label.1
+deployNpcAtTrigger.93.0
+goto.10
+label.2
+deployNpcAtTrigger.94.0
+goto.10
+label.10
+lookAtPlayer.0.1"""

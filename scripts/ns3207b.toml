@@ -1,0 +1,17 @@
+UID = "DF234A14"
+Name = "7B2D8F91"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<Привет, как дела у моей маленькой феи?>.0
+waitForUser
+talk.<
+    Если тебе повезет, ты найдешь мою вторую фею.
+    Она убежала недавно.
+    С тех пор ее видели в садах...
+>
+waitForUser"""
+InitScript = """
+setModel.d000s00m
+startActorEffect.0"""
+UpdateScript = "lookAtPlayer.-1.1"

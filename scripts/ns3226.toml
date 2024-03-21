@@ -1,0 +1,34 @@
+UID = "F82FD124"
+Name = "7B2D8F91"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<
+    Если ты хочешь, я могу обменять {4*три Детали Инструментов} на уникальную {4*фею Металла}.
+    Ты хочешь сделать это?
+>.0
+waitForUser
+ifPlayerHasCards.1.0.46
+setTalkLabels.-1.-1.0
+talk.<Сейчас гномы как никогда нуждаются в чужой помощи, ты так не думаешь?>
+waitForUser
+exit
+else
+setTalkLabels.-1.-1.2
+talk.<....>
+waitForUser
+talk.<
+    Ты тоже пришла из других земель?
+    
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Я не вижу, что у тебя есть {4*Детали Инструментов}.
+    Возвращайся, как у тебя будет их достаточно.
+>
+waitForUser
+exit
+endIf"""
+InitScript = "setModel.d000s00m"
+UpdateScript = "lookAtPlayer.0.1"

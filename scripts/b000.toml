@@ -1,0 +1,598 @@
+UID = "A78B9534"
+Name = "92F29531"
+TriggerScript = """
+setCamera.1000
+label.1
+say.<По неизвестной причине книга о {4*Занзаре}, которую ты читала, теперь парит в воздухе...>.1
+choice.2.<Прочесть>
+choice.0.<Уйти>
+waitForUser
+label.2
+playAnimation.14.-1
+say.<...Возможно, ты просто заснула и не заметила этого?>.3
+choice.4.<Выбор главы>
+choice.3.<Назад>
+waitForUser
+label.3
+goto.1
+label.4
+say.<Выбери необходимую главу.>.3
+choice.7.<
+    Глава 1.
+    {4*История Занзары}
+>
+choice.6.<
+    Глава 2.
+    {4*Легенды Занзары}
+>
+choice.46.<
+    Глава 3.
+    {4*Конец истории}
+>
+choice.5.<Назад>
+waitForUser
+label.5
+goto.2
+label.46
+ifPlayerHasCards.1.0.92
+setTalkLabels.47.48.1
+talk.<
+    Ты уверена, что хочешь закончить своё путешествие?
+    (Ты можешь вернуться к нему в любой момент, начав с того места, где остановилась в предыдущий раз.)
+>
+waitForUser
+endIf
+setTalkLabels.-1.-1.0
+talk.<Ты открываешь книгу на указанной странице, но все они абсолютно пустые.>
+waitForUser
+goto.4
+label.48
+goto.4
+label.7
+say.<Страницы книги могут рассказать больше о {4*мире Занзары}.>.3
+choice.11.<
+    1.
+    {4*Тайный Мир}
+>
+choice.10.<
+    2.
+    {4*Карта Природы}
+>
+choice.9.<
+    3.
+    {4*Царство Облаков}
+>
+choice.8.<Далее>
+waitForUser
+label.8
+say.<Страницы книги могут рассказать больше о {4*мире Занзары}.>.3
+choice.14.<
+    4.
+    {4*Карта Воздуха}
+>
+choice.13.<
+    5.
+    {4*Страж}
+>
+choice.12.<Назад>
+waitForUser
+label.12
+goto.4
+label.11
+playVideo.1
+goto.7
+label.10
+playVideo.2
+goto.7
+label.9
+playVideo.5
+goto.7
+label.14
+playVideo.3
+goto.8
+label.13
+playVideo.4
+goto.8
+label.2
+goto.0
+label.6
+ifPlayerHasSpecials.1.1
+setTalkLabels.-1.-1.0
+talk.<Ты открываешь книгу на указанной странице, но все они абсолютно пустые.>
+waitForUser
+goto.4
+else
+say.<По неизвестной причине книга о {4*Занзаре}, которую ты читала, теперь парит в воздухе...>.3
+choice.45.<Как это работает?>
+choice.44.<Пароль>
+choice.43.<Назад>
+waitForUser
+label.43
+goto.4
+label.45
+setTalkLabels.-1.-1.2
+talk.<
+    При помощи системы {4*Легенды} ты можешь выбрать особый путь прохождения игры: например, взять случайную дикую фею в качестве стартовой.
+    Прохождение игры таким способом не накладывает никаких ограничений или не даёт никаких новых наград.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Ты можешь воспользоваться этой функцией, пока у тебя нет никаких фей.
+    Для этого тебе нужно вернуться в {4*Лондон}, как только ты найдешь {4*руну Возвращения}, и не брать ни одну из трёх предложенных фей в {4*Эндеве}.
+    Введя пароль, ты получаешь случайную дикую фею.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<Пароль можно узнать после победы над {4*Стражем} или посмотреть цифры в документе, который идёт вместе с файлами мода.>
+waitForUser
+goto.6
+label.44
+say.<Выбери первую цифру пароля>.3
+choice.15.<1>
+choice.15.<2>
+choice.15.<3>
+choice.16.<Далее>
+waitForUser
+label.16
+say.<Выбери первую цифру пароля>.3
+choice.15.<4>
+choice.15.<5>
+choice.18.<6>
+choice.17.<Далее>
+waitForUser
+label.17
+say.<Выбери первую цифру пароля>.3
+choice.15.<7>
+choice.15.<8>
+choice.15.<9>
+waitForUser
+label.18
+say.<Выбери вторую цифру пароля>.3
+choice.19.<1>
+choice.19.<2>
+choice.19.<3>
+choice.20.<Далее>
+waitForUser
+label.20
+say.<Выбери вторую цифру пароля>.3
+choice.19.<4>
+choice.19.<5>
+choice.19.<6>
+choice.21.<Далее>
+waitForUser
+label.21
+say.<Выбери вторую цифру пароля>.3
+choice.19.<7>
+choice.19.<8>
+choice.22.<9>
+waitForUser
+label.22
+say.<Выбери третью цифру пароля>.3
+choice.23.<1>
+choice.23.<2>
+choice.23.<3>
+choice.24.<Далее>
+waitForUser
+label.24
+say.<Выбери третью цифру пароля>.3
+choice.25.<4>
+choice.23.<5>
+choice.23.<6>
+choice.26.<Далее>
+waitForUser
+label.26
+say.<Выбери третью цифру пароля>.3
+choice.23.<7>
+choice.23.<8>
+choice.23.<9>
+waitForUser
+label.25
+say.<Выбери четвёртую цифру пароля>.3
+choice.27.<1>
+choice.27.<2>
+choice.27.<3>
+choice.28.<Далее>
+waitForUser
+label.28
+say.<Выбери четвёртую цифру пароля>.3
+choice.27.<4>
+choice.29.<5>
+choice.27.<6>
+choice.30.<Далее>
+waitForUser
+label.30
+say.<Выбери четвёртую цифру пароля>.3
+choice.27.<7>
+choice.27.<8>
+choice.27.<9>
+waitForUser
+label.29
+say.<Выбери пятую цифру пароля>.3
+choice.31.<1>
+choice.31.<2>
+choice.31.<3>
+choice.32.<Далее>
+waitForUser
+label.32
+say.<Выбери пятую цифру пароля>.3
+choice.33.<4>
+choice.31.<5>
+choice.31.<6>
+choice.34.<Далее>
+waitForUser
+label.34
+say.<Выбери пятую цифру пароля>.3
+choice.31.<7>
+choice.31.<8>
+choice.31.<9>
+waitForUser
+label.15
+say.<Выбери вторую цифру пароля>.3
+choice.19.<1>
+choice.19.<2>
+choice.19.<3>
+choice.35.<Далее>
+waitForUser
+label.35
+say.<Выбери вторую цифру пароля>.3
+choice.19.<4>
+choice.19.<5>
+choice.19.<6>
+choice.36.<Далее>
+waitForUser
+label.36
+say.<Выбери вторую цифру пароля>.3
+choice.19.<7>
+choice.19.<8>
+choice.19.<9>
+waitForUser
+label.19
+say.<Выбери третью цифру пароля>.3
+choice.23.<1>
+choice.23.<2>
+choice.23.<3>
+choice.37.<Далее>
+waitForUser
+label.37
+say.<Выбери третью цифру пароля>.3
+choice.23.<4>
+choice.23.<5>
+choice.23.<6>
+choice.38.<Далее>
+waitForUser
+label.38
+say.<Выбери третью цифру пароля>.3
+choice.23.<7>
+choice.23.<8>
+choice.23.<9>
+waitForUser
+label.23
+say.<Выбери четвёртую цифру пароля>.3
+choice.27.<1>
+choice.27.<2>
+choice.27.<3>
+choice.39.<Далее>
+waitForUser
+label.39
+say.<Выбери четвёртую цифру пароля>.3
+choice.27.<4>
+choice.27.<5>
+choice.27.<6>
+choice.40.<Далее>
+waitForUser
+label.40
+say.<Выбери четвёртую цифру пароля>.3
+choice.27.<7>
+choice.27.<8>
+choice.27.<9>
+waitForUser
+label.27
+say.<Выбери пятую цифру пароля>.3
+choice.31.<1>
+choice.31.<2>
+choice.31.<3>
+choice.41.<Далее>
+waitForUser
+label.41
+say.<Выбери пятую цифру пароля>.3
+choice.31.<4>
+choice.31.<5>
+choice.31.<6>
+choice.42.<Далее>
+waitForUser
+label.42
+say.<Выбери пятую цифру пароля>.3
+choice.31.<7>
+choice.31.<8>
+choice.31.<9>
+waitForUser
+label.31
+setTalkLabels.-1.-1.0
+talk.<Ничего не происходит.>
+waitForUser
+goto.2
+label.33
+givePlayerCards.1.2.0
+givePlayerCards.1.0.88
+gotoRandomLabel.90.100
+label.100
+tradeWizform.0
+goto.0
+label.101
+tradeWizform.1
+goto.0
+label.102
+tradeWizform.2
+goto.0
+label.103
+tradeWizform.3
+goto.0
+label.104
+tradeWizform.4
+goto.0
+label.105
+tradeWizform.5
+goto.0
+label.106
+tradeWizform.6
+goto.0
+label.107
+tradeWizform.7
+goto.0
+label.108
+tradeWizform.8
+goto.0
+label.109
+tradeWizform.9
+goto.0
+label.110
+tradeWizform.10
+goto.0
+label.111
+tradeWizform.11
+goto.0
+label.112
+tradeWizform.12
+goto.0
+label.113
+tradeWizform.13
+goto.0
+label.114
+tradeWizform.14
+goto.0
+label.115
+tradeWizform.15
+goto.0
+label.116
+tradeWizform.16
+goto.0
+label.117
+tradeWizform.17
+goto.0
+label.118
+tradeWizform.18
+goto.0
+label.119
+tradeWizform.19
+goto.0
+label.120
+tradeWizform.20
+goto.0
+label.121
+tradeWizform.21
+goto.0
+label.122
+tradeWizform.22
+goto.0
+label.123
+tradeWizform.23
+goto.0
+label.124
+tradeWizform.24
+goto.0
+label.125
+tradeWizform.25
+goto.0
+label.126
+tradeWizform.26
+goto.0
+label.127
+tradeWizform.27
+goto.0
+label.128
+tradeWizform.28
+goto.0
+label.129
+tradeWizform.29
+goto.0
+label.130
+tradeWizform.30
+goto.0
+label.131
+tradeWizform.31
+goto.0
+label.132
+tradeWizform.32
+goto.0
+label.133
+tradeWizform.33
+goto.0
+label.134
+tradeWizform.34
+goto.0
+label.135
+tradeWizform.35
+goto.0
+label.136
+tradeWizform.36
+goto.0
+label.137
+tradeWizform.37
+goto.0
+label.138
+tradeWizform.38
+goto.0
+label.139
+tradeWizform.39
+goto.0
+label.140
+tradeWizform.40
+goto.0
+label.141
+tradeWizform.41
+goto.0
+label.142
+tradeWizform.42
+goto.0
+label.143
+tradeWizform.43
+goto.0
+label.144
+tradeWizform.44
+goto.0
+label.145
+tradeWizform.45
+goto.0
+label.146
+tradeWizform.46
+goto.0
+label.147
+tradeWizform.47
+goto.0
+label.148
+tradeWizform.48
+goto.0
+label.149
+tradeWizform.49
+goto.0
+label.150
+tradeWizform.50
+goto.0
+label.151
+tradeWizform.51
+goto.0
+label.152
+tradeWizform.52
+goto.0
+label.153
+tradeWizform.53
+goto.0
+label.154
+tradeWizform.54
+goto.0
+label.155
+tradeWizform.55
+goto.0
+label.156
+tradeWizform.56
+goto.0
+label.157
+tradeWizform.57
+goto.0
+label.158
+tradeWizform.58
+goto.0
+label.159
+tradeWizform.59
+goto.0
+label.160
+tradeWizform.60
+goto.0
+label.161
+tradeWizform.61
+goto.0
+label.162
+tradeWizform.62
+goto.0
+label.163
+tradeWizform.63
+goto.0
+label.164
+tradeWizform.64
+goto.0
+label.165
+tradeWizform.65
+goto.0
+label.166
+tradeWizform.66
+goto.0
+label.167
+tradeWizform.67
+goto.0
+label.168
+tradeWizform.68
+goto.0
+label.169
+tradeWizform.69
+goto.0
+label.170
+tradeWizform.70
+goto.0
+label.171
+tradeWizform.71
+goto.0
+label.172
+tradeWizform.72
+goto.0
+label.173
+tradeWizform.73
+goto.0
+label.174
+tradeWizform.74
+goto.0
+label.175
+tradeWizform.75
+goto.0
+label.176
+tradeWizform.76
+goto.0
+label.177
+tradeWizform.77
+goto.0
+label.178
+tradeWizform.78
+goto.0
+label.179
+tradeWizform.79
+goto.0
+label.180
+tradeWizform.80
+goto.0
+label.181
+tradeWizform.81
+goto.0
+label.182
+tradeWizform.82
+goto.0
+label.183
+tradeWizform.83
+goto.0
+label.184
+tradeWizform.84
+goto.0
+label.185
+tradeWizform.85
+goto.0
+label.186
+tradeWizform.86
+goto.0
+label.187
+tradeWizform.87
+goto.0
+label.188
+tradeWizform.88
+goto.0
+label.189
+tradeWizform.89
+goto.0
+label.0
+playAnimation.0.-1
+exit
+label.47
+playVideo.6
+endGame"""
+InitScript = """
+setNpcType.4
+setModel.i001si01"""
+UpdateScript = "lookAtPlayer.0.0"

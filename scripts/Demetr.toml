@@ -1,0 +1,82 @@
+UID = "1826D0B4"
+Name = "3D24B921"
+TriggerScript = """
+setCamera.1003
+say.<
+    Я никогда не видела тебя до этого.
+    Впервые в этом городе?
+>.0
+playAnimation.13.-1
+waitForUser
+label.1
+exit
+label.0
+say.<
+    Мне не нравится {4*Тиралин}, он слишком шумный.
+    Однажды я всё же решусь найти более спокойное и уединённое место...
+>.3
+choice.4.<Обмен {4*Щепотки Пыльцы фей}>
+choice.3.<Обмен {4*Горсти Пыльцы фей}>
+choice.2.<До встречи>
+choice.1.<До встречи>
+waitForUser
+label.3
+say.<
+    Мне не нравится {4*Тиралин}, он слишком шумный.
+    Однажды я всё же решусь найти более спокойное и уединённое место...
+>.3
+choice.5.<Обмен {4*Щепотки Пыльцы фей}>
+choice.6.<Обмен {4*Горсти Пыльцы фей}>
+waitForUser
+label.3
+setupGambling.1.1.146
+setupGambling.1.1.147
+setupGambling.1.1.148
+setupGambling.1.1.149
+setupGambling.1.1.150
+setupGambling.1.1.151
+setupGambling.1.1.152
+setupGambling.1.1.153
+setupGambling.1.1.154
+setupGambling.1.1.155
+setupGambling.1.1.156
+setupGambling.1.1.157
+waitForUser
+goto.0
+label.6
+setupGambling.1.1.158
+setupGambling.1.1.159
+setupGambling.1.1.160
+setupGambling.1.1.161
+setupGambling.1.1.162
+setupGambling.1.1.163
+setupGambling.1.1.164
+setupGambling.1.1.165
+setupGambling.1.1.166
+setupGambling.1.1.167
+setupGambling.1.1.168
+setupGambling.1.1.169
+waitForUser
+goto.0
+label.2?
+removePlayerCards.1.1.0
+removePlayerCards.1.1.5
+removePlayerCards.1.1.10
+removePlayerCards.1.1.15
+removePlayerCards.1.1.20
+removePlayerCards.1.1.25
+removePlayerCards.1.1.30
+removePlayerCards.1.1.35
+removePlayerCards.1.1.40
+removePlayerCards.1.1.45
+removePlayerCards.1.1.50
+removePlayerCards.1.1.55
+setTalkLabels.-1.-1.0
+talk.<...Гном выжидательно смотрит на тебя.>
+waitForUser
+goto.0
+killPlayer"""
+InitScript = """
+setModel.b008s09m
+defaultWizForm.188.0.0"""
+UpdateScript = "lookAtPlayer.0.1"

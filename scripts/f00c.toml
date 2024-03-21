@@ -1,0 +1,36 @@
+UID = "E132C324"
+Name = "B18BDDB1"
+TriggerScript = """
+ifPlayerHasSpecials.1.1
+say.<У тебя уже есть фея!>.0
+waitForUser
+exit
+else
+setTalkLabels.-1.-1.2
+talk.<
+    {4*Феи Камня} предпочитают жить в огромных булыжниках, скалах и придорожных камнях, нападая на путешественников, если только потревожить их покой.
+    Несмотря на непривлекательный вид, {4*феи Камня} имеют одни из {4*сильнейших атакующих способностей}, но им доступен {4*более ограниченный выбор заклинаний}.
+    
+>
+waitForUser
+setTalkLabels.10.11.1
+talk.<
+    Ты хочешь взять себе эту фею?
+    Ты уверена, что именно эту, а не одну из двух других?
+    {4*Люциус} разрешил тебе взять только одну из трех!
+>
+waitForUser
+exit
+label.10
+givePlayerCards.1.2.162
+setCamera.1006
+removeNpc
+exit
+label.11
+exit
+endIf"""
+InitScript = """
+setNpcType.3
+setCollision.0
+wizform.0.162.0"""
+UpdateScript = "lookAtPlayer.0.0"

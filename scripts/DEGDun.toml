@@ -1,0 +1,46 @@
+UID = "4B6C8034"
+Name = "44EB3001"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<Стой, кто это идёт?!>.0
+waitForUser
+ifPlayerHasCards.3.0.106
+setCamera.1006
+setTalkLabels.-1.-1.2
+talk.<
+    Похоже, ты не настолько слаба, как кажется на первый взгляд...
+    Что ж, я завершу то, что не смогли сделать мои солдаты, и заставлю тебя вернуться туда, откуда ты пришла!
+>
+waitForUser
+fight.-1.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Что?
+    Человек?
+    Что такое слабое существо как ты забыло здесь?
+    Я не стану даже тратить времени на тебя, если только не сможешь доказать, что ты {4*достаточно сильна} для битвы со мной.
+>
+waitForUser"""
+InitScript = """
+setModel.u000s00m
+defaultWizForm.195.0.8
+defaultWizForm.23.1.6
+defaultWizForm.67.2.5
+defaultWizForm.63.3.6
+defaultWizForm.44.4.8"""
+UpdateScript = "lookAtPlayer.0.1"
+DefeatedScript = """
+removeNpcAtTrigger.63
+givePlayerCards.1.0.15
+setCamera.1000
+talk.<
+    Я проиграл...
+    но это неважно.
+    Возможно тебе следует поторопиться на {4*Турнир}, который проводят эти никчемные {4*Болотные Гоблины}...
+    и в следующий раз, когда мы снова встретимся, у меня будут более сильные феи, чем у тебя!
+>
+waitForUser
+startEffect.0.-1
+removeNpc"""

@@ -1,0 +1,79 @@
+UID = "3C07D7A4"
+Name = "97688F91"
+TriggerScript = """
+playAnimation.13.-1
+setCamera.1006
+gotoRandomLabel.3.0
+label.0
+say.<Человеческим духом пахнет?>.0
+waitForUser
+goto.3
+label.1
+say.<Человеческим духом пахнет?>.0
+waitForUser
+goto.3
+label.2
+say.<Человеческим духом пахнет?>.0
+waitForUser
+goto.3
+label.3
+setCamera.1006
+fight.-1.0"""
+InitScript = """
+setModel.b016s00m
+gotoRandomLabel.3.0
+label.0
+defaultWizForm.112.0.48
+defaultWizForm.124.1.47
+defaultWizForm.74.2.49
+defaultWizForm.137.3.46
+defaultWizForm.111.4.47
+spell.0.0.27
+spell.0.2.8
+spell.1.2.43
+spell.3.2.46
+spell.4.0.7
+spell.4.2.34
+goto.3
+label.1
+defaultWizForm.112.0.48
+defaultWizForm.117.1.47
+defaultWizForm.101.2.48
+defaultWizForm.106.3.49
+defaultWizForm.80.4.46
+spell.0.0.27
+spell.0.2.8
+spell.1.2.41
+spell.2.0.51
+spell.2.2.26
+spell.3.2.53
+goto.3
+label.2
+defaultWizForm.112.0.48
+defaultWizForm.110.1.49
+defaultWizForm.14.2.47
+defaultWizForm.103.3.48
+defaultWizForm.135.4.46
+spell.0.0.27
+spell.0.2.8
+spell.1.0.42
+spell.1.2.29
+spell.3.2.14
+spell.4.2.47
+goto.3
+label.3"""
+UpdateScript = """
+label.0
+lookAtPlayer.10.1
+ifPlayerIsClose.50
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.1000
+say.<Ты не сможешь победить всех нас!>.0
+waitForUser
+givePlayerCards.1.0.106
+startEffect.0.-1
+removeNpc"""
+VictoriousScript = "killPlayer"

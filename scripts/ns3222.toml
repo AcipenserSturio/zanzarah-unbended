@@ -1,0 +1,14 @@
+UID = "45FB4394"
+Name = "BDE38F91"
+InitScript = """
+setNpcType.4
+setModel.g008s01m
+movementSpeed.10"""
+UpdateScript = """
+label.0
+changeWaypoint.6000.6004
+changeWaypoint.6004.6003
+changeWaypoint.6003.6002
+changeWaypoint.6002.6001
+changeWaypoint.6001.6000
+goto.0"""

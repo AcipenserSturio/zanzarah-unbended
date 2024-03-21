@@ -1,0 +1,24 @@
+UID = "0FE37C24"
+Name = "B18BDDB1"
+TriggerScript = """
+setCamera.1000
+say.<Человек у нас в саду?!>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Будь осторожна, многие {4*феи} любят докучать странникам своим волшебством.
+    Я дам тебе совет, ищи {4*магические места} в нашем мире, они иногда вызывают спасительные чудеса...
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    ...Если тебе улыбнется удача, ты даже найдешь одно из этих {4*магических мест} у моего камня! 
+>
+waitForUser
+setCamera.3100
+delay.20
+setCamera.1006
+delay.20
+startEffect.1.-1
+removeNpc"""
+InitScript = "wizform.0.3.1"

@@ -1,0 +1,66 @@
+UID = "33D0C584"
+Name = "B66ED221"
+TriggerScript = """
+setCamera.1003
+say.<Коллекционер фей, как приятно.>.0
+playAnimation.13.-1
+waitForUser
+label.0
+say.<Мои магические товары приходят напрямую из {4*Данмора} и {4*Монагама}, и они очень пригодятся тебе в путешествии.>.3
+choice.1.<Торговля>
+choice.2.<Обмен>
+choice.3.<До встречи>
+waitForUser
+label.1
+tradingCurrency.C564B4A3
+tradingItem.75.79064393
+tradingItem.40.1889A2B3
+tradingItem.40.66F10A03
+tradingItem.25.222D1303
+tradingItem.150.AC718B13
+waitForUser
+goto.0
+label.2
+say.<Я дам тебе скидку, в зависимости от того, насколько много кристаллов тебе нужно.>.3
+choice.7.<Купить 50 кристаллов за 225 монет>
+choice.8.<Купить 100 кристаллов за 450 монет>
+choice.9.<Купить 500 кристаллов за 2125 монет>
+choice.10.<Назад>
+waitForUser
+label.7
+ifPlayerHasCards.225.0.4
+removePlayerCards.225.0.4
+givePlayerCards.50.0.6
+exit
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя недостаточно денег для этой покупки.>
+waitForUser
+label.8
+ifPlayerHasCards.450.0.4
+removePlayerCards.450.0.4
+givePlayerCards.100.0.6
+exit
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя недостаточно денег для этой покупки.>
+waitForUser
+label.9
+ifPlayerHasCards.2125.0.4
+removePlayerCards.2125.0.4
+givePlayerCards.500.0.6
+exit
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя недостаточно денег для этой покупки.>
+waitForUser
+label.6
+goto.0
+killPlayer
+label.10
+goto.0
+killPlayer
+label.3
+exit"""
+InitScript = "setModel.d007s03m"
+UpdateScript = "lookAtPlayer.-1.1"

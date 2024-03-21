@@ -1,0 +1,368 @@
+UID = "53CA4E04"
+Name = "3EA58B21"
+TriggerScript = """
+setCamera.1003
+say.<Ещё одно существо, ищущее безграничную силу?>.0
+playAnimation.13.-1
+waitForUser
+label.0
+say.<Я могу исполнить все твои желания за соответствующую плату...>.3
+choice.1.<Диалог>
+choice.2.<Торговля>
+choice.3.<Обмен>
+choice.4.<До встречи>
+waitForUser
+label.2
+tradingCurrency.BAA9B8A3
+tradingItem.25.1593E4A3
+tradingItem.50.B25928A3
+tradingItem.35.9E193F13
+tradingItem.20.252DC9A3
+tradingItem.25.134FDAA3
+waitForUser
+goto.0
+label.1
+say.<О чём ты хочешь узнать?>.3
+choice.7.<Правила игры>
+choice.6.<Список наград>
+choice.5.<Назад>
+waitForUser
+label.6
+setTalkLabels.-1.-1.2
+talk.<{4*Неизвестный Камень} может содержать: {4*Эволюционный Камень} любой из существующих стихий, кроме {4*Металла}.>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<{4*Таинственный Камень} может содержать: {4*Светящийся Камень}, {4*Камень Регрессии}, {4*Эфирный Камень}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<{4*Магическая Деталь} может содержать: {4*Рубиновая Деталь}, {4*Сапфировая Деталь}, {4*Деталь Дезинтеграции}, {4*Деталь Инструментов}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<{4*Чудесное Зелье} может содержать: {4*Лечебный Эликсир}, {4*Медовый Эликсир}, {4*Большой Медовый Эликсир}, {4*Эликсир Маны}, {4*Большой Эликсир Маны}, {4*Эликсир Природы}>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<{4*Мешочек Трав} может содержать: {4*Бутон Луноцвета}, {4*Сумеречный Корень}, {4*Пучок Солнцелиста}, {4*Луговые Травы} (х3-х5)>
+waitForUser
+goto.0
+label.7
+setTalkLabels.-1.-1.0
+talk.<
+    Всё очень просто.
+    Ты покупаешь один из моих товаров, а потом меняешь его на {4*случайную награду из списка}.
+    Однако я не могу помочь тебе с оценкой {4*алхимических товаров}, для этого тебе лучше поискать кого-нибудь в {4*Данморе}.
+>
+waitForUser
+goto.0
+label.3
+setTalkLabels.10.11.1
+talk.<
+    Я могу открыть помочь тебе оценить все твои {4*Неизвестные Камни}, {4*Таинственные Камни} и {4*Магические Детали}.
+    Ты хочешь сделать это?
+>
+waitForUser
+label.10
+ifPlayerHasCards.1.0.159
+removePlayerCards.1.0.159
+goto.15
+else
+ifPlayerHasCards.1.0.160
+removePlayerCards.1.0.160
+goto.16
+else
+ifPlayerHasCards.1.0.98
+removePlayerCards.1.0.98
+goto.17
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет никаких предметов, с оценкой которых я могу тебе помочь.>
+waitForUser
+label.11
+goto.0
+label.15
+gotoRandomLabel.20.500
+label.500
+goto.60
+label.501
+goto.60
+label.502
+goto.60
+label.503
+goto.64
+label.504
+goto.64
+label.505
+goto.64
+label.506
+goto.64
+label.507
+goto.64
+label.508
+goto.64
+label.509
+goto.64
+label.510
+goto.69
+label.511
+goto.69
+label.512
+goto.69
+label.513
+goto.69
+label.514
+goto.69
+label.515
+goto.69
+label.516
+goto.69
+label.517
+goto.69
+label.518
+goto.69
+label.519
+goto.69
+label.60
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Неизвестный Камень...}>
+waitForUser
+gotoRandomLabel.3.61
+label.61
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Льда}!>
+waitForUser
+givePlayerCards.1.0.80
+goto.10
+label.62
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Света}!>
+waitForUser
+givePlayerCards.1.0.82
+goto.10
+label.63
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Тьмы}!>
+waitForUser
+givePlayerCards.1.0.84
+goto.10
+label.64
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Неизвестный Камень...}>
+waitForUser
+gotoRandomLabel.4.65
+label.65
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Воздуха}!>
+waitForUser
+givePlayerCards.1.0.51
+goto.10
+label.66
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Энергии}!>
+waitForUser
+givePlayerCards.1.0.83
+goto.10
+label.67
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Пси}!>
+waitForUser
+givePlayerCards.1.0.86
+goto.10
+label.68
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Огня}!>
+waitForUser
+givePlayerCards.1.0.52
+goto.10
+label.69
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Неизвестный Камень...}>
+waitForUser
+gotoRandomLabel.4.70
+label.70
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Земли}!>
+waitForUser
+givePlayerCards.1.0.79
+goto.10
+label.71
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Воды}!>
+waitForUser
+givePlayerCards.1.0.81
+goto.10
+label.72
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Хаоса}!>
+waitForUser
+givePlayerCards.1.0.85
+goto.10
+label.73
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эволюционный Камень Природы}!>
+waitForUser
+givePlayerCards.1.0.53
+goto.10
+label.16
+gotoRandomLabel.20.100
+label.100
+goto.80
+label.101
+goto.80
+label.102
+goto.80
+label.103
+goto.81
+label.104
+goto.81
+label.105
+goto.81
+label.106
+goto.81
+label.107
+goto.81
+label.108
+goto.81
+label.109
+goto.81
+label.110
+goto.82
+label.111
+goto.82
+label.112
+goto.82
+label.113
+goto.82
+label.114
+goto.82
+label.115
+goto.82
+label.116
+goto.82
+label.117
+goto.82
+label.118
+goto.82
+label.119
+goto.82
+label.80
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Таинственный Камень...}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Светящийся Камень}!>
+waitForUser
+givePlayerCards.1.0.134
+goto.10
+label.81
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Таинственный Камень...}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Камень Регрессии}!>
+waitForUser
+givePlayerCards.1.0.136
+goto.10
+label.82
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Таинственный Камень...}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эфирный Камень}!>
+waitForUser
+givePlayerCards.1.0.87
+goto.10
+label.17
+gotoRandomLabel.20.200
+label.200
+goto.90
+label.201
+goto.90
+label.202
+goto.90
+label.203
+goto.90
+label.204
+goto.90
+label.205
+goto.90
+label.206
+goto.91
+label.207
+goto.91
+label.208
+goto.91
+label.209
+goto.91
+label.210
+goto.91
+label.211
+goto.91
+label.212
+goto.92
+label.213
+goto.92
+label.214
+goto.92
+label.215
+goto.92
+label.216
+goto.92
+label.217
+goto.92
+label.218
+goto.93
+label.219
+goto.93
+label.90
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Магическую Деталь...}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Сапфировая Деталь}!>
+waitForUser
+givePlayerCards.1.0.96
+goto.10
+label.91
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Магическую Деталь...}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Рубиновая Деталь}!>
+waitForUser
+givePlayerCards.1.0.97
+goto.10
+label.92
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Магическую Деталь...}>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Деталь Дезинтеграции}!>
+waitForUser
+givePlayerCards.1.0.69
+goto.10
+label.93
+setTalkLabels.-1.-1.2
+talk.<Ты оцениваешь {4*Магическую Деталь...}>
+waitForUser
+gotoRandomLabel.3.95
+label.95
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Детали Инструментов} (х1)!>
+waitForUser
+givePlayerCards.1.0.70
+goto.10
+label.96
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Детали Инструментов} (х2)!>
+waitForUser
+givePlayerCards.2.0.70
+goto.10
+label.97
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Детали Инструментов} (х3)!>
+waitForUser
+givePlayerCards.3.0.70
+goto.10
+label.4
+exit"""
+InitScript = "setModel.b007s02m"
+UpdateScript = "lookAtPlayer.0.1"

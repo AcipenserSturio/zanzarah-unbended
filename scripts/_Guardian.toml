@@ -1,0 +1,71 @@
+UID = "1D191D04"
+Name = "A46E5421"
+TriggerScript = """
+ifNpcModifierHasValue.1
+delay.10
+fight.0.1
+exit
+endIf
+say.<Эта статуя окружена сильнодействующим заклинанием.>.1
+delay.30"""
+InitScript = """
+setNpcType.3
+defaultWizForm.96.0.61
+defaultWizForm.97.1.61
+defaultWizForm.98.2.61
+defaultWizForm.104.3.61
+defaultWizForm.105.4.61
+spell.0.2.32
+spell.1.2.24
+spell.2.2.47
+spell.3.2.37
+spell.4.2.17"""
+DefeatedScript = """
+delay.10
+startEffect.2.0
+startEffect.3.2
+startEffect.2.91
+startEffect.3.92
+startEffect.2.93
+startEffect.3.94
+startEffect.2.95
+startEffect.3.96
+startEffect.2.97
+startEffect.3.98
+startEffect.2.99
+delay.2
+startEffect.1.0
+startEffect.1.2
+startEffect.1.91
+startEffect.1.92
+startEffect.1.93
+startEffect.1.94
+startEffect.1.95
+startEffect.1.96
+startEffect.1.97
+startEffect.1.98
+startEffect.1.99
+delay.2
+setTalkLabels.-1.-1.2
+talk.<
+    Магия, питающая {4*Стража}, постепенно покидает его.
+    Тёмный Собор погружается в тишину.
+    Ты не уверена, является ли это концом твоего путешествия, но, пока что, миру {4*Занзары} больше ничего не угрожает.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Поздравляем! Вы завершили игру.
+    Вы можете продолжить исследовать мир {4*Занзары} или закончить игру через выбор главы {4*\"Конец истории\"} у книги в {4*Лондоне}.
+    
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Доступен новый {4*пароль} — 69454.
+    Вы можете использовать {4*пароль} в начале новой игры, поговорив с книгой в {4*Лондоне}.
+>
+waitForUser
+givePlayerCards.1.0.92
+startEffect.0.-1
+removeNpc"""

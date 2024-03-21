@@ -1,0 +1,34 @@
+UID = "E943B9B4"
+Name = "97688F91"
+TriggerScript = """
+setCamera.1000
+setTalkLabels.5.10.1
+talk.<
+    Принеси мне {4*три Камеи Коллекционера и три Камеи Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+label.5
+setCamera.1006
+fight.-1.0
+label.10
+setTalkLabels.-1.-1.0
+talk.<Прочесть>
+waitForUser"""
+InitScript = """
+setModel.u003s03m
+defaultWizForm.71.0.60
+defaultWizForm.45.1.60
+defaultWizForm.36.2.60
+defaultWizForm.61.3.60"""
+UpdateScript = "lookAtPlayer.-1.1"
+DefeatedScript = """
+setCamera.1000
+say.<
+    Принеси мне {4*девять Камей Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>.0
+waitForUser
+startEffect.0.-1
+removeNpc"""
+VictoriousScript = "killPlayer"

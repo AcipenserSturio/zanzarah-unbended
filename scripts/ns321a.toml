@@ -1,0 +1,6 @@
+UID = "6ECEDA24"
+Name = "97688F91"
+InitScript = """
+setModel.u003s03m
+defaultDeck.2.40.1"""
+UpdateScript = "lookAtPlayer.0.1"

@@ -1,0 +1,128 @@
+UID = "E277B534"
+Name = "2B4B0221"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<
+    Люди и Повелители фей! Я вас всех ненавижу!
+>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Пока у меня еще остались силы, моя магия защищает путь к {4*Стражу}.
+    Сразись со мной! Для тебя это единственный способ выполнить твою миссию.
+>
+waitForUser
+setCamera.1006
+fight.-1.-1"""
+InitScript = """
+defaultWizForm.42.0.61
+defaultWizForm.33.1.61
+defaultWizForm.25.2.61
+defaultWizForm.22.3.61
+defaultWizForm.61.4.61
+setModel.v000s00"""
+UpdateScript = "lookAtPlayer.0.0"
+DefeatedScript = """
+setTalkLabels.-1.-1.2
+talk.<
+    Я не смог тебя победить, Эмми.
+    Дорога к {4*Стражу}, защитнику {4*Занзары}, открыта перед тобой.
+>
+waitForUser
+talk.<
+    Когда Гном-Мастер {4*Квинлин} и я создали {4*Стража} на заброшенном заводе гномов под горой, мы поругались и пошли каждый своей дорогой.
+    {4*Квинлин} рассматривал Стража лишь как временного защитника.
+    Он всецело верил в узы между людьми и эльфами.
+>
+waitForUser
+talk.<
+    Но глупый гном никогда не видел поступков людей своими собственными глазами.
+    Его не преследовали и не убивали как волшебников, он не присутствовал, когда существование фей отрицалось, и вера в них была запрещена.
+    
+>
+waitForUser
+talk.<
+    И мне ничего не оставалось, кроме как пленить {4*Квинлина}, а вместе с ним и всю мудрость гномов.
+    Это был единственный способ сохранить {4*Занзару} и оставить Стража в живых, когда его время истекло.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Ты расстроила все мои планы.
+    Теперь ты будешь определять судьбу {4*Занзары}.
+    Дорога к {4*Стражу} открыта.
+>
+waitForUser
+startEffect.0.-1
+deployNpcAtTrigger.82.0
+delay.10
+setCamera.3020
+startEffect.0.91
+startEffect.1.92
+delay.1
+startEffect.0.92
+startEffect.2.93
+delay.1
+startEffect.0.93
+startEffect.1.94
+delay.1
+startEffect.0.94
+startEffect.2.95
+delay.1
+startEffect.0.95
+startEffect.1.96
+delay.1
+startEffect.0.96
+startEffect.2.97
+delay.1
+startEffect.0.97
+startEffect.1.98
+delay.1
+startEffect.0.98
+startEffect.2.99
+delay.1
+startEffect.0.99
+startEffect.1.0
+delay.1
+startEffect.0.0
+startEffect.1.2
+delay.1
+startEffect.0.2
+startEffect.1.91
+delay.1
+startEffect.0.91
+startEffect.1.92
+delay.1
+startEffect.0.92
+startEffect.2.93
+delay.1
+startEffect.0.93
+startEffect.1.94
+delay.1
+startEffect.0.94
+startEffect.1.95
+delay.1
+startEffect.0.95
+startEffect.2.96
+delay.1
+startEffect.0.96
+startEffect.1.97
+delay.1
+startEffect.0.97
+startEffect.1.98
+delay.5
+startEffect.2.0
+startEffect.3.2
+startEffect.2.91
+startEffect.3.92
+startEffect.2.93
+startEffect.3.94
+startEffect.2.95
+startEffect.3.96
+startEffect.2.97
+startEffect.3.98
+startEffect.2.99
+delay.10
+setNpcModifier.-1.3.1
+removeNpc"""

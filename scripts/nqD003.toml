@@ -1,0 +1,40 @@
+UID = "ABF0DA04"
+Name = "F8438821"
+TriggerScript = """
+setCamera.1000
+changeWaypoint.-1.-1
+playAnimation.13.-1
+say.<Держись от меня подальше, долговязая тварь!>.0
+waitForUser
+talk.<
+    Как можешь ты, маленькое глупое существо, надеяться меня победить?
+    Пока я здесь стою, сила волшебной клетки никогда не исчезнет.
+    Конечно, ты можешь попробовать победить меня, но я непобедим!
+>
+waitForUser
+setCamera.1006
+fight.-1.0"""
+InitScript = """
+setModel.u001s01m
+defaultWizForm.53.0.60
+defaultWizForm.49.1.60
+defaultWizForm.51.2.60
+defaultWizForm.71.3.60
+defaultWizForm.36.4.60"""
+UpdateScript = """
+label.0
+lookAtPlayer.10.1
+ifPlayerIsClose.20
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.1000
+say.<
+    Как я мог проиграть такому маленькому костлявому человечку?
+    Это недопустимо!
+>.0
+waitForUser
+startEffect.0.-1
+removeNpc"""
+VictoriousScript = "killPlayer"

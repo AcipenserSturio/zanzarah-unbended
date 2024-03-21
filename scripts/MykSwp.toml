@@ -1,0 +1,37 @@
+UID = "13CEC914"
+Name = "910B1179"
+TriggerScript = """
+playSound.3
+say.<Кто потревожил мой покой?>.0
+setCamera.1000
+waitForUser
+talk.<
+    Как ты здесь оказалась?
+    Неужели ты думала, что сможешь забрать мои сокровища просто так?
+    Ты вместе со своими феями прямо сейчас отправишься на дно!
+>
+waitForUser
+fight.-1.0"""
+InitScript = """
+setNpcType.3
+defaultWizForm.26.0.54
+defaultWizForm.144.1.52
+defaultWizForm.103.2.53
+defaultWizForm.113.3.51
+defaultWizForm.157.4.33
+spell.0.0.3
+spell.0.2.27
+spell.1.0.12
+spell.1.2.6
+spell.2.0.34
+spell.2.2.11
+spell.3.0.13
+spell.3.2.17
+spell.4.0.43
+spell.4.2.47"""
+DefeatedScript = """
+talk.<Пифия ({4*4 Рунических Свитка})>
+waitForUser
+createDynamicItems.6.30.-1
+startEffect.1.-1
+removeNpc"""

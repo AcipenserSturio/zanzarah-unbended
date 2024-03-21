@@ -1,0 +1,79 @@
+UID = "70B749B4"
+Name = "F655D391"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+ifPlayerHasCards.1.0.10
+goto.10
+endIf
+ifNumberOfNpcsIs.1.5AB6E504
+setTalkLabels.-1.-1.0
+talk.<Остался последний терновый куст на нашей земле.>
+waitForUser
+exit
+endIf
+ifNumberOfNpcsIs.2.5AB6E504
+setTalkLabels.-1.-1.0
+talk.<На нашей земле осталось еще два терновых куста.>
+waitForUser
+exit
+endIf
+ifNumberOfNpcsIs.3.5AB6E504
+setTalkLabels.-1.-1.0
+talk.<Тебе надо найти и уничтожить еще три терновых куста.>
+waitForUser
+exit
+endIf
+ifNumberOfNpcsIs.4.5AB6E504
+setTalkLabels.-1.-1.0
+talk.<В нашей долине растут четыре терновых куста.>
+waitForUser
+exit
+endIf
+ifNumberOfNpcsIs.0.5AB6E504
+setTalkLabels.-1.-1.0
+talk.<
+    Спасибо, что освободила наш дом от кустов.
+    {4*Стихийный Ключ Природы} хранится в Мэрии Тиралина, и для этого тебе потребуется {4*ключ}.{4* }Возьми эту вещь в качестве моей благодарности.
+>
+waitForUser
+givePlayerCards.1.0.10
+exit
+endIf
+ifNumberOfNpcsIs.5.5AB6E504
+say.<Добро пожаловать в нашу лесную хижину.>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    {4*Терновые кусты} заполонили всю нашу землю так, что мы больше не можем здесь жить.
+    Мой муж отправился {4*за помощью} на болото.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Найди все терновые кусты на нашей земле и уничтожь их.
+    За это я подскажу, где стоит искать {4*Стихийный Ключ Природы}.
+>
+waitForUser
+exit
+endIf
+label.10
+ifNumberOfNpcsIs.1.E3A72994
+say.<Спасибо, что освободила наш дом от этих кустов.>.0
+waitForUser
+exit
+endIf
+say.<Добро пожаловать в нашу лесную хижину.>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Мой муж еще не вернулся из {4*Болотной Деревни}.
+    Он не знает, что ты очистила нашу долину от терновых кустов.
+    Вот если бы кто-нибудь мог {4*сообщить}, что ему надо вернуться домой...
+>
+waitForUser
+exit"""
+InitScript = """
+setModel.w000s00m
+movementSpeed.13"""
+UpdateScript = "lookAtPlayer.0.1"

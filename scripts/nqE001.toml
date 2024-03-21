@@ -1,0 +1,63 @@
+UID = "1E3B48B4"
+Name = "60D826B1"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+ifNpcModifierHasValue.1
+say.<...>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<...>
+waitForUser
+exit
+endIf
+setNpcModifier.3600.40.1
+setNpcModifier.3600.43.1
+setNpcModifier.3600.54.1
+setNpcModifier.3600.21.1000
+setNpcModifier.3600.7.1000
+setNpcModifier.-1.-1.1
+say.<Привет, Эми.>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<Человек из предсказания!>
+waitForUser
+setCamera.2003
+talk.<...>
+waitForUser
+talk.<...>
+waitForUser
+talk.<...>
+waitForUser
+talk.<
+    Я практически потерял надежду, что кто-то найдёт меня здесь.
+    Я пробрался в {4*Царство Тьмы}, чтобы разузнать, что планируют {4*Тёмные Эльфы}, но, как ты видишь, я был не настолько успешен в этом...
+    и раз уж ты здесь, то они не стали для тебя большой проблемой.
+    И теперь ты хочешь узнать, о чём всё это.
+>
+waitForUser
+talk.<...>
+waitForUser
+setCamera.1000
+talk.<...>
+waitForUser
+talk.<...>
+waitForUser
+talk.<...>
+waitForUser
+talk.<
+    Предсказание говорило о том, что в один день в Занзару придёт человек из другого мира, чтобы восстановить нарушенный баланс.
+    
+>
+waitForUser
+talk.<
+    Когда-то давно мы создали {4*Стража} - одновременно механическое и магическое существо, задачей которого было закрыть порталы, ведущие в мир людей.
+    Большинство из нас верило, что это будет лишь временной мерой, до того момента, пока не пройдёт достаточно времени, чтобы люди смогли измениться.
+    Именно поэтому и возникло Предсказание.
+>
+setTalkLabels.-1.-1.0
+waitForUser
+givePlayerCards.1.0.73
+exit"""
+InitScript = "setModel.d005s01m"
+UpdateScript = "lookAtPlayer.0.1"

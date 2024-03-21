@@ -1,0 +1,36 @@
+UID = "3E4CCC34"
+Name = "31455C31"
+TriggerScript = """
+setCamera.1000
+say.<Ты видишь перед собой пикси, сидящего на бочонке.>.0
+waitForUser
+label.0
+say.<Пара зелёных глаз с интересом изучают тебя.>.1
+choice.3.<Диалог>
+choice.2.<Обмен>
+choice.1.<Уйти>
+waitForUser
+label.2
+tradingCurrency.C564B4A3
+tradingItem.5.BAA9B8A3
+waitForUser
+goto.0
+label.3
+setTalkLabels.-1.-1.2
+talk.<
+    Пикси достаёт из соседней бочки монетку и показывает её тебе.
+    В следующий момент он ловко вынимает кристалл из-под крышки бочки под собой, демонстрируя чудеса ловкости.
+    Пикси попеременно перекладывает монетку и кристалл между своих двух лап, хитрым взглядом изучая тебя.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Похоже, он готов обменивать твои монеты на кристаллы.
+    Впрочем, ты все ещё не уверена, всегда ли пикси были такими умными...
+>
+waitForUser
+goto.0
+label.1
+exit"""
+InitScript = "setModel.p001s00m"
+UpdateScript = "lookAtPlayer.-1.1"

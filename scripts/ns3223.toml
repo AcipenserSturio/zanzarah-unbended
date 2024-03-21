@@ -1,0 +1,175 @@
+UID = "191C6894"
+Name = "D5161F81"
+TriggerScript = """
+playAnimation.14.-1
+setCamera.1000
+say.<Добро пожаловать в мою кузню, чужестранка.>.0
+waitForUser
+label.0
+say.<
+    Тебе требуется помощь моего молота?
+    Он всегда к твоим услугам.
+>.3
+choice.4.<Диалог>
+choice.3.<Обмен фей>
+choice.1.<До встречи>
+waitForUser
+label.4
+setTalkLabels.-1.-1.2
+talk.<
+    В старые времена гномы были теми, кто изготовил первых искусственных фей, сделанных полностью из металла.
+    С тех пор прошло много времени, и гномы совсем забыли об этом искусстве.
+    Тем не менее, все ещё существуют немногие, кто пытается возродить эти старые знания.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Я могу помочь тебе получить {4*Детали Инструментов}, используемые для изготовления {4*инструментов для эволюции фей Металла}, но тебе потребуется найти для этого {4*фею Металла}.
+    К сожалению, их очень тяжело найти в дикой природе, и лишь немногие из них остались у {4*Коллекционеров}, но если у тебя найдётся лишняя, я с радостью готов её обменять на {4*Детали Инструментов}.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    И ещё одна вещь — количество инструментов, которые ты получишь за фею, зависит от её {4*модели}, а также удачи.
+    Иногда их будет больше, иногда меньше...
+    к сожалению, {4*феи Металла} уязвимы перед временем, и ты никогда не знаешь, насколько они пригодны для чего-либо ещё.
+    Поэтому из {4*Гигарекс}, к примеру, ты получишь в среднем больше деталей, чем из {4*Минари}.
+>
+waitForUser
+goto.0
+label.3
+setTalkLabels.10.11.1
+talk.<
+    Если у тебя есть лишние {4*Прототипы фей Металла}, я могу их обменять на {4*Детали Инструментов}.
+    Так что, ты хочешь совершить сделку?
+>
+waitForUser
+label.10
+ifPlayerHasCards.1.2.39
+tradeWizform.143
+goto.12
+else
+ifPlayerHasCards.1.2.49
+tradeWizform.143
+goto.13
+else
+ifPlayerHasCards.1.2.87
+tradeWizform.143
+goto.14
+else
+setTalkLabels.-1.-1.0
+talk.<
+    У тебя нет подходящей {4*феи Металла}.
+    Ты можешь попытаться поискать их на {4*Заброшенной Фабрике}, она расположена как раз ниже по дороге.
+    Я также слышал, что кто-то ещё продаёт старых {4*фей Металла}, но я не могу тебе помочь с этим — тебе лучше попытаться спросить об этом кого-то ещё.
+>
+waitForUser
+goto.0
+label.11
+goto.0
+label.12
+gotoRandomLabel.10.20
+label.20
+givePlayerCards.2.0.108
+goto.100
+label.21
+givePlayerCards.2.0.108
+goto.100
+label.22
+givePlayerCards.2.0.108
+goto.100
+label.23
+givePlayerCards.2.0.108
+goto.100
+label.24
+givePlayerCards.2.0.108
+goto.100
+label.25
+givePlayerCards.3.0.108
+goto.100
+label.26
+givePlayerCards.3.0.108
+goto.100
+label.27
+givePlayerCards.3.0.108
+goto.100
+label.28
+givePlayerCards.4.0.108
+goto.100
+label.29
+givePlayerCards.4.0.108
+goto.100
+label.13
+gotoRandomLabel.10.30
+label.30
+givePlayerCards.3.0.108
+goto.100
+label.31
+givePlayerCards.3.0.108
+goto.100
+label.32
+givePlayerCards.3.0.108
+goto.100
+label.33
+givePlayerCards.3.0.108
+goto.100
+label.34
+givePlayerCards.3.0.108
+goto.100
+label.35
+givePlayerCards.4.0.108
+goto.100
+label.36
+givePlayerCards.4.0.108
+goto.100
+label.37
+givePlayerCards.4.0.108
+goto.100
+label.38
+givePlayerCards.5.0.108
+goto.100
+label.39
+givePlayerCards.5.0.108
+goto.100
+label.14
+gotoRandomLabel.10.30
+label.40
+givePlayerCards.4.0.108
+goto.100
+label.41
+givePlayerCards.4.0.108
+goto.100
+label.42
+givePlayerCards.4.0.108
+goto.100
+label.43
+givePlayerCards.4.0.108
+goto.100
+label.44
+givePlayerCards.4.0.108
+goto.100
+label.45
+givePlayerCards.5.0.108
+goto.100
+label.46
+givePlayerCards.5.0.108
+goto.100
+label.47
+givePlayerCards.5.0.108
+goto.100
+label.48
+givePlayerCards.6.0.108
+goto.100
+label.49
+givePlayerCards.6.0.108
+goto.100
+label.100
+playAnimation.33.0
+exit
+label.1
+playAnimation.33.0
+exit"""
+InitScript = """
+setNpcType.4
+setModel.d008s00m
+playAnimation.33.0"""

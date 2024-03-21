@@ -1,0 +1,61 @@
+UID = "E7D47224"
+Name = "7B2D8F91"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+gotoRandomLabel.2.10
+label.10
+say.<Нежданный гость!>.0
+goto.12
+label.11
+say.<Добро пожаловать, Повелительница фей.>.0
+label.12
+waitForUser
+ifPlayerHasCards.1.0.25
+setTalkLabels.-1.-1.0
+talk.<
+    Вижу, у тебя теперь есть {4*наше сокровище}.
+    Вряд ли я могу тебе еще чем-нибудь помочь.
+>
+waitForUser
+exit
+endIf
+ifPlayerHasCards.1.0.48
+goto.20
+else
+setTalkLabels.-1.-1.2
+talk.<
+    Я охраняю доступ к {4*сокровищам гномов}.
+    Я хотел бы помочь тебе в поисках, но сначала ты должна доказать, что являешься другом нашего народа.
+    
+>
+waitForUser
+talk.<
+    Издревле в Занзаре ходит слух о легендарной {4*Карте Пси Магии}.
+    Давным-давно она была утрачена гномами...
+    Найди её и докажи, что ты истинный {4*Коллекционер Фей}.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Найди {4*Карту Пси Магии} и покажи её мне.
+    Это будет доказательством того, что ты достойна наших сокровищ!
+>
+waitForUser
+exit
+endIf
+label.20
+setTalkLabels.-1.-1.0
+ifNpcModifierHasValue.0
+talk.<О, у тебя {4*Карта Пси Магии}, минутку...>
+waitForUser
+setNpcModifier.-1.-1.1
+setCamera.3000
+else
+talk.<Я помогу тебе...>
+waitForUser
+endIf
+createSceneObjects.0
+exit"""
+InitScript = "setModel.b019s00m"
+UpdateScript = "lookAtPlayer.0.1"

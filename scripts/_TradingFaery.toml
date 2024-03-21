@@ -1,0 +1,46 @@
+UID = "8219B694"
+Name = "8999AF11"
+TriggerScript = """
+setCamera.1001
+say.<Повелительница фей!>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Ты как раз вовремя.
+    Я {4*Суэйн}, {4*Фея Света}, Хранитель старой арены.
+    Этот Злобный {4*темный эльф} вторгся на мою территорию и принес с собой мерзких {4*Темных фей}.
+>
+waitForUser
+talk.<
+    У меня не было ни одного шанса...
+    И словно этого было мало, они посадили на меня эту отвратительную {4*Фею Хаоса}.
+    Это ужасно!
+>
+waitForUser
+talk.<Помоги мне!>
+waitForUser
+fight.-1.0
+exit"""
+InitScript = """
+setNpcType.3
+setModel.f071s26
+defaultWizForm.32.2.1"""
+UpdateScript = """
+label.0
+lookAtPlayer.1.0
+ifPlayerIsClose.8
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+removeWizForms
+talk.<
+    Ты избавила меня от неприятностей.
+    Ох, как мне выразить благодарность?
+    Возьми эту магическую {4*Карту Воздуха} и немедленно сообщи обо всём {4*Друиду}! {4*Королева фей} непременно должна узнать об этом подлом плане {4*Тёмных Эльфов} захватить всю {4*Занзару}!
+>
+waitForUser
+changeWaypoint.-1.-1
+givePlayerCards.1.0.44
+startEffect.1.-1
+removeNpc"""

@@ -1,0 +1,59 @@
+UID = "B263B5F1"
+Name = "23D47EB1"
+TriggerScript = """
+deployNpcAtTrigger.65.1
+setCamera.3000
+playAnimation.13.-1
+say.<Какое разочарование, ты смогла добраться до Турнира...>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    И теперь мы обязаны мириться с последствиями ваших глупых решений.
+    Где были {4*люди}, когда {4*Тёмные Эльфы} начали войну в {4*Занзаре}?
+    Где всё это время была ты, когда {4*Тёмные Эльфы} осадили {4*Данмор} и заблокировали дорогу к {4*Монагаму}?
+>
+waitForUser
+setTalkLabels.10.11.1
+talk.<
+    Достаточно разговоров.
+    Ты готова к последней своей дуэли?
+>
+waitForUser
+label.10
+setCamera.1006
+fight.-1.0
+exit
+label.11
+setTalkLabels.-1.-1.0
+talk.<
+    Наша семья издревле занималась защитой {4*Занзары} от {4*Тёмных Эльфов} и их вредных приспешников, {4*пикси}.
+    С того момента, как этот мир увидел рождение этих отвратительных созданий, безопасность {4*Занзары} постоянно находится в опасности.
+>
+waitForUser
+exit"""
+InitScript = """
+setModel.g204s20m
+defaultWizForm.1.0.53
+defaultWizForm.11.1.52
+defaultWizForm.11.2.50
+defaultWizForm.11.3.51"""
+UpdateScript = """
+label.0
+lookAtPlayer.1.1
+ifPlayerIsClose.2
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.3000
+setTalkLabels.-1.-1.0
+talk.<
+    Кому, ты думаешь, мы обязаны тем, что {4*Тёмные Эльфы} появились на свет?
+    Конечно же людям! Именно из-за вашего страха перед {4*магией} общество {4*эльфов} раскололось надвое, и {4*Тёмные Эльфы} решили собственным способом бороться с человеческой заразой...
+>
+waitForUser
+changeWaypoint.30.31
+setCamera.3004
+changeWaypoint.31.32
+changeWaypoint.32.33
+removeNpc"""

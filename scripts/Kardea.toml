@@ -1,0 +1,54 @@
+UID = "D23AD1A4"
+Name = "3383EDB1"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<
+    Человек?
+    Ты пришла помочь в борьбе с Тёмными Эльфами?
+>.0
+waitForUser
+label.0
+say.<Будь осторожна, Тёмные Эльфы - опасные противника даже для опытных Коллекционеров.>.1
+choice.1.<Торговля>
+choice.2.<До встречи>
+waitForUser
+label.1
+tradingCurrency.C564B4A3
+tradingItem.5.23173793
+tradingItem.10.99D2B4A3
+tradingItem.25.AD58B4A3
+waitForUser
+goto.0
+label.2
+exit"""
+InitScript = """
+setModel.b025s21m
+movementSpeed.10
+defaultWizForm.192.0.28
+defaultWizForm.64.1.27
+defaultWizForm.32.2.25
+defaultWizForm.2.3.25
+defaultWizForm.52.4.25"""
+UpdateScript = """
+label.0
+moveSystem.1.0
+gotoRandomLabel.3.0
+goto.0
+label.1
+playAnimation.0.30
+goto.0
+label.2
+playAnimation.11.30
+goto.0"""
+DefeatedScript = """
+setCamera.1000
+talk.<
+    Я проиграл...
+    но это неважно.
+    Возможно тебе следует поторопиться на {4*Турнир}, который проводят эти никчемные {4*Болотные Гоблины}...
+    и в следующий раз, когда мы снова встретимся, у меня будут более сильные феи, чем у тебя!
+>
+waitForUser
+startEffect.0.-1
+removeNpc"""

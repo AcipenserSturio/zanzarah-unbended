@@ -65,7 +65,6 @@ setTalkLabels.-1.-1.0
 talk.<
     Счастливого пути.
     Но помни: гномы виноваты в наших бедах.
-    
 >
 waitForUser"""
 InitScript = "setModel.v000s00"

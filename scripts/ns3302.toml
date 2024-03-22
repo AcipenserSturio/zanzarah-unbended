@@ -13,7 +13,10 @@ talk.<
 >
 waitForUser
 setTalkLabels.10.11.1
-talk.<Ты готова участвовать в поединке фей?>
+talk.<
+    Ты готова участвовать в поединке фей?
+    
+>
 waitForUser
 label.10
 setCamera.1006

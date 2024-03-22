@@ -1,5 +1,5 @@
-UID = "399C7404"
-Name = "05360321"
+UID = "9171CF24"
+Name = "2A28E891"
 TriggerScript = """
 playAmyVoice.4
 say.<Пара красных глаз изучающе смотрят на тебя.>.0
@@ -10,11 +10,11 @@ waitForUser
 fight.-1.0"""
 InitScript = """
 setNpcType.3
-defaultWizForm.208.0.7
-defaultWizForm.77.1.8
-defaultWizForm.43.2.6
-defaultWizForm.83.3.6
-defaultWizForm.54.4.7"""
+defaultWizForm.208.0.9
+defaultWizForm.40.1.9
+defaultWizForm.23.2.12
+defaultWizForm.50.3.9
+defaultWizForm.21.4.11"""
 DefeatedScript = """
 talk.<
     После долгого боя фея больше не представляет никакой опасности.

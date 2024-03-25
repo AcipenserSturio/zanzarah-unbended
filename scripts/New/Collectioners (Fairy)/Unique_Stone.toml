@@ -1,0 +1,27 @@
+UID = "9A299BA4"
+Name = "4963CC91"
+TriggerScript = """
+playAmyVoice.5
+say.<Пара красных глаз изучающе смотрят на тебя.>.0
+setCamera.1000
+waitForUser
+talk.<Похоже, ты потревожила покой этой феи, и теперь боя не избежать...>
+waitForUser
+fight.-1.0"""
+InitScript = """
+setNpcType.3
+defaultWizForm.210.0.11
+defaultWizForm.8.1.11
+defaultWizForm.81.2.10
+defaultWizForm.6.3.10
+defaultWizForm.37.4.11"""
+DefeatedScript = """
+talk.<
+    После долгого боя фея больше не представляет никакой опасности.
+    Ты решаешь забрать её с собой, чтобы она больше не стала причиной чьих-то неприятностей...
+>
+waitForUser
+givePlayerCards.1.2.210
+createDynamicItems.6.30.-1
+startEffect.1.-1
+removeNpc"""

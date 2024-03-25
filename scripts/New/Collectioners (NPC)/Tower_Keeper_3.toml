@@ -1,0 +1,58 @@
+UID = "1900B294"
+Name = "10E82091"
+TriggerScript = """
+setCamera.3001
+deployNpcAtTrigger.36.1
+playAnimation.13.-1
+say.<Добро пожаловать в Башню Мудрости!>.0
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Вижу, ты пришла издалека.
+    Но только тот, кто победит меня и моего старшего брата, достоин получить {4*Карту Огня}.
+>
+waitForUser
+setTalkLabels.10.11.1
+talk.<
+    Ты готова участвовать в поединке фей?
+    
+>
+waitForUser
+label.10
+setCamera.1006
+fight.-1.0
+label.11
+setTalkLabels.-1.-1.0
+talk.<Я уверен, что выиграю!>
+waitForUser"""
+InitScript = """
+setModel.b011s00m
+defaultWizForm.131.0.54
+defaultWizForm.17.1.53
+defaultWizForm.132.2.51
+defaultWizForm.118.3.52
+defaultWizForm.48.4.52"""
+UpdateScript = """
+label.0
+idle
+ifPlayerIsClose.5
+startPrelude
+else
+lookAtPlayer.5.1
+endIf
+goto.0"""
+DefeatedScript = """
+setTalkLabels.-1.-1.0
+setCamera.3001
+setTalkLabels.-1.-1.0
+talk.<
+    Твои феи хорошо подготовлены! Но одержат ли они победу над феями моего старшего брата?
+    Приходи ко мне в библиотеку, если хочешь побольше узнать о {4*Царстве Облаков}.
+>
+waitForUser
+givePlayerCards.1.0.107
+changeWaypoint.-1.100
+changeWaypoint.100.101
+removeNpc
+setCamera.1006"""
+VictoriousScript = "killPlayer"

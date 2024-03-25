@@ -1,0 +1,57 @@
+UID = "D4B4AE94"
+Name = "10E82091"
+TriggerScript = """
+setCamera.3000
+deployNpcAtTrigger.35.1
+playAnimation.13.-1
+say.<Добро пожаловать в Башню Мудрости, человеческая девушка.>.0
+waitForUser
+setTalkLabels.10.11.1
+talk.<
+    Разве ты не знаешь, что я и мои братья охраняем эту башню?
+    Ты пришла, чтобы бросить мне вызов?
+>
+waitForUser
+label.10
+setTalkLabels.-1.-1.0
+talk.<
+    Тогда давай, измерим силу наших фей! Пусть победит лучший Повелитель фей!
+>
+waitForUser
+setCamera.1006
+fight.-1.0
+label.11
+setTalkLabels.-1.-1.0
+talk.<Что же, такое решение более безопасно для тебя и твоих фей!>
+waitForUser"""
+InitScript = """
+setModel.b010s00m
+defaultWizForm.139.0.47
+defaultWizForm.133.1.49
+defaultWizForm.25.2.50
+defaultWizForm.70.3.46
+defaultWizForm.93.4.48"""
+UpdateScript = """
+label.0
+idle
+ifPlayerIsClose.5
+startPrelude
+else
+lookAtPlayer.5.1
+endIf
+goto.0"""
+DefeatedScript = """
+setTalkLabels.-1.-1.0
+setCamera.3000
+setTalkLabels.-1.-1.0
+talk.<
+    У тебя сильные феи! Может ты поможешь {4*Белому друиду} в его миссии.
+    Иди и приходи ко мне, если захочешь узнать больше о Друиде.
+>
+waitForUser
+givePlayerCards.1.0.107
+changeWaypoint.-1.200
+changeWaypoint.200.201
+removeNpc
+setCamera.1006"""
+VictoriousScript = "killPlayer"

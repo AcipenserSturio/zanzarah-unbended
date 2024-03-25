@@ -1,0 +1,45 @@
+UID = "B68F5714"
+Name = "10E82091"
+TriggerScript = """
+setCamera.3001
+changeWaypoint.-1.0
+playAnimation.13.-1
+say.<Ты победила всех моих братьев?>.0
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Возможно ты достойна того, чтобы использовать нашу {4*Карту Магии Огня}.
+    Но сначала тебе придется доказать свои способности в битве со мной.
+    Готовься!
+>
+waitForUser
+fight.-1.0"""
+InitScript = """
+setModel.d004s00m
+defaultWizForm.141.0.54
+defaultWizForm.123.1.55
+defaultWizForm.113.2.51
+defaultWizForm.115.3.51
+defaultWizForm.48.4.53"""
+UpdateScript = """
+label.0
+idle
+ifTriggerIsActive.19
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.3001
+deployNpcAtTrigger.19.1
+setTalkLabels.-1.-1.2
+talk.<
+    Ты действительно заслужила {4*Карту Магии Огня}.
+    Возьми её, теперь все надежды гномов  — на человеческую девушку.
+>
+waitForUser
+givePlayerCards.1.0.107
+setTalkLabels.-1.-1.0
+talk.<Правильно используй {4*Карту Магии Огня} и приходи ко мне, если хочешь узнать больше о легендах {4*Занзары}.>
+waitForUser
+changeWaypoint.0.1
+changeDatabase.4D925714"""

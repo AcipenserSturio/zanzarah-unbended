@@ -1,0 +1,61 @@
+UID = "5A2476B4"
+Name = "97688F91"
+TriggerScript = """
+playAnimation.13.-1
+setCamera.1006
+gotoRandomLabel.3.0
+label.0
+say.<Человеческим духом пахнет?>.0
+waitForUser
+goto.3
+label.1
+say.<Человеческим духом пахнет?>.0
+waitForUser
+goto.3
+label.2
+say.<Человеческим духом пахнет?>.0
+waitForUser
+goto.3
+label.3
+setCamera.1006
+fight.-1.0"""
+InitScript = """
+setModel.u002s02m
+gotoRandomLabel.3.0
+label.0
+defaultWizForm.94.0.29
+defaultWizForm.90.1.27
+defaultWizForm.39.2.26
+defaultWizForm.53.3.26
+defaultWizForm.127.4.29
+goto.3
+label.1
+defaultWizForm.94.0.29
+defaultWizForm.128.1.28
+defaultWizForm.98.2.26
+defaultWizForm.33.3.27
+defaultWizForm.70.4.29
+goto.3
+label.2
+defaultWizForm.94.0.29
+defaultWizForm.112.1.27
+defaultWizForm.45.2.28
+defaultWizForm.115.3.27
+defaultWizForm.32.4.27
+goto.3
+label.3"""
+UpdateScript = """
+label.0
+lookAtPlayer.10.1
+ifPlayerIsClose.50
+startPrelude
+endIf
+goto.0"""
+DefeatedScript = """
+setCamera.1000
+say.<Ты не сможешь победить всех нас!>.0
+waitForUser
+givePlayerCards.1.0.106
+startEffect.0.-1
+removeNpc"""
+VictoriousScript = "killPlayer"

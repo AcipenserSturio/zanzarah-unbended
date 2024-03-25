@@ -1,0 +1,220 @@
+UID = "252FAF24"
+Name = "589BCFB1"
+TriggerScript = """
+ifPlayerHasCards.1.0.102
+goto.30
+else
+goto.31
+label.31
+say.<...>.3
+waitForUser
+goto.0
+label.30
+setCamera.1005
+say.<...>.3
+choice.33.<Диалог>
+choice.1.<Действие>
+choice.0.<До встречи>
+waitForUser
+label.1
+playPlayerAnimation.13.-1
+say.<...Гном выжидательно смотрит на тебя.>.3
+choice.5.<Камень>
+choice.4.<Энергия>
+choice.3.<Металл>
+choice.2.<Назад>
+waitForUser
+label.5
+say.<...>.3
+choice.9.<Грем ({4*2 Рунический Свиток})>
+choice.8.<Гремор ({4*4 Рунических Свитка})>
+choice.7.<Мукори ({4*2 Рунический Свиток})>
+choice.6.<Далее>
+waitForUser
+label.9
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.6
+exit
+else
+goto.32
+label.8
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.7
+exit
+else
+goto.32
+label.7
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.40
+exit
+else
+goto.32
+label.6
+say.<...>.3
+choice.13.<Абери ({4*4 Рунических Свитка})>
+choice.12.<Весбат ({4*2 Рунический Свиток})>
+choice.11.<Стобат ({4*4 Рунических Свитка})>
+choice.10.<Далее>
+waitForUser
+label.13
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.41
+exit
+else
+goto.32
+label.12
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.2
+exit
+else
+goto.32
+label.11
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.3
+exit
+else
+goto.32
+label.10
+say.<...>.3
+choice.17.<Туберри ({4*4 Рунических Свитка})>
+choice.16.<ДжамДжам ({4*2 Рунический Свиток})>
+choice.15.<Фалеон ({4*4 Рунических Свитка})>
+choice.14.<Далее>
+waitForUser
+label.17
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.18
+exit
+else
+goto.32
+label.16
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.81
+exit
+else
+goto.32
+label.15
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.88
+exit
+else
+goto.32
+label.14
+say.<...>.3
+choice.19.<Галеон ({4*6 Рунических Свитка})>
+choice.18.<Назад>
+waitForUser
+label.19
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.89
+exit
+else
+goto.32
+label.18
+goto.30
+label.4
+say.<...>.3
+choice.23.<Охра ({4*6 Рунических Свитка})>
+choice.22.<Электра ({4*6 Рунических Свитка})>
+choice.21.<Дарбью ({4*8 Рунических Свитка})>
+choice.20.<Далее>
+waitForUser
+label.23
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.19
+exit
+else
+goto.32
+label.22
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.43
+exit
+else
+goto.32
+label.21
+ifPlayerHasCards.8.0.102
+removePlayerCards.8.0.102
+givePlayerCards.1.2.60
+exit
+else
+goto.32
+label.20
+say.<...>.3
+choice.25.<Джина ({4*8 Рунических Свитка})>
+choice.24.<Назад>
+waitForUser
+label.25
+ifPlayerHasCards.8.0.102
+removePlayerCards.8.0.102
+givePlayerCards.1.2.85
+exit
+else
+goto.32
+label.24
+goto.30
+label.3
+say.<...>.3
+choice.29.<Прототип \"Минари\" ({4*6 Рунических Свитка})>
+choice.28.<Прототип \"Мегари\" ({4*6 Рунических Свитка})>
+choice.27.<Прототип \"Гигарекс\" ({4*6 Рунических Свитка})>
+choice.26.<Назад>
+waitForUser
+label.29
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.39
+exit
+else
+goto.32
+label.28
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.49
+exit
+else
+goto.32
+label.27
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.87
+exit
+else
+goto.32
+label.26
+goto.30
+label.32
+playAnimation.13.-1
+say.<Гном жестом показывает, что у тебя недостаточно {4*Рунических Свитков} для обмена.>.0
+waitForUser
+goto.30
+label.33
+playAmyVoice.IDL002
+goto.34
+label.34
+say.<Ты пытаешься завести разговор с гномом...>.3
+delay.40
+say.<...но, кажется, он тебя совершенно не понимает.>.3
+delay.40
+say.<Какой замечательный разговор!>.0
+waitForUser
+goto.30
+label.2
+goto.30
+label.0
+exit"""
+InitScript = """
+setModel.b015s00m
+defaultWizForm.157.0.2"""
+UpdateScript = "lookAtPlayer.0.1"

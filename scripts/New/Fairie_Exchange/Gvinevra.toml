@@ -1,0 +1,220 @@
+UID = "CB2B6E04"
+Name = "C2E87B91"
+TriggerScript = """
+setCamera.1000
+say.<Надеюсь, мой облик не пугает тебя, дитя?>.0
+playAnimation.13.-1
+waitForUser
+label.0
+ifPlayerHasCards.1.0.102
+say.<
+    Это неожиданно увидеть кого-то похожего на себя, только во плоти...
+    извини, это была плохая шутка, ха-ха...
+>.1
+choice.50.<Диалог>
+choice.51.<Обмен>
+choice.52.<До встречи>
+waitForUser
+else
+say.<
+    Это неожиданно увидеть кого-то похожего на себя, только во плоти...
+    извини, это была плохая шутка, ха-ха...
+>.1
+choice.50.<Диалог>
+choice.52.<До встречи>
+waitForUser
+label.51
+say.<Да, вероятно ты пришла сюда только из-за этого...>.1
+choice.5.<Хаос>
+choice.4.<Огонь>
+choice.3.<Тьма>
+choice.2.<Назад>
+waitForUser
+label.5
+say.<...>.3
+choice.9.<Расроу ({4*2 Рунический Свиток})>
+choice.8.<Сегбуз ({4*6 Рунических Свитка})>
+choice.7.<Скелбо ({4*6 Рунических Свитка})>
+choice.6.<Далее>
+waitForUser
+label.9
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.10
+exit
+else
+goto.30
+label.8
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.32
+exit
+else
+goto.30
+label.7
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.52
+exit
+else
+goto.30
+label.6
+say.<...>.3
+choice.12.<Калидрекс ({4*4 Рунических Свитка})>
+choice.11.<Стрикс ({4*2 Рунический Свиток})>
+choice.10.<Назад>
+waitForUser
+label.12
+ifPlayerHasCards.4.0.102
+removePlayerCards.4.0.102
+givePlayerCards.1.2.77
+exit
+else
+goto.30
+label.11
+ifPlayerHasCards.2.0.102
+removePlayerCards.2.0.102
+givePlayerCards.1.2.83
+exit
+else
+goto.30
+label.10
+goto.0
+label.4
+say.<...>.3
+choice.16.<Каллисто ({4*8 Рунических Свитка})>
+choice.15.<Гаэр ({4*6 Рунических Свитка})>
+choice.14.<Пикс ({4*8 Рунических Свитка})>
+choice.13.<Далее>
+waitForUser
+label.16
+ifPlayerHasCards.8.0.102
+removePlayerCards.8.0.102
+givePlayerCards.1.2.16
+exit
+else
+goto.30
+label.15
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.35
+exit
+else
+goto.30
+label.14
+ifPlayerHasCards.8.0.102
+removePlayerCards.8.0.102
+givePlayerCards.1.2.54
+exit
+else
+goto.30
+label.13
+say.<...>.3
+choice.18.<Ферикс ({4*10 Рунических Свитка})>
+choice.17.<Зана ({4*6 Рунических Свитка})>
+choice.26.<Назад>
+waitForUser
+label.18
+ifPlayerHasCards.10.0.102
+removePlayerCards.10.0.102
+givePlayerCards.1.2.55
+exit
+else
+goto.30
+label.17
+ifPlayerHasCards.6.0.102
+removePlayerCards.6.0.102
+givePlayerCards.1.2.67
+exit
+else
+goto.30
+label.26
+goto.0
+label.3
+say.<...>.3
+choice.22.<Акритар ({4*10 Рунических Свитка})>
+choice.21.<Бриана ({4*10 Рунических Свитка})>
+choice.20.<Дартис ({4*8 Рунических Свитка})>
+choice.19.<Далее>
+waitForUser
+label.22
+ifPlayerHasCards.10.0.102
+removePlayerCards.10.0.102
+givePlayerCards.1.2.27
+exit
+else
+goto.30
+label.21
+ifPlayerHasCards.10.0.102
+removePlayerCards.10.0.102
+givePlayerCards.1.2.42
+exit
+else
+goto.30
+label.20
+ifPlayerHasCards.8.0.102
+removePlayerCards.8.0.102
+givePlayerCards.1.2.45
+exit
+else
+goto.30
+label.19
+say.<...>.3
+choice.25.<Ноксис ({4*8 Рунических Свитка})>
+choice.24.<Турнокс ({4*10 Рунических Свитка})>
+choice.23.<Назад>
+waitForUser
+label.25
+ifPlayerHasCards.8.0.102
+removePlayerCards.8.0.102
+givePlayerCards.1.2.56
+exit
+else
+goto.30
+label.24
+ifPlayerHasCards.10.0.102
+removePlayerCards.10.0.102
+givePlayerCards.1.2.57
+exit
+else
+goto.30
+label.23
+goto.0
+label.50
+setTalkLabels.-1.-1.2
+talk.<
+    Увы, я не думаю, что я могу рассказать тебе многое о нас.
+    В один день мы просто проснулись и поняли, что мы живы...
+    в таком виде.
+    Возможно, что мы когда-то были людьми?
+    Я не знаю.
+    Большинство из нас не имеет никаких воспоминаний о том, кем мы были до того.
+    Но есть ещё одна другая, более серьёзная, проблема.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Если лучи яркого солнца коснутся наших костей, то магия, поддерживающая нашу жизнь, моментально иссякнет.
+    Из-за этого мы не можем покинуть этих мрачных подземелий, — здесь мы в безопасности.
+    И что нас ожидало бы на поверхности?
+    Наверняка они все ненавидят нас...
+    разве не люди стали причиной того, что {4*человеческий мир} был отделён от {4*Занзары}?
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    {4*Тёмные Эльфы} были единственными, кто протянул нам руку помощи.
+    Я понимаю, что это звучит очень странно, но поверь мне, то, к чему они стремятся, только сделает {4*Занзару} гораздо лучшим местом для всех.
+    Я не могу рассказать тебе всего, но не стоит их ненавидеть за то, кто они есть.
+    Они такие же, как и мы, {4*люди}, для кого не нашлось места в новом мире.
+>
+waitForUser
+goto.0
+label.2
+goto.0
+label.52
+exit"""
+InitScript = """
+setModel.x002s02
+defaultWizForm.169.0.4"""
+UpdateScript = "lookAtPlayer.0.1"

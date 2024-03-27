@@ -4,7 +4,7 @@ TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
 playPlayerAnimation.15.-1
-say.<Эмми, рад тебя видеть.>.0
+say.<Эми, рад тебя видеть.>.0
 waitForUser
 setTalkLabels.-1.-1.2
 talk.<
@@ -14,7 +14,7 @@ talk.<
 waitForUser
 setTalkLabels.-1.-1.2
 talk.<
-    Возможно, за этим стоит какая-то злая сила, Эмми.
+    Возможно, за этим стоит какая-то злая сила, Эми.
     Будь осторожна в пути, и никогда не недооценивай силу фей – они создали {4*Занзару}, и они повелевают стихиями.
 >
 waitForUser

@@ -7,7 +7,7 @@ deployNpcAtTrigger.24.1
 deployNpcAtTrigger.17.0
 playAnimation.0.-1
 playAnimation.13.-1
-say.<Ты прогнала {4*Темных Эльфов}?>.0
+say.<Ты прогнала {4*Тёмных Эльфов}?>.0
 waitForUser
 setTalkLabels.-1.-1.0
 talk.<
@@ -38,7 +38,7 @@ gotoRandomLabel.3.1
 label.1
 playAnimation.0.-1
 say.<
-    Помогите! Почему мне никто не поможет бороться с Темными Эльфами?
+    Помогите! Почему мне никто не поможет бороться с Тёмными Эльфами?
 >.0
 waitForUser
 exit
@@ -52,7 +52,7 @@ exit
 label.3
 playAnimation.0.-1
 say.<
-    Темные Эльфы! Они хотят украсть мои сокровища!
+    Тёмные Эльфы! Они хотят украсть мои сокровища!
 >.0
 waitForUser
 exit"""

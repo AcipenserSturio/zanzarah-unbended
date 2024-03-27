@@ -3,20 +3,8 @@ Name = "97688F91"
 TriggerScript = """
 setCamera.1000
 changeWaypoint.-1.-1
-gotoRandomLabel.3.0
-label.0
 say.<Человеческим духом пахнет?>.0
 waitForUser
-goto.3
-label.1
-say.<Человеческим духом пахнет?>.0
-waitForUser
-goto.3
-label.2
-say.<Человеческим духом пахнет?>.0
-waitForUser
-goto.3
-label.3
 setCamera.1006
 fight.-1.0"""
 InitScript = """

@@ -26,7 +26,7 @@ startEffect.3.69
 startEffect.3.72
 delay.2
 endActorEffect
-say.<Хорошая работа, Эмми!>.0
+say.<Хорошая работа, Эми!>.0
 waitForUser
 setTalkLabels.-1.-1.2
 talk.<

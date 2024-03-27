@@ -6,7 +6,7 @@ playAnimation.13.-1
 say.<Привет, Повелительница фей.>.0
 waitForUser
 setTalkLabels.-1.-1.0
-talk.<Надеюсь, больше никогда не увижу этих {4*ужасных Темных Эльфов}!>
+talk.<Надеюсь, больше никогда не увижу этих {4*ужасных Тёмных Эльфов}!>
 waitForUser"""
 InitScript = """
 movementSpeed.2

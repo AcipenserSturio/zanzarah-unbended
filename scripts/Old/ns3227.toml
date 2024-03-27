@@ -1,7 +1,7 @@
 UID = "8B410394"
 Name = "0FDF8F91"
 TriggerScript = """
-say.<Здесь везде воняет {4*Темными эльфами}, фу!>.0
+say.<Здесь везде воняет {4*Тёмными эльфами}, фу!>.0
 waitForUser"""
 InitScript = """
 setNpcType.4

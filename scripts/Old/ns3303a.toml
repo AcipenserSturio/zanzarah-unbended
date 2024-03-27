@@ -3,7 +3,7 @@ Name = "10E82091"
 TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
-say.<Привет, Эмми, как дела?>.0
+say.<Привет, Эми, как дела?>.0
 waitForUser
 label.10
 say.<Что ты еще хочешь узнать?>.1

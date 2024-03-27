@@ -37,7 +37,7 @@ startPrelude
 endIf
 goto.0"""
 DefeatedScript = """
-talk.<Друид, помоги нам, кто может ее остановить?!>
+talk.<Друид, помоги нам, кто может её остановить?!>
 waitForUser
 removeNpcAtTrigger.81
 delay.10

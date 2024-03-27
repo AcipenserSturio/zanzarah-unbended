@@ -5,7 +5,7 @@ deployNpcAtTrigger.12.1
 setCamera.3001
 changeWaypoint.1.2
 playAnimation.13.-1
-say.<Ты как раз вовремя, Эмми.>.0
+say.<Ты как раз вовремя, Эми.>.0
 waitForUser
 setTalkLabels.-1.-1.0
 talk.<

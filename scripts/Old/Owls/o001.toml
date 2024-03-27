@@ -4,7 +4,7 @@ TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
 playPlayerAnimation.15.-1
-say.<Эмми, рад тебя видеть.>.0
+say.<Эми, рад тебя видеть.>.0
 waitForUser
 setTalkLabels.-1.-1.2
 talk.<
@@ -30,7 +30,7 @@ talk.<
 >
 waitForUser
 setTalkLabels.-1.-1.0
-talk.<Приходи ко мне в любое время, Эмми.>
+talk.<Приходи ко мне в любое время, Эми.>
 waitForUser"""
 InitScript = "setModel.w003s03m"
 UpdateScript = "lookAtPlayer.0.0"

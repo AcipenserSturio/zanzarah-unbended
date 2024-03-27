@@ -14,7 +14,7 @@ talk.<
 waitForUser
 exit
 endIf
-say.<Эмми, помоги мне!>.0
+say.<Эми, помоги мне!>.0
 waitForUser
 setTalkLabels.-1.-1.2
 talk.<

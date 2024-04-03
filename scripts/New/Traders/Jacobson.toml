@@ -39,7 +39,7 @@ label.3
 setTalkLabels.10.11.1
 talk.<
     Если тебе нужна помощь с опознанием алхимических зелий или трав, то я могу помочь с этим.
-    У тебя что-то есть для меня?
+    У тебя есть что-то для меня?
 >
 waitForUser
 label.10
@@ -47,8 +47,8 @@ ifPlayerHasCards.1.0.162
 removePlayerCards.1.0.162
 goto.12
 else
-ifPlayerHasCards.1.0.161
-removePlayerCards.1.0.161
+ifPlayerHasCards.1.0.224
+removePlayerCards.1.0.224
 goto.13
 else
 setTalkLabels.-1.-1.0
@@ -64,46 +64,9 @@ label.12
 setTalkLabels.-1.-1.2
 talk.<Ты открываешь {4*Мешочек Трав}...>
 waitForUser
-gotoRandomLabel.20.100
-label.100
-goto.50
-label.101
-goto.50
-label.102
-goto.50
-label.103
-goto.50
-label.104
-goto.50
-label.105
-goto.50
-label.106
-goto.51
-label.107
-goto.51
-label.108
-goto.51
-label.109
-goto.51
-label.110
-goto.51
-label.111
-goto.51
-label.112
-goto.52
-label.113
-goto.52
-label.114
-goto.52
-label.115
-goto.52
-label.116
-goto.52
-label.117
-goto.52
-label.118
-goto.53
-label.119
+gotoLabelByRandom.70.50
+gotoLabelByRandom.70.51
+gotoLabelByRandom.70.52
 goto.53
 label.50
 setTalkLabels.-1.-1.2
@@ -145,46 +108,74 @@ givePlayerCards.5.0.5
 goto.10
 label.13
 setTalkLabels.-1.-1.2
-talk.<Ты изучаешь {4*Чудесное Зелье}...>
+talk.<Ты изучаешь {4*Неизвестное Зелье}...>
 waitForUser
-gotoRandomLabel.6.60
+gotoRandomLabel.11.60
 label.60
 setTalkLabels.-1.-1.2
-talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Медовый Эликсир} (х1)!>
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Природы} (х1)!>
 waitForUser
-givePlayerCards.1.0.75
+givePlayerCards.1.0.215
 goto.10
 label.61
 setTalkLabels.-1.-1.2
-talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Большой Медовый Эликсир} (х1)!>
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Воздуха} (х1)!>
 waitForUser
-givePlayerCards.1.0.76
+givePlayerCards.1.0.213
 goto.10
 label.62
 setTalkLabels.-1.-1.2
-talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Маны} (х1)!>
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Воды} (х1)!>
 waitForUser
-givePlayerCards.1.0.90
+givePlayerCards.1.0.218
 goto.10
 label.63
 setTalkLabels.-1.-1.2
-talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Большой Эликсир Маны} (х1)!>
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Света} (х1)!>
 waitForUser
-givePlayerCards.1.0.91
+givePlayerCards.1.0.219
 goto.10
 label.64
 setTalkLabels.-1.-1.2
-talk.<
-    При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Природы} (х1)! 
->
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Энергии} (х1)!>
 waitForUser
-givePlayerCards.1.0.77
+givePlayerCards.1.0.220
 goto.10
 label.65
 setTalkLabels.-1.-1.2
-talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Лечебный Эликсир} (х1)!>
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Пси} (х1)!>
 waitForUser
-givePlayerCards.1.0.14
+givePlayerCards.1.0.223
+goto.10
+label.66
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Земли} (х1)!>
+waitForUser
+givePlayerCards.1.0.216
+goto.10
+label.67
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Льда} (х1)!>
+waitForUser
+givePlayerCards.1.0.217
+goto.10
+label.68
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Огня} (х1)!>
+waitForUser
+givePlayerCards.1.0.214
+goto.10
+label.69
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Тьмы} (х1)!>
+waitForUser
+givePlayerCards.1.0.221
+goto.10
+label.70
+setTalkLabels.-1.-1.2
+talk.<При ближайшем рассмотрении ты обнаруживаешь, что это {4*Эликсир Хаоса} (х1)!>
+waitForUser
+givePlayerCards.1.0.222
 goto.10
 label.4
 exit"""

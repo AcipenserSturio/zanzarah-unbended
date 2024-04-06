@@ -8,23 +8,15 @@ say.<
     Повелитель фей из человеческого мира?
 >.0
 waitForUser
-ifPlayerHasCards.1.0.22
-setTalkLabels.-1.-1.2
-talk.<
-    Я всё ещё не могу поверить, что {4*Друид} принес хаос в Занзару! Так это он запер нашего Гнома-Мастера Квинлина и обвиняет нас?
->
-waitForUser
-goto.0
-endIf
-ifPlayerHasCards.1.0.38
-setTalkLabels.-1.-1.2
-talk.<
-    Ты нашла артефакт гномов у вождя {4*Тёмных Эльфов}?
-    Теперь все в Занзаре поверят, что это мы вызвали Тёмных Эльфов.
->
-waitForUser
-endIf
+ifNpcModifierHasValue.1
 label.0
+setTalkLabels.-1.-1.0
+talk.<
+    Я желаю, чтобы тебе в дороге сопутствовала удача, Эми.
+>
+waitForUser
+goto.11
+endIf
 setTalkLabels.1.2.1
 talk.<
     Я вижу, ты собрала интересную коллекцию фей.
@@ -37,7 +29,8 @@ fight.-1.0
 label.2
 setTalkLabels.-1.-1.0
 talk.<Жаль, Я всё ещё ищу достойного соперника.>
-waitForUser"""
+waitForUser
+label.11"""
 InitScript = """
 setModel.b012s00m
 defaultWizForm.88.0.8
@@ -49,6 +42,7 @@ DefeatedScript = """
 setCamera.3005
 givePlayerCards.1.0.33
 givePlayerCards.1.0.107
+setNpcModifier.-1.-1.1
 setTalkLabels.1.2.1
 talk.<
     Ты хорошо сражалась! Наконец-то я нашел равного себе Повелителя фей.
@@ -66,7 +60,5 @@ waitForUser
 setTalkLabels.-1.-1.0
 talk.<Каждая фея обладает собственными {4*достоинствами} и {4*недостатками}, но только в правильной комбинации их способности приобретают важное значение.>
 waitForUser
-label.2
-changeDatabase.5AC06084
 exit"""
 VictoriousScript = "killPlayer"

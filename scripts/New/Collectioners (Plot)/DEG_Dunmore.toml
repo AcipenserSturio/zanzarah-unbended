@@ -33,7 +33,7 @@ defaultWizForm.44.4.8"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 removeNpcAtTrigger.63
-givePlayerCards.1.0.15
+givePlayerCards.1.0.56
 setCamera.1000
 talk.<
     Я проиграл...

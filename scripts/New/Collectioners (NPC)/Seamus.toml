@@ -1,5 +1,5 @@
 UID = "BD67EC84"
-Name = "011E786E"
+Name = "31CC2EC8"
 TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
@@ -31,7 +31,7 @@ exit
 label.11
 exit"""
 InitScript = """
-setModel.g300s30m
+setModel.g204s20m
 defaultWizForm.89.0.19
 defaultWizForm.54.1.17
 defaultWizForm.28.2.17

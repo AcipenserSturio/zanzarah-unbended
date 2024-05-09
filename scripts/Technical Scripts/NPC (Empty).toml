@@ -1,2 +1,5 @@
 UID = "946DDE34"
 Name = "B18BDDB1"
+InitScript = """
+setNpcType.4
+setCollision.0"""

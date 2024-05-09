@@ -1,4 +1,4 @@
-UID = "BD67EC84"
+UID = "1E12D3B4"
 Name = "97688F91"
 TriggerScript = """
 playAnimation.13.-1
@@ -25,7 +25,6 @@ defaultWizForm.38.4.33
 goto.3
 label.2
 defaultWizForm.122.0.33
-defaultWizForm.109.1.31
 defaultWizForm.121.2.32
 defaultWizForm.28.3.31
 defaultWizForm.5.4.31

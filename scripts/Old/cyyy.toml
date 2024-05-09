@@ -31,7 +31,7 @@ ifNpcModifierHasValue.17
 givePlayerCards.1.0.23
 endIf
 ifNpcModifierHasValue.20
-givePlayerCards.3.0.60
+givePlayerCards.1.0.15
 endIf
 ifNpcModifierHasValue.21
 givePlayerCards.1.0.21

@@ -1,4 +1,4 @@
-UID = "1E12D3B4"
+UID = "BD67EC84"
 Name = "31CC2EC8"
 TriggerScript = """
 setCamera.1000
@@ -48,4 +48,4 @@ talk.<
 	Забирай свою награду и убирайся с глаз моих!
 >
 waitForUser
-givePlayerCards.1.0.107"""
+givePlayerCards.2.0.107"""

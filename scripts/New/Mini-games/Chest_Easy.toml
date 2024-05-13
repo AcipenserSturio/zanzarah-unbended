@@ -182,17 +182,17 @@ waitForUser
 givePlayerCards.1.0.17
 goto.0
 label.2
+ifPlayerHasCards.1.0.131
 setTalkLabels.10.11.1
 talk.<Ты хочешь попытаться открыть этот сундук?>
 waitForUser
-label.10
-ifPlayerHasCards.1.0.131
-goto.50
 else
-talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+talk.<У тебя нет {4*Отмычек}, чтобы попытаться открыть этот сундук.>
 goto.0
-label.50
-gotoRandomLabel.23.51
+label.10
+goto.51
+label.11
+goto.0
 label.51
 ifPlayerHasCards.1.0.131
 say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
@@ -302,5 +302,6 @@ label.109
 say.<Ты слышишь, как замок щёлкает. Ты смогла открыть сундук!>.3
 removePlayerCards.1.0.131
 goto.1000
+label.1
 exit"""
 InitScript = "setModel.i002si02"

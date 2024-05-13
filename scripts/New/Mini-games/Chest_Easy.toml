@@ -303,7 +303,4 @@ say.<Ты слышишь, как замок щёлкает. Ты смогла о
 removePlayerCards.1.0.131
 goto.1000
 exit"""
-InitScript = """
-setNpcType.4
-setModel.i002si02
-"""
+InitScript = "setModel.i002si02"

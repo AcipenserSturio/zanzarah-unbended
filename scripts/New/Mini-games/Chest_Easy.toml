@@ -1,0 +1,309 @@
+UID = "B263B5F1"
+Name = "B18BDDB1"
+TriggerScript = """
+setCamera.1003
+say.<Ты видишь перед собой обычный сундук, запертый на замок.>.0
+waitForUser
+label.0
+say.<Ты думаешь, что можешь попытаться открыть замок, если у тебя будет правильный инструмент для этого.>.3
+choice.4.<Диалог>
+choice.3.<Действие>
+choice.2.<Взлом>
+choice.1.<Уйти>
+waitForUser
+label.4
+talk.<Осмотрев сундук внимательно, ты обнаруживаешь, что на его обратной стороне кто-то оставил сообщение...>
+waitForUser
+gotoRandomLabel.36.2000
+label.2000
+talk.<Шаг вперёд, шаг назад, обернись три раза вокруг себя и прыгни назад, совершив кувырок. Бу-бум!>
+waitForUser
+goto.0
+label.2001
+talk.<Ты не думаешь, что уже увидела достаточно?>
+waitForUser
+goto.0
+label.2002
+talk.<Я ненавижу уровни в Лондоне...>
+waitForUser
+goto.0
+label.2003
+talk.<Да не умерла она в Царстве Тьмы!>
+waitForUser
+goto.0
+label.2004
+talk.<Нет, нет, ты дала мне слово! Эй, ты же обещала!>
+waitForUser
+goto.0
+label.2005
+talk.<У меня недостаточно силы, чтобы подвинуть этот сундук...>
+waitForUser
+goto.0
+label.2006
+talk.<Вот это БОЛЬШОЙ сундук!>
+waitForUser
+goto.0
+label.2007
+talk.<В Занзаре не существует секретного куриного уровня!>
+waitForUser
+goto.0
+label.2008
+talk.<Приветствую, друг мой! Постой и почитай.>
+waitForUser
+goto.0
+label.2009
+talk.<Ты не видела пикси? Ростом около фута и постоянно путается под ногами?>
+waitForUser
+goto.0
+label.2010
+talk.<Здесь что-то лежало. Теперь этого нет.>
+waitForUser
+goto.0
+label.2011
+talk.<Ты не думаешь, что быть блондинкой намного веселее?>
+waitForUser
+goto.0
+label.2012
+talk.<Не уходи из Занзары! Подпись: Рафи.>
+waitForUser
+goto.0
+label.2013
+talk.<Где... моя... Суэйн?!>
+waitForUser
+goto.0
+label.2014
+talk.<Введи чит-код Фунатиков, чтобы получить костюм собаки.>
+waitForUser
+goto.0
+label.2015
+talk.<Я стерел себе память, чтобы начать вспоминать, зачем я это сделал.>
+waitForUser
+goto.0
+label.2016
+talk.<Когда все драконы смотрят на север, происходит ЭТО!>
+waitForUser
+goto.0
+label.2017
+talk.<Заведу вашу женщину под могилу. Оплата цветами вперёд. Д.>
+waitForUser
+goto.0
+label.2018
+talk.<Это всегда одна и та же история. Эми, сделай это, Эми, сделай то...>
+waitForUser
+goto.0
+label.2019
+talk.<Если ты останешься без присмотра, тебя может кто-нибудь съесть...>
+waitForUser
+goto.0
+label.2020
+talk.<Одинокий Тёмный Эльф разыскивает фею Хаоса, пахнующую навозом.>
+waitForUser
+goto.0
+label.2021
+talk.<Тёмные Эльфы никак не пахнут!>
+waitForUser
+goto.0
+label.2022
+talk.<Знаешь про убийственный приём? Он называется D3-E5!>
+waitForUser
+goto.0
+label.2023
+talk.<Ты не видела пикси? Ростом около фута и постоянно путается под ногами?>
+waitForUser
+goto.0
+label.2024
+talk.<Охотник убил девятнадцать кроликов. Больше его никто не видел.>
+waitForUser
+goto.0
+label.2025
+talk.<Ты ищешь новое имя, достойное героини? Как насчёт Эми Курогоняй?>
+waitForUser
+goto.0
+label.2026
+talk.<Ты не видела пикси? Ростом около фута и постоянно путается под ногами?>
+waitForUser
+goto.0
+label.2027
+talk.<Тема: chr02>
+waitForUser
+goto.0
+label.2028
+talk.<141, 142.>
+waitForUser
+goto.0
+label.2029
+talk.<Ты уже нашла легендарную 78 фею?>
+waitForUser
+goto.0
+label.2030
+talk.<Книга фей? Нет, это Фейриномикон!>
+waitForUser
+goto.0
+label.2031
+talk.<Ты не знаешь, как пишется "вода" на немецком? Я тоже.>
+waitForUser
+goto.0
+label.2032
+talk.<Извини, ты не могла найти мою корову? Она потерялась в ближайшей пещере.>
+waitForUser
+goto.0
+label.2033
+talk.<Настал Фестиваль Весны! Самое время дотронуться до большого камня...>
+waitForUser
+goto.0
+label.2034
+talk.<Разработчики Unbended извиняются за отсутствие отсылок к Глобалу (и к Редуксу тоже).>
+waitForUser
+goto.0
+label.2035
+talk.<Ты получила +1 к Харизме и -1 к Интеллекту!>
+waitForUser
+goto.0
+label.3
+talk.<Ты аккуратно гладишь сундук по крышке.>
+waitForUser
+talk.<Сундук ценит твою заботу, но он чувствует себя в порядке.>
+waitForUser
+goto.0
+label.5
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома изменилась! Тебе придётся начать всё с самого начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.0
+label.6
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.51
+label.1000
+setTalkLabels.-1.-1.2
+talk.<Ты находишь внутри {4*Серебряный Шар} (х1)!>
+waitForUser
+givePlayerCards.1.0.17
+goto.0
+label.2
+setTalkLabels.10.11.1
+talk.<Ты хочешь попытаться открыть этот сундук?>
+waitForUser
+label.10
+ifPlayerHasCards.1.0.131
+goto.50
+else
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+goto.0
+label.50
+gotoRandomLabel.23.51
+label.51
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.100.<Влево>
+choice.101.<Вправо>
+waitForUser
+else
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+goto.0
+label.100
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.6
+gotoLabelByRandom.50.7
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.51
+label.7
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.51
+label.101
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.102.<Влево>
+choice.103.<Вправо>
+waitForUser
+else
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+goto.0
+label.102
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.6
+gotoLabelByRandom.50.8
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.101
+label.8
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.101
+label.103
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.104.<Влево>
+choice.105.<Вправо>
+waitForUser
+else
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+goto.0
+label.104
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.6
+gotoLabelByRandom.50.9
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.101
+label.9
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.103
+label.105
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, (...), (...)>.3
+choice.106.<Влево>
+choice.107.<Вправо>
+waitForUser
+else
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+goto.0
+label.106
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.6
+gotoLabelByRandom.50.10
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.105
+label.10
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.105
+label.107
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, Право, (...)>.3
+choice.108.<Влево>
+choice.109.<Вправо>
+waitForUser
+else
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+goto.0
+label.108
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.6
+gotoLabelByRandom.50.11
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.107
+label.11
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.107
+label.109
+say.<Ты слышишь, как замок щёлкает. Ты смогла открыть сундук!>.3
+removePlayerCards.1.0.131
+goto.1000
+exit"""
+InitScript = """
+setNpcType.4
+setModel.i002si02
+"""

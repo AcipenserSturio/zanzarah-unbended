@@ -12,6 +12,7 @@ choice.2.<Взлом>
 choice.1.<Уйти>
 waitForUser
 label.4
+setTalkLabels.-1.-1.2
 talk.<Осмотрев сундук внимательно, ты обнаруживаешь, что на его обратной стороне кто-то оставил сообщение...>
 waitForUser
 gotoRandomLabel.36.2000
@@ -163,6 +164,7 @@ label.3
 setTalkLabels.-1.-1.2
 talk.<Ты аккуратно гладишь сундук по крышке.>
 waitForUser
+setTalkLabels.-1.-1.0
 talk.<Сундук ценит твою заботу, но он чувствует себя в порядке.>
 waitForUser
 goto.0

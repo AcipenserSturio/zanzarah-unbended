@@ -234,6 +234,7 @@ goto.0
 else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
 goto.0
 label.51
 ifPlayerHasCards.1.0.131
@@ -244,6 +245,7 @@ waitForUser
 else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
 goto.0
 label.100
 gotoLabelByRandom.95.5
@@ -268,6 +270,7 @@ waitForUser
 else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
 goto.0
 label.102
 gotoLabelByRandom.95.5
@@ -292,6 +295,7 @@ waitForUser
 else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
 goto.0
 label.104
 gotoLabelByRandom.95.5
@@ -316,6 +320,7 @@ waitForUser
 else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
 goto.0
 label.106
 gotoLabelByRandom.95.5
@@ -340,6 +345,7 @@ waitForUser
 else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
 goto.0
 label.108
 gotoLabelByRandom.95.5
@@ -358,6 +364,7 @@ goto.107
 label.109
 setTalkLabels.-1.-1.2
 say.<Ты слышишь, как замок щёлкает. Ты смогла открыть сундук!>.3
+waitForUser
 removePlayerCards.1.0.131
 goto.1000
 label.1

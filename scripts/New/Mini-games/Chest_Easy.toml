@@ -1,5 +1,11 @@
 UID = "B263B5F4"
 Name = "B18BDDB1"
+#Labels 51-8x used for all possible combo variants
+#Labels 100-1xx used for jumps between actions in combo
+#Label 1000 used for getting a reward
+#Label 5 used for shuffle to the start (get a new combo)
+#Label 6 used for reset to the start (in current combo)
+#Labels 2000-2xxx used for dialogues only
 TriggerScript = """
 setCamera.1003
 say.<Ты видишь перед собой обычный сундук, запертый на замок.>.0
@@ -304,7 +310,7 @@ gotoLabelByRandom.50.9
 setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
 waitForUser
-goto.101
+goto.103
 label.9
 setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3

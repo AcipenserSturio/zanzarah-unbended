@@ -227,13 +227,13 @@ ifPlayerHasCards.1.0.131
 setTalkLabels.10.11.1
 talk.<Ты хочешь попытаться открыть этот сундук?>
 waitForUser
-else
-setTalkLabels.-1.-1.0
-talk.<У тебя нет {4*Отмычек}, чтобы попытаться открыть этот сундук.>
-goto.0
 label.10
 goto.51
 label.11
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет {4*Отмычек}, чтобы попытаться открыть этот сундук.>
 goto.0
 label.51
 ifPlayerHasCards.1.0.131

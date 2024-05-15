@@ -211,13 +211,13 @@ waitForUser
 removePlayerCards.1.0.131
 goto.0
 label.6
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
 waitForUser
 removePlayerCards.1.0.131
 goto.51
 label.1000
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Ты находишь внутри {4*Серебряный Шар} (х1)!>
 waitForUser
 givePlayerCards.1.0.17
@@ -251,12 +251,12 @@ label.100
 gotoLabelByRandom.95.5
 gotoLabelByRandom.75.6
 gotoLabelByRandom.50.7
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
 waitForUser
 goto.51
 label.7
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
 waitForUser
 removePlayerCards.1.0.131
@@ -276,12 +276,12 @@ label.102
 gotoLabelByRandom.95.5
 gotoLabelByRandom.75.6
 gotoLabelByRandom.50.8
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
 waitForUser
 goto.101
 label.8
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
 waitForUser
 removePlayerCards.1.0.131
@@ -301,12 +301,12 @@ label.104
 gotoLabelByRandom.95.5
 gotoLabelByRandom.75.6
 gotoLabelByRandom.50.9
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
 waitForUser
 goto.101
 label.9
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
 waitForUser
 removePlayerCards.1.0.131
@@ -326,12 +326,12 @@ label.106
 gotoLabelByRandom.95.5
 gotoLabelByRandom.75.6
 gotoLabelByRandom.50.10
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
 waitForUser
 goto.105
 label.10
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
 waitForUser
 removePlayerCards.1.0.131
@@ -351,12 +351,12 @@ label.108
 gotoLabelByRandom.95.5
 gotoLabelByRandom.75.6
 gotoLabelByRandom.50.11
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
 waitForUser
 goto.107
 label.11
-setTalkLabels.-1.-1.2
+setTalkLabels.-1.-1.0
 talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
 waitForUser
 removePlayerCards.1.0.131

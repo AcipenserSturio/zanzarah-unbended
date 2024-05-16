@@ -1,10 +1,12 @@
 UID = "B263B5F4"
 Name = "B18BDDB1"
-#Labels 51-8x used for all possible combo variants
-#Labels 100-1xx used for jumps between actions in combo
+#Labels 51-73 used for all possible combo variants
+#Labels 100-301 used for jumps between actions in combo
+#Labels 6-50/74-99/350-395 used for reset combo labels
+#Label 500 used for success attemp 
 #Label 1000 used for getting a reward
 #Label 5 used for shuffle to the start (get a new combo)
-#Label 6 used for reset to the start (in current combo)
+#Labels 751-773 used for reset to the start (in current combo)
 #Labels 2000-2xxx used for dialogues only
 TriggerScript = """
 setCamera.1003
@@ -17,6 +19,3059 @@ choice.3.<Действие>
 choice.2.<Взлом>
 choice.1.<Уйти>
 waitForUser
+label.3
+setTalkLabels.-1.-1.2
+talk.<Ты аккуратно гладишь сундук по крышке.>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<Сундук ценит твою заботу, но он чувствует себя в порядке.>
+waitForUser
+goto.0
+label.5
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома изменилась! Тебе придётся начать всё с самого начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.0
+label.751
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.51
+label.752
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.52
+label.753
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.53
+label.754
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.54
+label.755
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.55
+label.756
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.56
+label.757
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.57
+label.758
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.58
+label.759
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.59
+label.760
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.60
+label.761
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.61
+label.762
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.62
+label.763
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.63
+label.764
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.64
+label.765
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.65
+label.766
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.66
+label.767
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.67
+label.768
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.68
+label.769
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.69
+label.770
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.70
+label.771
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.71
+label.772
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.72
+label.773
+setTalkLabels.-1.-1.0
+talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.73
+label.500
+setTalkLabels.-1.-1.2
+talk.<Ты слышишь, как замок щёлкает. Ты смогла открыть сундук!>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.1000
+label.1000
+setTalkLabels.-1.-1.0
+talk.<Ты находишь внутри {4*Серебряный Шар} (х1)!>
+waitForUser
+givePlayerCards.1.0.17
+goto.0
+label.2
+ifPlayerHasCards.1.0.131
+setTalkLabels.10.11.1
+talk.<Ты хочешь попытаться открыть этот сундук?>
+waitForUser
+label.10
+gotoRandomLabel.23.51
+label.11
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.51
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.100.<Влево>
+choice.101.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.100
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.751
+gotoLabelByRandom.50.7
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.51
+label.7
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.51
+label.101
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.102.<Влево>
+choice.103.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.102
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.751
+gotoLabelByRandom.50.8
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.101
+label.8
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.101
+label.103
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.104.<Влево>
+choice.105.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.104
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.751
+gotoLabelByRandom.50.9
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.103
+label.9
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.103
+label.105
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, (...), (...)>.3
+choice.106.<Влево>
+choice.107.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.106
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.751
+gotoLabelByRandom.50.10
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.105
+label.10
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.105
+label.107
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, Право, (...)>.3
+choice.108.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.108
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.751
+gotoLabelByRandom.50.11
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.107
+label.11
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.107
+label.52
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.109.<Влево>
+choice.110.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.109
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.752
+gotoLabelByRandom.50.12
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.52
+label.12
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.52
+label.110
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.111.<Влево>
+choice.112.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.111
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.752
+gotoLabelByRandom.50.13
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.110
+label.13
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.110
+label.112
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.113.<Влево>
+choice.114.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.113
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.752
+gotoLabelByRandom.50.14
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.112
+label.14
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.112
+label.114
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, (...), (...)>.3
+choice.115.<Влево>
+choice.116.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.115
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.752
+gotoLabelByRandom.50.15
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.114
+label.15
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.114
+label.116
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, Право, (...)>.3
+choice.500.<Влево>
+choice.117.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.117
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.752
+gotoLabelByRandom.50.16
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.116
+label.16
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.116
+label.53
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.118.<Влево>
+choice.119.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.118
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.753
+gotoLabelByRandom.50.17
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.53
+label.17
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.53
+label.119
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.120.<Влево>
+choice.121.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.120
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.753
+gotoLabelByRandom.50.18
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.119
+label.18
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.119
+label.121
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.122.<Влево>
+choice.123.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.122
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.753
+gotoLabelByRandom.50.19
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.121
+label.19
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.121
+label.123
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, (...), (...)>.3
+choice.124.<Влево>
+choice.125.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.125
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.753
+gotoLabelByRandom.50.20
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.123
+label.20
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.123
+label.124
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Право, Лево, (...)>.3
+choice.500.<Влево>
+choice.126.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.126
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.753
+gotoLabelByRandom.50.21
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.124
+label.21
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.124
+label.54
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.127.<Влево>
+choice.128.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.127
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.754
+gotoLabelByRandom.50.22
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.54
+label.22
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.54
+label.128
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.129.<Влево>
+choice.130.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.129
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.754
+gotoLabelByRandom.50.23
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.128
+label.23
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.128
+label.130
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.131.<Влево>
+choice.132.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.132
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.754
+gotoLabelByRandom.50.24
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.130
+label.24
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.130
+label.131
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, (...), (...)>.3
+choice.132.<Влево>
+choice.133.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.132
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.754
+gotoLabelByRandom.50.25
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.131
+label.25
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.131
+label.133
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, Право, (...)>.3
+choice.134.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.134
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.754
+gotoLabelByRandom.50.26
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.133
+label.26
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.133
+label.55
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.135.<Влево>
+choice.136.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.135
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.755
+gotoLabelByRandom.50.27
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.55
+label.27
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.55
+label.136
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.137.<Влево>
+choice.138.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.137
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.755
+gotoLabelByRandom.50.28
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.136
+label.28
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.136
+label.138
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.139.<Влево>
+choice.140.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.140
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.755
+gotoLabelByRandom.50.29
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.138
+label.29
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.138
+label.139
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, (...), (...)>.3
+choice.140.<Влево>
+choice.141.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.140
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.755
+gotoLabelByRandom.50.30
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.139
+label.30
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.139
+label.141
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, Право, (...)>.3
+choice.500.<Влево>
+choice.142.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.142
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.755
+gotoLabelByRandom.50.31
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.141
+label.31
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.141
+label.56
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.143.<Влево>
+choice.144.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.143
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.756
+gotoLabelByRandom.50.32
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.56
+label.32
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.56
+label.144
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.145.<Влево>
+choice.146.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.145
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.756
+gotoLabelByRandom.50.33
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.145
+label.33
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.145
+label.146
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.147.<Влево>
+choice.148.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.148
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.756
+gotoLabelByRandom.50.34
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.146
+label.34
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.146
+label.147
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, (...), (...)>.3
+choice.148.<Влево>
+choice.149.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.149
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.756
+gotoLabelByRandom.50.35
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.147
+label.35
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.147
+label.148
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, Лево, (...)>.3
+choice.149.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.149
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.756
+gotoLabelByRandom.50.36
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.148
+label.36
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.148
+label.57
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.150.<Влево>
+choice.151.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.150
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.757
+gotoLabelByRandom.50.37
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.57
+label.37
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.57
+label.151
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.152.<Влево>
+choice.153.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.152
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.757
+gotoLabelByRandom.50.38
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.151
+label.38
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.151
+label.153
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
+choice.154.<Влево>
+choice.155.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.155
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.757
+gotoLabelByRandom.50.39
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.153
+label.39
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.153
+label.154
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, (...), (...)>.3
+choice.156.<Влево>
+choice.157.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.157
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.757
+gotoLabelByRandom.50.40
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.154
+label.40
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.154
+label.156
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Право, Лево, Лево, (...)>.3
+choice.500.<Влево>
+choice.158.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.158
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.757
+gotoLabelByRandom.50.41
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.156
+label.41
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.156
+label.58
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.159.<Влево>
+choice.160.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.159
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.758
+gotoLabelByRandom.50.42
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.58
+label.42
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.58
+label.160
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.161.<Влево>
+choice.162.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.160
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.758
+gotoLabelByRandom.50.43
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.160
+label.43
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.160
+label.161
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, (...), (...), (...)>.3
+choice.163.<Влево>
+choice.164.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.163
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.758
+gotoLabelByRandom.50.44
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.161
+label.44
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.161
+label.164
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Право, (...), (...)>.3
+choice.165.<Влево>
+choice.166.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.165
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.758
+gotoLabelByRandom.50.45
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.164
+label.45
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.164
+label.166
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Право, Право, (...)>.3
+choice.167.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.167
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.758
+gotoLabelByRandom.50.46
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.166
+label.46
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.166
+label.59
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.168.<Влево>
+choice.169.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.168
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.759
+gotoLabelByRandom.50.47
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.59
+label.47
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.59
+label.169
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.170.<Влево>
+choice.171.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.160
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.759
+gotoLabelByRandom.50.48
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.169
+label.48
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.169
+label.170
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, (...), (...), (...)>.3
+choice.172.<Влево>
+choice.173.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.163
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.759
+gotoLabelByRandom.50.49
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.170
+label.49
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.170
+label.173
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Право, (...), (...)>.3
+choice.174.<Влево>
+choice.175.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.175
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.759
+gotoLabelByRandom.50.74
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.173
+label.74
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.173
+label.174
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Право, Лево, (...)>.3
+choice.176.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.176
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.759
+gotoLabelByRandom.50.75
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.174
+label.75
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.174
+label.60
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.177.<Влево>
+choice.178.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.177
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.760
+gotoLabelByRandom.50.76
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.60
+label.76
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.60
+label.178
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.179.<Влево>
+choice.180.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.180
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.760
+gotoLabelByRandom.50.77
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.178
+label.77
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.178
+label.179
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, (...), (...), (...)>.3
+choice.181.<Влево>
+choice.182.<Вправо>
+waitForUse3r
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.182
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.760
+gotoLabelByRandom.50.78
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.179
+label.78
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.179
+label.181
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Лево, (...), (...)>.3
+choice.183.<Влево>
+choice.184.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.183
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.760
+gotoLabelByRandom.50.79
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.181
+label.79
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.181
+label.184
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Лево, Право, (...)>.3
+choice.185.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.185
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.760
+gotoLabelByRandom.50.80
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.184
+label.80
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.184
+label.61
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.186.<Влево>
+choice.187.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.186
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.761
+gotoLabelByRandom.50.81
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.61
+label.81
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.61
+label.187
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.188.<Влево>
+choice.189.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.189
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.761
+gotoLabelByRandom.50.82
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.187
+label.82
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.187
+label.188
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, (...), (...), (...)>.3
+choice.190.<Влево>
+choice.191.<Вправо>
+waitForUse3r
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.191
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.761
+gotoLabelByRandom.50.83
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.188
+label.83
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.188
+label.190
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Лево, (...), (...)>.3
+choice.192.<Влево>
+choice.193.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.192
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.761
+gotoLabelByRandom.50.84
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.190
+label.84
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.190
+label.193
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Лево, Право, (...)>.3
+choice.500.<Влево>
+choice.194.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.194
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.761
+gotoLabelByRandom.50.85
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.194
+label.85
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.194
+label.62
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.195.<Влево>
+choice.196.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.195
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.762
+gotoLabelByRandom.50.86
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.62
+label.86
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.62
+label.196
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
+choice.197.<Влево>
+choice.198.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.198
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.762
+gotoLabelByRandom.50.87
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.196
+label.87
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.196
+label.197
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, (...), (...), (...)>.3
+choice.199.<Влево>
+choice.200.<Вправо>
+waitForUse3r
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.200
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.762
+gotoLabelByRandom.50.88
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.197
+label.88
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.197
+label.199
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Лево, (...), (...)>.3
+choice.201.<Влево>
+choice.202.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.202
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.762
+gotoLabelByRandom.50.89
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.199
+label.89
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.199
+label.201
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Право, Лево, Лево, Лево, (...)>.3
+choice.500.<Влево>
+choice.203.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.203
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.762
+gotoLabelByRandom.50.90
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.201
+label.90
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.201
+label.63
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.204.<Влево>
+choice.205.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.205
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.763
+gotoLabelByRandom.50.91
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.63
+label.91
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.63
+label.204
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.206.<Влево>
+choice.207.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.206
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.763
+gotoLabelByRandom.50.92
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.204
+label.92
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.204
+label.207
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, (...), (...), (...)>.3
+choice.208.<Влево>
+choice.209.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.208
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.763
+gotoLabelByRandom.50.93
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.207
+label.93
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.207
+label.209
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Право, (...), (...)>.3
+choice.210.<Влево>
+choice.211.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.210
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.763
+gotoLabelByRandom.50.94
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.209
+label.94
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.209
+label.211
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Право, Право, (...)>.3
+choice.212.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.212
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.763
+gotoLabelByRandom.50.95
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.211
+label.95
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.211
+label.64
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.213.<Влево>
+choice.214.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.214
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.764
+gotoLabelByRandom.50.96
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.64
+label.96
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.64
+label.213
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.215.<Влево>
+choice.216.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.215
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.764
+gotoLabelByRandom.50.97
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.213
+label.97
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.213
+label.216
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, (...), (...), (...)>.3
+choice.217.<Влево>
+choice.218.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.217
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.764
+gotoLabelByRandom.50.98
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.216
+label.98
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.216
+label.218
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Право, (...), (...)>.3
+choice.219.<Влево>
+choice.220.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.219
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.764
+gotoLabelByRandom.50.99
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.218
+label.99
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.218
+label.220
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Право, Право, (...)>.3
+choice.500.<Влево>
+choice.221.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.221
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.764
+gotoLabelByRandom.50.350
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.220
+label.350
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.220
+label.65
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.222.<Влево>
+choice.223.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.223
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.765
+gotoLabelByRandom.50.351
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.65
+label.351
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.65
+label.222
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.224.<Влево>
+choice.225.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.224
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.765
+gotoLabelByRandom.50.352
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.222
+label.352
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.222
+label.225
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, (...), (...), (...)>.3
+choice.226.<Влево>
+choice.227.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.226
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.765
+gotoLabelByRandom.50.353
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.225
+label.353
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.225
+label.227
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Право, (...), (...)>.3
+choice.228.<Влево>
+choice.229.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.229
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.765
+gotoLabelByRandom.50.354
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.227
+label.354
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.227
+label.228
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Право, Лево, (...)>.3
+choice.230.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.230
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.765
+gotoLabelByRandom.50.355
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.228
+label.355
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.228
+label.66
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.231.<Влево>
+choice.232.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.232
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.766
+gotoLabelByRandom.50.356
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.66
+label.356
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.66
+label.231
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.233.<Влево>
+choice.234.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.233
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.766
+gotoLabelByRandom.50.357
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.231
+label.357
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.231
+label.234
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, (...), (...), (...)>.3
+choice.235.<Влево>
+choice.236.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.236
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.766
+gotoLabelByRandom.50.358
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.234
+label.358
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.234
+label.235
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Лево, (...), (...)>.3
+choice.237.<Влево>
+choice.238.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.238
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.766
+gotoLabelByRandom.50.359
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.235
+label.359
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.235
+label.237
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Лево, Лево, (...)>.3
+choice.239.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.239
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.766
+gotoLabelByRandom.50.360
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.237
+label.360
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.237
+label.67
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.240.<Влево>
+choice.241.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.241
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.767
+gotoLabelByRandom.50.361
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.67
+label.361
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.67
+label.240
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.242.<Влево>
+choice.243.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.242
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.767
+gotoLabelByRandom.50.362
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.240
+label.362
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.240
+label.243
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, (...), (...), (...)>.3
+choice.244.<Влево>
+choice.245.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.245
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.767
+gotoLabelByRandom.50.363
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.243
+label.363
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.243
+label.244
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Лево, (...), (...)>.3
+choice.246.<Влево>
+choice.247.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.247
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.767
+gotoLabelByRandom.50.364
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.244
+label.364
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.244
+label.246
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Право, Лево, Лево, (...)>.3
+choice.500.<Влево>
+choice.248.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.248
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.767
+gotoLabelByRandom.50.365
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.246
+label.365
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.246
+label.68
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.249.<Влево>
+choice.250.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.250
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.768
+gotoLabelByRandom.50.366
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.68
+label.366
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.68
+label.249
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.251.<Влево>
+choice.252.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.252
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.768
+gotoLabelByRandom.50.367
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.249
+label.367
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.249
+label.251
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, (...), (...), (...)>.3
+choice.253.<Влево>
+choice.254.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.253
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.768
+gotoLabelByRandom.50.368
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.251
+label.368
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.251
+label.254
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Право, (...), (...)>.3
+choice.255.<Влево>
+choice.256.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.255
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.768
+gotoLabelByRandom.50.369
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.254
+label.369
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.254
+label.256
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Право, Право, (...)>.3
+choice.257.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.257
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.768
+gotoLabelByRandom.50.370
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.256
+label.370
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.256
+label.69
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.258.<Влево>
+choice.259.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.259
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.769
+gotoLabelByRandom.50.371
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.69
+label.371
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.69
+label.258
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.260.<Влево>
+choice.261.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.261
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.769
+gotoLabelByRandom.50.372
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.258
+label.372
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.258
+label.260
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, (...), (...), (...)>.3
+choice.262.<Влево>
+choice.263.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.262
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.769
+gotoLabelByRandom.50.373
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.260
+label.373
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.260
+label.263
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Право, (...), (...)>.3
+choice.264.<Влево>
+choice.265.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.264
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.769
+gotoLabelByRandom.50.374
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.263
+label.374
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.263
+label.265
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Право, Право, (...)>.3
+choice.500.<Влево>
+choice.266.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.266
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.769
+gotoLabelByRandom.50.375
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.265
+label.375
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.265
+label.70
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.267.<Влево>
+choice.268.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.268
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.770
+gotoLabelByRandom.50.376
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.70
+label.376
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.70
+label.267
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.269.<Влево>
+choice.270.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.270
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.770
+gotoLabelByRandom.50.377
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.267
+label.377
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.267
+label.269
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, (...), (...), (...)>.3
+choice.271.<Влево>
+choice.272.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.271
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.770
+gotoLabelByRandom.50.378
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.269
+label.378
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.269
+label.272
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Право, (...), (...)>.3
+choice.273.<Влево>
+choice.274.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.274
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.770
+gotoLabelByRandom.50.379
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.272
+label.379
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.272
+label.273
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Право, Лево, (...)>.3
+choice.275.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.275
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.770
+gotoLabelByRandom.50.380
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.273
+label.380
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.273
+label.71
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.276.<Влево>
+choice.277.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.277
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.771
+gotoLabelByRandom.50.381
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.71
+label.381
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.71
+label.276
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.278.<Влево>
+choice.279.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.279
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.771
+gotoLabelByRandom.50.382
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.276
+label.382
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.276
+label.278
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, (...), (...), (...)>.3
+choice.280.<Влево>
+choice.281.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.281
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.771
+gotoLabelByRandom.50.383
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.278
+label.383
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.278
+label.280
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Лево, (...), (...)>.3
+choice.282.<Влево>
+choice.283.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.282
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.771
+gotoLabelByRandom.50.384
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.280
+label.384
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.280
+label.283
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Лево, Право, (...)>.3
+choice.284.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.284
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.771
+gotoLabelByRandom.50.385
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.283
+label.385
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.283
+label.72
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.285.<Влево>
+choice.286.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.286
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.772
+gotoLabelByRandom.50.386
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.72
+label.386
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.72
+label.285
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.287.<Влево>
+choice.288.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.288
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.772
+gotoLabelByRandom.50.387
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.285
+label.387
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.285
+label.287
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, (...), (...), (...)>.3
+choice.289.<Влево>
+choice.290.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.290
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.772
+gotoLabelByRandom.50.388
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.287
+label.388
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.287
+label.289
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Лево, (...), (...)>.3
+choice.291.<Влево>
+choice.292.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.292
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.772
+gotoLabelByRandom.50.389
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.289
+label.389
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.289
+label.291
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Лево, Лево, (...)>.3
+choice.293.<Влево>
+choice.500.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.293
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.772
+gotoLabelByRandom.50.390
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.291
+label.390
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.291
+label.73
+ifPlayerHasCards.1.0.131
+say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
+choice.294.<Влево>
+choice.295.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.295
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.773
+gotoLabelByRandom.50.391
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.73
+label.391
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.73
+label.294
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, (...), (...), (...), (...)>.3
+choice.296.<Влево>
+choice.297.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.297
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.773
+gotoLabelByRandom.50.392
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.294
+label.392
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.294
+label.296
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, (...), (...), (...)>.3
+choice.298.<Влево>
+choice.299.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.299
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.773
+gotoLabelByRandom.50.393
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.296
+label.393
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.296
+label.298
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Лево, (...), (...)>.3
+choice.300.<Влево>
+choice.301.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.300
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.773
+gotoLabelByRandom.50.394
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.298
+label.394
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.298
+label.300
+ifPlayerHasCards.1.0.131
+say.<Текущая комбинация: Лево, Лево, Лево, Лево, (...)>.3
+choice.500.<Влево>
+choice.301.<Вправо>
+waitForUser
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
+waitForUser
+goto.0
+label.301
+gotoLabelByRandom.95.5
+gotoLabelByRandom.75.773
+gotoLabelByRandom.50.395
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
+waitForUser
+goto.300
+label.395
+setTalkLabels.-1.-1.0
+talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
+waitForUser
+removePlayerCards.1.0.131
+goto.300
 label.4
 setTalkLabels.-1.-1.2
 talk.<Осмотрев сундук внимательно, ты обнаруживаешь, что на его обратной стороне кто-то оставил сообщение...>
@@ -194,7 +3249,7 @@ waitForUser
 goto.0
 label.2034
 setTalkLabels.-1.-1.0
-talk.<{4*Разработчики Unbended извиняются за отсутствие отсылок к Глобалу (и к Редуксу тоже).}>
+talk.<{4*Разработчики Unbended извиняются за отсутствие отсылок к Глобалу (и к Редаксу тоже).}>
 waitForUser
 goto.0
 label.2035
@@ -202,177 +3257,6 @@ setTalkLabels.-1.-1.0
 talk.<{4*Ты получила +1 к Харизме и -1 к Интеллекту!}>
 waitForUser
 goto.0
-label.3
-setTalkLabels.-1.-1.2
-talk.<Ты аккуратно гладишь сундук по крышке.>
-waitForUser
-setTalkLabels.-1.-1.0
-talk.<Сундук ценит твою заботу, но он чувствует себя в порядке.>
-waitForUser
-goto.0
-label.5
-setTalkLabels.-1.-1.0
-talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома изменилась! Тебе придётся начать всё с самого начала.>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.0
-label.6
-setTalkLabels.-1.-1.0
-talk.<Ты активировала защитный механизм сундука! Твоя {4*Отмычка} сломалась, а вся комбинация взлома сбросилась! Тебе придётся начать всю комбинацию с начала.>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.51
-label.1000
-setTalkLabels.-1.-1.0
-talk.<Ты находишь внутри {4*Серебряный Шар} (х1)!>
-waitForUser
-givePlayerCards.1.0.17
-goto.0
-label.2
-ifPlayerHasCards.1.0.131
-setTalkLabels.10.11.1
-talk.<Ты хочешь попытаться открыть этот сундук?>
-waitForUser
-label.10
-goto.51
-label.11
-goto.0
-else
-setTalkLabels.-1.-1.0
-talk.<У тебя нет {4*Отмычек}, чтобы попытаться открыть этот сундук.>
-waitForUser
-goto.0
-label.51
-ifPlayerHasCards.1.0.131
-say.<Теперь тебе нужно подобрать правильную комбинацию...>.3
-choice.100.<Влево>
-choice.101.<Вправо>
-waitForUser
-else
-setTalkLabels.-1.-1.0
-talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
-waitForUser
-goto.0
-label.100
-gotoLabelByRandom.95.5
-gotoLabelByRandom.75.6
-gotoLabelByRandom.50.7
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
-waitForUser
-goto.51
-label.7
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.51
-label.101
-ifPlayerHasCards.1.0.131
-say.<Текущая комбинация: Право, (...), (...), (...), (...)>.3
-choice.102.<Влево>
-choice.103.<Вправо>
-waitForUser
-else
-setTalkLabels.-1.-1.0
-talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
-waitForUser
-goto.0
-label.102
-gotoLabelByRandom.95.5
-gotoLabelByRandom.75.6
-gotoLabelByRandom.50.8
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
-waitForUser
-goto.101
-label.8
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.101
-label.103
-ifPlayerHasCards.1.0.131
-say.<Текущая комбинация: Право, Право, (...), (...), (...)>.3
-choice.104.<Влево>
-choice.105.<Вправо>
-waitForUser
-else
-setTalkLabels.-1.-1.0
-talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
-waitForUser
-goto.0
-label.104
-gotoLabelByRandom.95.5
-gotoLabelByRandom.75.6
-gotoLabelByRandom.50.9
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
-waitForUser
-goto.103
-label.9
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.103
-label.105
-ifPlayerHasCards.1.0.131
-say.<Текущая комбинация: Право, Право, Право, (...), (...)>.3
-choice.106.<Влево>
-choice.107.<Вправо>
-waitForUser
-else
-setTalkLabels.-1.-1.0
-talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
-waitForUser
-goto.0
-label.106
-gotoLabelByRandom.95.5
-gotoLabelByRandom.75.6
-gotoLabelByRandom.50.10
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
-waitForUser
-goto.105
-label.10
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.105
-label.107
-ifPlayerHasCards.1.0.131
-say.<Текущая комбинация: Право, Право, Право, Право, (...)>.3
-choice.108.<Влево>
-choice.109.<Вправо>
-waitForUser
-else
-setTalkLabels.-1.-1.0
-talk.<У тебя нет больше {4*Отмычек}, чтобы попытаться открыть этот сундук.>
-waitForUser
-goto.0
-label.108
-gotoLabelByRandom.95.5
-gotoLabelByRandom.75.6
-gotoLabelByRandom.50.11
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, но {4*Отмычка} все ещё цела.>.3
-waitForUser
-goto.107
-label.11
-setTalkLabels.-1.-1.0
-talk.<Это было неправильное действие, и твоя {4*Отмычка} оказывается сломана.>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.107
-label.109
-setTalkLabels.-1.-1.2
-say.<Ты слышишь, как замок щёлкает. Ты смогла открыть сундук!>.3
-waitForUser
-removePlayerCards.1.0.131
-goto.1000
 label.1
 exit"""
 InitScript = """

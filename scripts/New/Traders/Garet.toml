@@ -1,5 +1,5 @@
 UID = "399C7404"
-Name = "05360321"
+Name = "23D47EB1"
 TriggerScript = """
 playAnimation.13.-1
 setCamera.1000
@@ -7,9 +7,7 @@ say.<Приветствую, путешественница.>.0
 waitForUser
 label.0
 say.<Надеюсь, ты наслаждаешься своим пребыванием здесь. Достаточно уютное и тихое место, не правда ли?>.1
-choice.4.<Диалог>
 choice.3.<Торговля>
-choice.2.<Обмен>
 choice.1.<До встречи>
 waitForUser
 label.4

@@ -11,19 +11,19 @@ InitScript = """
 setModel.u003s03m
 gotoRandomLabel.3.0
 label.0
-defaultWizForm.77.0.7
-defaultWizForm.32.1.7
-defaultWizForm.67.2.8
+defaultWizForm.74.0.7
+defaultWizForm.10.1.7
+defaultWizForm.50.2.8
 goto.3
 label.1
-defaultWizForm.77.0.7
-defaultWizForm.39.1.7
+defaultWizForm.74.0.7
+defaultWizForm.88.1.7
 defaultWizForm.52.2.8
 goto.3
 label.2
-defaultWizForm.77.0.7
-defaultWizForm.65.1.7
-defaultWizForm.10.2.7
+defaultWizForm.74.0.7
+defaultWizForm.79.1.7
+defaultWizForm.6.2.7
 goto.3
 label.3"""
 UpdateScript = """

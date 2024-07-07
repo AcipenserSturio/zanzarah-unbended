@@ -1,4 +1,4 @@
-UID = "C5B14EB4"
+UID = "7266B9B4"
 Name = "97688F91"
 TriggerScript = """
 playAnimation.13.-1
@@ -10,25 +10,25 @@ InitScript = """
 setModel.u002s02m
 gotoRandomLabel.3.0
 label.0
-defaultWizForm.87.0.18
-defaultWizForm.48.1.17
-defaultWizForm.87.2.15
-defaultWizForm.86.3.15
-defaultWizForm.13.4.18
+defaultWizForm.161.0.47
+defaultWizForm.151.1.49
+defaultWizForm.172.2.49
+defaultWizForm.98.3.48
+defaultWizForm.167.4.47
 goto.3
 label.1
-defaultWizForm.87.0.18
-defaultWizForm.84.1.18
-defaultWizForm.39.2.17
-defaultWizForm.16.3.15
-defaultWizForm.65.4.17
+defaultWizForm.161.0.47
+defaultWizForm.149.1.49
+defaultWizForm.178.2.49
+defaultWizForm.148.3.47
+defaultWizForm.119.4.46
 goto.3
 label.2
-defaultWizForm.87.0.18
-defaultWizForm.61.1.18
-defaultWizForm.67.2.16
-defaultWizForm.2.3.15
-defaultWizForm.49.4.18
+defaultWizForm.161.0.47
+defaultWizForm.181.1.47
+defaultWizForm.102.2.49
+defaultWizForm.159.3.49
+defaultWizForm.150.4.47
 goto.3
 label.3"""
 UpdateScript = """

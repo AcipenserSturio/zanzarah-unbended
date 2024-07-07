@@ -1,5 +1,5 @@
-UID = "7266B9B4"
-Name = "97688F91"
+UID = "6A91CC34"
+Name = "B18BDDB1"
 TriggerScript = """
 playAnimation.13.-1
 setCamera.1006
@@ -7,28 +7,28 @@ say.<Человеческим духом пахнет?>.0
 waitForUser
 fight.-1.0"""
 InitScript = """
-setModel.u002s02m
+setModel.b016s00m
 gotoRandomLabel.3.0
 label.0
-defaultWizForm.129.0.47
-defaultWizForm.118.1.49
-defaultWizForm.113.2.49
-defaultWizForm.123.3.48
-defaultWizForm.25.4.47
+defaultWizForm.34.0.27
+defaultWizForm.80.1.26
+defaultWizForm.49.2.23
+defaultWizForm.38.3.23
+defaultWizForm.68.4.26
 goto.3
 label.1
-defaultWizForm.129.0.47
-defaultWizForm.120.1.49
-defaultWizForm.63.2.49
-defaultWizForm.127.3.47
-defaultWizForm.122.4.46
+defaultWizForm.34.0.27
+defaultWizForm.55.1.24
+defaultWizForm.81.2.23
+defaultWizForm.44.3.27
+defaultWizForm.29.4.25
 goto.3
 label.2
-defaultWizForm.129.0.47
-defaultWizForm.107.1.47
-defaultWizForm.126.2.49
-defaultWizForm.89.3.49
-defaultWizForm.95.4.47
+defaultWizForm.34.0.27
+defaultWizForm.5.1.24
+defaultWizForm.24.2.25
+defaultWizForm.11.3.24
+defaultWizForm.63.4.27
 goto.3
 label.3"""
 UpdateScript = """

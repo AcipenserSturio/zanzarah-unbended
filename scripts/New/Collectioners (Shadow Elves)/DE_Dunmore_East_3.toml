@@ -1,5 +1,5 @@
-UID = "1F4D22A4"
-Name = "97688F91"
+UID = "0F96CC34"
+Name = "B18BDDB1"
 TriggerScript = """
 playAnimation.13.-1
 setCamera.1006
@@ -10,25 +10,25 @@ InitScript = """
 setModel.b016s00m
 gotoRandomLabel.3.0
 label.0
-defaultWizForm.143.0.19
-defaultWizForm.36.1.17
-defaultWizForm.74.2.16
-defaultWizForm.65.3.16
-defaultWizForm.130.4.19
+defaultWizForm.72.0.24
+defaultWizForm.1.1.22
+defaultWizForm.62.2.23
+defaultWizForm.67.3.24
+defaultWizForm.67.4.24
 goto.3
 label.1
-defaultWizForm.143.0.19
-defaultWizForm.20.1.18
-defaultWizForm.64.2.16
-defaultWizForm.158.3.17
-defaultWizForm.54.4.19
+defaultWizForm.72.0.24
+defaultWizForm.65.1.25
+defaultWizForm.17.2.23
+defaultWizForm.3.3.26
+defaultWizForm.67.4.26
 goto.3
 label.2
-defaultWizForm.143.0.19
-defaultWizForm.38.1.17
-defaultWizForm.14.2.18
-defaultWizForm.13.3.17
-defaultWizForm.61.4.17
+defaultWizForm.72.0.24
+defaultWizForm.87.1.24
+defaultWizForm.47.2.23
+defaultWizForm.53.3.26
+defaultWizForm.67.4.23
 goto.3
 label.3"""
 UpdateScript = """

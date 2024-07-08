@@ -77,7 +77,7 @@ defaultWizForm.47.0.21
 defaultWizForm.70.1.22
 defaultWizForm.41.2.24
 defaultWizForm.39.3.23
-defaultWizForm.12.4.22""
+defaultWizForm.12.4.22"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 setCamera.1000

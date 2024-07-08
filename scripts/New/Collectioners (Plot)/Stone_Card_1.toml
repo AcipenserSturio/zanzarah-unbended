@@ -2,22 +2,6 @@ UID = "008C94A4"
 Name = "0648ACA1"
 TriggerScript = """
 setCamera.1000
-ifNpcModifierHasValue.1
-say.<Человеческий детёныш снова пришел к нам!>.0
-waitForUser
-setTalkLabels.10.20.1
-talk.<
-    Сейчас не лучший момент для схватки – я всё ещё восстанавливаю ману, потерянную в последнем сражении.
-    Тебе нужно еще раз создать лестницу?
->
-waitForUser
-exit
-label.10
-createSceneObjects.0
-exit
-label.20
-exit
-endIf
 say.<У тебя должны быть сильные феи, чтобы осмелиться прийти в такое место, человеческий детёныш.>.0
 waitForUser
 setTalkLabels.0.1.0
@@ -31,25 +15,13 @@ fight.225.1
 exit"""
 InitScript = """
 setNpcType.3
-defaultWizForm.208.0.29
-defaultWizForm.208.4.27"""
+defaultWizForm.210.0.29"""
 UpdateScript = """
-ifNpcModifierHasValue.1
-lookAtPlayer.0.0
-endIf
-exit
-label.0
-lookAtPlayer.5.0
-ifPlayerIsClose.15
-startPrelude
-endIf
-goto.0"""
+lookAtPlayer.5.0"""
 DefeatedScript = """
 setTalkLabels.-1.-1.0
 talk.<
     Ты самый сильный коллекционер фей из всех, которых я когда-либо встречала.
     Ты заслужила доступ к {4*Карте Камня}.
 >
-waitForUser
-createSceneObjects.0
-setNpcModifier.-1.-1.1"""
+waitForUser"""

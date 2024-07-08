@@ -1,0 +1,67 @@
+UID = "9023B3A4"
+Name = "B18BDDB1"
+TriggerScript = """
+ifPlayerHasCards.1.0.48
+goto.0
+else
+say.<Похоже, это некий магический барьер. Ты не знаешь, что можешь сделать с ним.>.0
+waitForUser
+exit
+label.0
+ifPlayerHasCards.1.2.12
+goto.1
+else
+ifPlayerHasCards.1.2.13
+goto.1
+else
+ifPlayerHasCards.1.2.17
+goto.1
+else
+ifPlayerHasCards.1.2.23
+goto.1
+else
+ifPlayerHasCards.1.2.24
+goto.1
+else
+ifPlayerHasCards.1.2.28
+goto.1
+else
+ifPlayerHasCards.1.2.29
+goto.1
+else
+ifPlayerHasCards.1.2.73
+goto.1
+else
+ifPlayerHasCards.1.2.74
+goto.1
+else
+ifPlayerHasCards.1.2.104
+goto.1
+else
+ifPlayerHasCards.1.2.107
+goto.1
+else
+ifPlayerHasCards.1.2.108
+goto.1
+else
+ifPlayerHasCards.1.2.127
+goto.1
+else
+ifPlayerHasCards.1.2.155
+goto.1
+else
+ifPlayerHasCards.1.2.176
+goto.1
+else
+ifPlayerHasCards.1.2.214
+goto.1
+else
+say.<Похоже, это некий магический барьер. Ты сможешь уничтожить его, если ты используешь силу {4*феи Пси}.>.0
+waitForUser
+exit
+label.1
+startEffect.0.-1
+removeNpc"""
+InitScript = """
+setModel.b999s21
+startActorEffect.1"""

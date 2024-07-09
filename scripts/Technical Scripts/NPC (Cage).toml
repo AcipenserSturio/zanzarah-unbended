@@ -1,6 +1,11 @@
 UID = "9023B3A4"
 Name = "B18BDDB1"
 TriggerScript = """
+ifNumberOfNpcsIs.1.008C94A4
+say.<Похоже, это некий магический барьер. Может, фея поблизости может рассказать об этом больше...>.0
+waitForUser
+exit
+else
 ifPlayerHasCards.1.0.48
 goto.0
 else

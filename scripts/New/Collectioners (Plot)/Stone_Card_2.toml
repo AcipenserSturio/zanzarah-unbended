@@ -3,5 +3,9 @@ Name = "B18BDDB1"
 InitScript = """
 setNpcType.3
 setCollision.0
-defaultWizForm.6.2.22"""
+defaultWizForm.137.2.22
+spell.0.0.65535
+spell.0.1.62
+spell.0.2.65535
+spell.0.3.64"""
 UpdateScript = "lookAtPlayer.0.2"

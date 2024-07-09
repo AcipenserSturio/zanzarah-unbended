@@ -30,7 +30,7 @@ label.2
 exit"""
 InitScript = """
 setNpcType.3
-defaultWizForm.210.2.29"""
+defaultWizForm.210.2.16"""
 UpdateScript = """
 lookAtPlayer.5.0"""
 DefeatedScript = """
@@ -55,9 +55,11 @@ talk.<
 	Мы не должны позволить им этого сделать, иначе {4*Занзару} окончательно поглотит эпоха хаоса!
 >
 waitForUser
+changeWaypoint.-1.-1
+givePlayerCards.1.2.210
+startEffect.1.-1
 removeNpcAtTrigger.59
 removeNpcAtTrigger.60
 removeNpcAtTrigger.61
 removeNpcAtTrigger.62
-givePlayerCards.1.2.210
 removeNpc"""

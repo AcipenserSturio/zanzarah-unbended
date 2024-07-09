@@ -3,7 +3,7 @@ Name = "B18BDDB1"
 InitScript = """
 setNpcType.3
 setCollision.0
-defaultWizForm.137.2.22
+defaultWizForm.137.2.13
 spell.2.0.65535
 spell.2.1.62
 spell.2.2.65535

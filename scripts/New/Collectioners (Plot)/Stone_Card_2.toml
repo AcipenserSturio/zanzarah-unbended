@@ -4,8 +4,8 @@ InitScript = """
 setNpcType.3
 setCollision.0
 defaultWizForm.137.2.22
-spell.0.0.65535
-spell.0.1.62
-spell.0.2.65535
-spell.0.3.64"""
+spell.2.0.65535
+spell.2.1.62
+spell.2.2.65535
+spell.2.3.64"""
 UpdateScript = "lookAtPlayer.0.2"

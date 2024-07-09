@@ -35,7 +35,7 @@ exit"""
 InitScript = """
 setNpcType.4
 setModel.v001s01
-defaultWizForm.27.0.6"""
+defaultWizForm.27.2.6"""
 DefeatedScript = """
 createDynamicItems.60.3.-1
 playSound.0

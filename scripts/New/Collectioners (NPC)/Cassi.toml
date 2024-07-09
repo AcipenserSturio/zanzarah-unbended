@@ -30,8 +30,8 @@ exit"""
 InitScript = """
 setModel.g004s03m
 defaultWizForm.69.0.3
-defaultWizForm.25.1.5
-defaultWizForm.40.2.2"""
+defaultWizForm.25.2.5
+defaultWizForm.40.4.2"""
 UpdateScript = """
 label.0
 idle

@@ -10,11 +10,9 @@ waitForUser
 fight.-1.0"""
 InitScript = """
 setNpcType.3
-defaultWizForm.135.0.6
-defaultWizForm.77.1.7
+defaultWizForm.135.0.3
 defaultWizForm.43.2.5
-defaultWizForm.83.3.8
-defaultWizForm.54.4.6"""
+defaultWizForm.54.4.4"""
 DefeatedScript = """
 talk.<
     После долгого боя фея больше не представляет никакой опасности.

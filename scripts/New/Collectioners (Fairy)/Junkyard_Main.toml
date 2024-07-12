@@ -10,11 +10,11 @@ fight.-1.1"""
 InitScript = """
 setNpcType.3
 setCollision.0
-defaultWizForm.43.0.46
-defaultWizForm.27.1.46
-defaultWizForm.55.2.46
-defaultWizForm.27.3.46
-defaultWizForm.43.4.46"""
+defaultWizForm.39.0.36
+defaultWizForm.43.1.36
+defaultWizForm.39.2.36
+defaultWizForm.43.3.36
+defaultWizForm.39.4.36"""
 UpdateScript = """
 label.0
 idle

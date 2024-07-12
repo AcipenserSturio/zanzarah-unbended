@@ -3,8 +3,5 @@ Name = "B7993001"
 InitScript = """
 setNpcType.3
 setCollision.0
-ifNpcModifierHasValue.1
-defaultWizForm.66.0.4
-else
-defaultWizForm.72.2.60
+defaultWizForm.43.2.30
 endIf"""

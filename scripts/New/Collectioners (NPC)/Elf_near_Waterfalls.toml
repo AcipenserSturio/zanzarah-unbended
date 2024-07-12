@@ -38,11 +38,11 @@ label.11
 exit"""
 InitScript = """
 setModel.g300s30m
-defaultWizForm.140.0.53
-defaultWizForm.101.1.52
-defaultWizForm.128.2.51
-defaultWizForm.107.3.55
-defaultWizForm.131.4.54"""
+defaultWizForm.123.0.33
+defaultWizForm.127.1.32
+defaultWizForm.130.2.31
+defaultWizForm.125.3.35
+defaultWizForm.124.4.34"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 setCamera.1000

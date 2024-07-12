@@ -23,11 +23,11 @@ waitForUser
 setCamera.3005
 fight.-1.-1"""
 InitScript = """
-defaultWizForm.14.0.60
-defaultWizForm.11.1.61
-defaultWizForm.61.2.61
-defaultWizForm.25.3.60
-defaultWizForm.63.4.60
+defaultWizForm.14.0.36
+defaultWizForm.11.1.37
+defaultWizForm.61.2.39
+defaultWizForm.25.3.37
+defaultWizForm.63.4.38
 setModel.u002s02m"""
 UpdateScript = """
 label.0

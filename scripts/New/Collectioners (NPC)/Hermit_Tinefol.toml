@@ -37,9 +37,9 @@ label.1
 exit"""
 InitScript = """
 setModel.d004s00m
-defaultWizForm.147.0.45
-defaultWizForm.148.2.43
-defaultWizForm.149.4.47"""
+defaultWizForm.147.0.15
+defaultWizForm.148.2.13
+defaultWizForm.149.4.17"""
 UpdateScript = "lookAtPlayer.-1.1"
 DefeatedScript = """
 setCamera.1000

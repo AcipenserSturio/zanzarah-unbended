@@ -101,7 +101,7 @@ label.53
 givePlayerCards.1.0.8
 endIf
 ifNpcModifierHasValue.54
-givePlayerCards.1.0.46
+givePlayerCards.1.0.57
 endIf
 ifNpcModifierHasValue.55
 givePlayerCards.1.0.51
@@ -129,7 +129,7 @@ ifNpcModifierHasValue.63
 givePlayerCards.1.0.18
 endIf
 ifNpcModifierHasValue.64
-givePlayerCards.1.0.134
+givePlayerCards.1.0.55
 endIf
 ifNpcModifierHasValue.65
 givePlayerCards.1.0.65
@@ -158,7 +158,7 @@ givePlayerCards.1.0.73
 endIf
 ifNpcModifierHasValue.175
 label.175
-givePlayerCards.1.0.57
+givePlayerCards.1.0.134
 endIf
 ifNpcModifierHasValue.176
 label.176

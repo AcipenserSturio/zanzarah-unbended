@@ -52,7 +52,7 @@ ifNpcModifierHasValue.54
 givePlayerCards.1.0.54
 endIf
 ifNpcModifierHasValue.55
-givePlayerCards.1.0.55
+givePlayerCards.1.0.46
 endIf
 ifNpcModifierHasValue.56
 givePlayerCards.1.0.56

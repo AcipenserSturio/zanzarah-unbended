@@ -1,7 +1,7 @@
 UID = "0A4D1424"
 Name = "A46E5421"
 InitScript = """
-defaultWizForm.500.0.61
+defaultWizForm.500.0.31
 spell.0.0.55
 spell.0.1.116
 spell.0.2.55

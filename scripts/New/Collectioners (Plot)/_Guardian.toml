@@ -10,11 +10,11 @@ say.<Эта статуя окружена сильнодействующим з�
 delay.30"""
 InitScript = """
 setNpcType.3
-defaultWizForm.29.0.61
-defaultWizForm.55.1.61
-defaultWizForm.29.2.61
-defaultWizForm.55.3.61
-defaultWizForm.29.4.61"""
+defaultWizForm.29.0.46
+defaultWizForm.55.1.46
+defaultWizForm.29.2.46
+defaultWizForm.55.3.46
+defaultWizForm.29.4.46"""
 DefeatedScript = """
 delay.10
 startEffect.2.0

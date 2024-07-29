@@ -72,7 +72,7 @@ goto.0
 label.1
 exit"""
 InitScript = """
-setModel.g201s21m
+setModel.g301s31m
 defaultWizForm.47.0.26
 defaultWizForm.70.1.27
 defaultWizForm.41.2.29

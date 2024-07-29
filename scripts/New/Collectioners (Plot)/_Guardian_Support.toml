@@ -3,5 +3,4 @@ Name = "A46E5421"
 InitScript = """
 setNpcType.3
 setCollision.0
-defaultWizForm.106.0.61
-spell.0.2.51"""
+defaultWizForm.44.0.61"""

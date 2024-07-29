@@ -2,7 +2,7 @@ UID = "5F7A5E84"
 Name = "A46E5421"
 InitScript = """
 defaultWizForm.499.0.61
-spell.0.0.156
-spell.0.1.160
-spell.0.2.150
-spell.0.3.158"""
+spell.0.0.55
+spell.0.1.116
+spell.0.2.55
+spell.0.3.116"""

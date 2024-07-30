@@ -16,6 +16,7 @@ defaultWizForm.29.2.46
 defaultWizForm.55.3.46
 defaultWizForm.29.4.46"""
 DefeatedScript = """
+removeWizForms
 delay.10
 startEffect.2.0
 startEffect.3.2
@@ -61,6 +62,6 @@ talk.<
     Вы можете использовать {4*пароль} в начале новой игры, поговорив с книгой в {4*Лондоне}.
 >
 waitForUser
-givePlayerCards.1.0.92
+givePlayerCards.1.0.113
 startEffect.0.-1
 removeNpc"""

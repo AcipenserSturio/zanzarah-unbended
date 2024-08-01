@@ -18,13 +18,13 @@ goto.1
 label.0
 ifPlayerHasSpecials.1.1
 say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
-choice.4.<Диалог>
-choice.2.<Обмен>
+choice.3.<Диалог>
 choice.1.<До встречи>
 waitForUser
 else
 say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
-choice.3.<Диалог>
+choice.4.<Диалог>
+choice.2.<Обмен>
 choice.1.<До встречи>
 waitForUser
 label.4

@@ -21,7 +21,7 @@ talk.<
 >
 waitForUser
 goto.0
-label.44
+label.2
 say.<Выбери первую цифру>.3
 choice.15.<1>
 choice.15.<2>

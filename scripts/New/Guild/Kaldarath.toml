@@ -76,6 +76,7 @@ choice.8.<Совет>
 choice.7.<Одна фея>
 choice.6.<Пять фей>
 choice.5.<Назад>
+waitForUser
 label.8
 setTalkLabels.-1.-1.2
 talk.<

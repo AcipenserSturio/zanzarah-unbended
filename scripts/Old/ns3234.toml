@@ -39,6 +39,7 @@ InitScript = """
 setNpcType.4
 setModel.g306s36m"""
 UpdateScript = """
+lookAtPlayer.0.-1
 label.10
 idle
 idle

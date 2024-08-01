@@ -6,25 +6,27 @@ playAnimation.13.-1
 say.<Ты что-то ищешь?>.0
 waitForUser
 ifPlayerHasCards.1.0.208
-label.0
-ifPlayerHasSpecials.1.1
-say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
-choice.3.<Диалог>
-choice.1.<До встречи>
-waitForUser
+goto.0
 else
-say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
-choice.4.<Диалог>
-choice.2.<Обмен>
-choice.1.<До встречи>
-waitForUser
-endIf
 setTalkLabels.-1.-1.2
 talk.<
     Извини, но ты не являешься членом нашей {4*Гильдии}.
     Я предоставляю услуги только тем, кто заслужил наше доверие.
 >
+waitForUser
 goto.1
+label.0
+ifPlayerHasSpecials.1.1
+say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
+choice.4.<Диалог>
+choice.2.<Обмен>
+choice.1.<До встречи>
+waitForUser
+else
+say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
+choice.3.<Диалог>
+choice.1.<До встречи>
+waitForUser
 label.4
 setTalkLabels.-1.-1.0
 talk.<

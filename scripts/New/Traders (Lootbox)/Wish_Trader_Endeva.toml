@@ -12,7 +12,7 @@ choice.3.<Диалог>
 choice.2.<Почта>
 choice.1.<До встречи>
 waitForUser
-label.1
+label.3
 setTalkLabels.-1.-1.0
 talk.<
     Я представляю услуги особенной магической почты.

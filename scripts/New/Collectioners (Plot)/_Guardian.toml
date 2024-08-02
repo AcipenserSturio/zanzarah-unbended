@@ -62,6 +62,11 @@ talk.<
     Вы можете использовать {4*пароль} в начале новой игры, поговорив с Почтмейстером в {4*таверне Эндевы}.
 >
 waitForUser
+ifPlayerHasCards.-1.2.142
+goto.0
+else
+givePlayerCards.1.2.142
+label.0
 removeNpcAtTrigger.54
 givePlayerCards.1.0.113
 startEffect.0.-1

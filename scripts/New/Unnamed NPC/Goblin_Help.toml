@@ -55,6 +55,7 @@ talk.<
 >
 waitForUser
 goto.0
+label.1
 exit"""
 InitScript = """
 setModel.e002s02m

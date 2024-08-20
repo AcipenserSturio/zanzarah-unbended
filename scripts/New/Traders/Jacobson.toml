@@ -4,11 +4,21 @@ TriggerScript = """
 setCamera.3001
 say.<Добро пожаловать в мой магазин.>.0
 waitForUser
-ifPlayerHasCards.1.0.15
+ifPlayerHasCards.1.0.56
 label.0
 say.<Теперь, когда {4*Тёмные Эльфы} исчезли с болот, я могу продать тебе самые разнообразные травы.>.1
 choice.6.<Диалог>
 choice.7.<Торговля>
+choice.3.<Обмен>
+choice.4.<До встречи>
+waitForUser
+else
+label.99
+say.<
+    Извини, мне практически нечего тебе предложить.
+    {4*Тёмные Эльфы} скрываются повсюду на болотах, и все опасаются покидать деревню.
+>.1
+choice.5.<Торговля>
 choice.3.<Обмен>
 choice.4.<До встречи>
 waitForUser
@@ -21,15 +31,6 @@ tradingItem.135.238AFCA3
 tradingItem.200.B437E9A3
 waitForUser
 goto.0
-label.99
-say.<
-    Извини, мне практически нечего тебе предложить.
-    {4*Тёмные Эльфы} скрываются повсюду на болотах, и все опасаются покидать деревню.
->.1
-choice.5.<Торговля>
-choice.3.<Обмен>
-choice.4.<До встречи>
-waitForUser
 label.5
 tradingCurrency.C564B4A3
 tradingItem.10.2825B8A3
@@ -54,7 +55,10 @@ else
 setTalkLabels.-1.-1.0
 talk.<У тебя нет никаких предметов, с оценкой которых я могу тебе помочь.>
 waitForUser
+ifPlayerHasCards.1.0.56
 goto.0
+else
+goto.99
 label.11
 ifPlayerHasCards.1.0.15
 goto.0

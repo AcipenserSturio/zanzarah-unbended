@@ -1,0 +1,220 @@
+UID = "B11A4C94"
+Name = "3CBE9A91"
+TriggerScript = """
+playAnimation.13.-1
+setCamera.1000
+say.<
+    Приветствую, чужеземка.
+    Добро пожаловать в мою таверну.
+>.0
+waitForUser
+label.0
+say.<Могу я чем-то помочь тебе?>.1
+choice.3.<Диалог>
+choice.2.<Обмен>
+choice.1.<До встречи>
+waitForUser
+label.2
+say.<Если у тебя есть лишние магические овощи, я готова купить их за эльфийские монеты.>.1
+choice.8.<Обмен Медного Редиса ({4*x10 Эльфийских Монет})>
+choice.7.<Обмен Серебряного Лука ({4*x20 Эльфийских Монет})>
+choice.6.<Обмен Золотой Моркови({4*x40 Эльфийских Монет})>
+choice.5.<Назад>
+waitForUser
+label.8
+say.<Насколько много ты хочешь продать?>.1
+choice.12.<Один>
+choice.11.<Пять>
+choice.10.<Все, что есть>
+choice.9.<Назад>
+waitForUser
+label.12
+ifPlayerHasCards.1.0.60
+removePlayerCards.1.0.60
+givePlayerCards.10.0.4
+exitsetTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*десять эльфийских монет}.>
+waitForUser
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет никакого {4*Медного Редиса} с собой.>
+waitForUser
+goto.2
+label.11
+ifPlayerHasCards.5.0.60
+removePlayerCards.5.0.60
+givePlayerCards.50.0.4
+exitsetTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*пятьдесят эльфийских монет}.>
+waitForUser
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя недостаточно {4*Медного Редиса} для продажи.>
+waitForUser
+goto.2
+label.10
+ifPlayerHasCards.1.0.60
+removePlayerCards.1.0.60
+givePlayerCards.10.0.4
+goto.100
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет никакого {4*Медного Редиса} с собой.>
+waitForUser
+goto.2
+label.100
+ifPlayerHasCards.1.0.60
+removePlayerCards.1.0.60
+givePlayerCards.10.0.4
+goto.100
+else
+setTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела.>
+waitForUser
+goto.2
+label.7
+say.<Насколько много ты хочешь продать?>.1
+choice.16.<Один>
+choice.15.<Пять>
+choice.14.<Все, что есть>
+choice.13.<Назад>
+waitForUser
+label.16
+ifPlayerHasCards.1.0.7
+removePlayerCards.1.0.7
+givePlayerCards.20.0.4
+exitsetTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*двадцать эльфийских монет}.>
+waitForUser
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет никакого {4*Серебряного Лука} с собой.>
+waitForUser
+goto.2
+label.15
+ifPlayerHasCards.5.0.7
+removePlayerCards.5.0.7
+givePlayerCards.100.0.4
+exitsetTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*сотня эльфийских монет}.>
+waitForUser
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя недостаточно {4*Серебряного Лука} для продажи.>
+waitForUser
+goto.2
+label.14
+ifPlayerHasCards.1.0.7
+removePlayerCards.1.0.7
+givePlayerCards.20.0.4
+goto.101
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет никакого {4*Серебряного Лука} с собой.>
+waitForUser
+goto.2
+label.101
+ifPlayerHasCards.1.0.7
+removePlayerCards.1.0.7
+givePlayerCards.20.0.4
+goto.101
+else
+setTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела.>
+waitForUser
+goto.2
+label.6
+say.<Насколько много ты хочешь продать?>.1
+choice.20.<Один>
+choice.19.<Пять>
+choice.18.<Все, что есть>
+choice.17.<Назад>
+waitForUser
+label.20
+ifPlayerHasCards.1.0.3
+removePlayerCards.1.0.3
+givePlayerCards.40.0.4
+exitsetTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*сорок эльфийских монет}.>
+waitForUser
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет никакой {4*Золотой Моркови} с собой.>
+waitForUser
+goto.2
+label.19
+ifPlayerHasCards.5.0.3
+removePlayerCards.5.0.3
+givePlayerCards.200.0.4
+exitsetTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*двести эльфийских монет}.>
+waitForUser
+goto.0
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя недостаточно {4*Золотой Моркови} для продажи.>
+waitForUser
+goto.2
+label.18
+ifPlayerHasCards.1.0.3
+removePlayerCards.1.0.3
+givePlayerCards.40.0.4
+goto.103
+else
+setTalkLabels.-1.-1.0
+talk.<У тебя нет никакой {4*Золотой Моркови} с собой.>
+waitForUser
+goto.2
+label.103
+ifPlayerHasCards.1.0.3
+removePlayerCards.1.0.3
+givePlayerCards.40.0.4
+goto.103
+else
+setTalkLabels.-1.-1.0
+talk.<Всегда приятно иметь дело с профессионалами своего дела.>
+waitForUser
+goto.2
+label.3
+setTalkLabels.-1.-1.2
+talk.<
+    В последняя время все только и говорят об {4*Орионе}...
+	Пока {4*Тиралинская Стража} бездействует, они патрулируют все улицы города ночью, пытаясь отыскать хоть какие-то следы существования {4*Тёмных Эльфов} и их союзников.
+	К сожалению, не похоже, что у них это получается: за несколько месяцев им не удалось найти даже одного {4*Тёмного Эльфа}.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Я бы не удивилась, если бы к этому оказались причастны {4*гномы} - они всегда думали только о своей выгоде.
+	Или могут ли это быть {4*гоблины}, кто знает?
+	Они вовсе не хотят следовать принятым законам, потому что считают себя выше этого.
+	Хотя даже обычные {4*эльфы} могут оказаться двуличными лицемерами, прячущимися за маской любезности...
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Страх перед неизвестностью и будущим всё больше заставляет всех задуматься над вопросом, кто должен взять в свои руки контроль над {4*Занзарой}?
+	Очевидно, это должны быть {4*эльфы} - потомки самих {4*фей}, бесконечно юные и прекрасные создания.
+	Всё, что им необходимо для этого, лишь доказать всем остальным, что они не трусливые и корыстные ничтожества, а потомки высшей расы.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Именно поэтому ты оказалась здесь. 
+	Ты должна выполнить своё {4*предназначение}, чтобы помочь {4*эльфам} занять их заслуженное место, которое когда-то было отобрано {4*Белым Друидом}. 
+	Судьба {4*Занзары} всегда решалась руками {4*эльфов}, так как сам мир был создан именно для них, - и даже {4*человек} не способен этого изменить. 
+	Или ты думаешь об этом иначе?
+>
+waitForUser
+goto.0
+label.5
+goto.0
+label.1
+exit"""
+InitScript = "setModel.b018s00m"
+UpdateScript = "lookAtPlayer.0.1"

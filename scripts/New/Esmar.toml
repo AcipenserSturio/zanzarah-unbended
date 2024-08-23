@@ -32,7 +32,7 @@ label.12
 ifPlayerHasCards.1.0.60
 removePlayerCards.1.0.60
 givePlayerCards.10.0.4
-exitsetTalkLabels.-1.-1.0
+setTalkLabels.-1.-1.0
 talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*десять эльфийских монет}.>
 waitForUser
 goto.0
@@ -45,7 +45,7 @@ label.11
 ifPlayerHasCards.5.0.60
 removePlayerCards.5.0.60
 givePlayerCards.50.0.4
-exitsetTalkLabels.-1.-1.0
+setTalkLabels.-1.-1.0
 talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*пятьдесят эльфийских монет}.>
 waitForUser
 goto.0
@@ -85,7 +85,7 @@ label.16
 ifPlayerHasCards.1.0.7
 removePlayerCards.1.0.7
 givePlayerCards.20.0.4
-exitsetTalkLabels.-1.-1.0
+setTalkLabels.-1.-1.0
 talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*двадцать эльфийских монет}.>
 waitForUser
 goto.0
@@ -98,7 +98,7 @@ label.15
 ifPlayerHasCards.5.0.7
 removePlayerCards.5.0.7
 givePlayerCards.100.0.4
-exitsetTalkLabels.-1.-1.0
+setTalkLabels.-1.-1.0
 talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*сотня эльфийских монет}.>
 waitForUser
 goto.0
@@ -138,7 +138,7 @@ label.20
 ifPlayerHasCards.1.0.3
 removePlayerCards.1.0.3
 givePlayerCards.40.0.4
-exitsetTalkLabels.-1.-1.0
+setTalkLabels.-1.-1.0
 talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*сорок эльфийских монет}.>
 waitForUser
 goto.0
@@ -151,7 +151,7 @@ label.19
 ifPlayerHasCards.5.0.3
 removePlayerCards.5.0.3
 givePlayerCards.200.0.4
-exitsetTalkLabels.-1.-1.0
+setTalkLabels.-1.-1.0
 talk.<Всегда приятно иметь дело с профессионалами своего дела. Вот твои {4*двести эльфийских монет}.>
 waitForUser
 goto.0

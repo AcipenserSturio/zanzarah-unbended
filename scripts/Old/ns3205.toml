@@ -21,4 +21,4 @@ setCamera.1006
 delay.20
 startEffect.1.-1
 removeNpc"""
-InitScript = "wizform.0.3.1"
+InitScript = "wizform.0.6.1"

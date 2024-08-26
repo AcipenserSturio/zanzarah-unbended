@@ -61,5 +61,5 @@ talk.<
 >
 waitForUser
 exit"""
-InitScript = "setModel.d000s00m"
+InitScript = "setModel.g206s22m"
 UpdateScript = "lookAtPlayer.-1.1"

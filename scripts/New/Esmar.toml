@@ -18,7 +18,7 @@ label.2
 say.<Если у тебя есть лишние магические овощи, я готова купить их за эльфийские монеты.>.1
 choice.8.<Обмен Медного Редиса ({4*x10 Эльфийских Монет})>
 choice.7.<Обмен Серебряного Лука ({4*x20 Эльфийских Монет})>
-choice.6.<Обмен Золотой Моркови({4*x40 Эльфийских Монет})>
+choice.6.<Обмен Золотой Моркови ({4*x40 Эльфийских Монет})>
 choice.5.<Назад>
 waitForUser
 label.8
@@ -76,12 +76,12 @@ waitForUser
 goto.2
 label.7
 say.<Насколько много ты хочешь продать?>.1
-choice.16.<Один>
-choice.15.<Пять>
-choice.14.<Все, что есть>
-choice.13.<Назад>
+choice.15.<Один>
+choice.14.<Пять>
+choice.13.<Все, что есть>
+choice.9.<Назад>
 waitForUser
-label.16
+label.15
 ifPlayerHasCards.1.0.7
 removePlayerCards.1.0.7
 givePlayerCards.20.0.4
@@ -94,7 +94,7 @@ setTalkLabels.-1.-1.0
 talk.<У тебя нет никакого {4*Серебряного Лука} с собой.>
 waitForUser
 goto.2
-label.15
+label.14
 ifPlayerHasCards.5.0.7
 removePlayerCards.5.0.7
 givePlayerCards.100.0.4
@@ -107,7 +107,7 @@ setTalkLabels.-1.-1.0
 talk.<У тебя недостаточно {4*Серебряного Лука} для продажи.>
 waitForUser
 goto.2
-label.14
+label.13
 ifPlayerHasCards.1.0.7
 removePlayerCards.1.0.7
 givePlayerCards.20.0.4
@@ -129,12 +129,12 @@ waitForUser
 goto.2
 label.6
 say.<Насколько много ты хочешь продать?>.1
-choice.20.<Один>
-choice.19.<Пять>
-choice.18.<Все, что есть>
-choice.17.<Назад>
+choice.18.<Один>
+choice.17.<Пять>
+choice.16.<Все, что есть>
+choice.9.<Назад>
 waitForUser
-label.20
+label.18
 ifPlayerHasCards.1.0.3
 removePlayerCards.1.0.3
 givePlayerCards.40.0.4
@@ -147,7 +147,7 @@ setTalkLabels.-1.-1.0
 talk.<У тебя нет никакой {4*Золотой Моркови} с собой.>
 waitForUser
 goto.2
-label.19
+label.17
 ifPlayerHasCards.5.0.3
 removePlayerCards.5.0.3
 givePlayerCards.200.0.4
@@ -160,7 +160,7 @@ setTalkLabels.-1.-1.0
 talk.<У тебя недостаточно {4*Золотой Моркови} для продажи.>
 waitForUser
 goto.2
-label.18
+label.16
 ifPlayerHasCards.1.0.3
 removePlayerCards.1.0.3
 givePlayerCards.40.0.4
@@ -214,6 +214,8 @@ waitForUser
 goto.0
 label.5
 goto.0
+label.9
+goto.2
 label.1
 exit"""
 InitScript = "setModel.b018s00m"

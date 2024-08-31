@@ -17,8 +17,8 @@ fight.223.0"""
 InitScript = """
 setModel.g202s22m
 wizform.0.43.0
-wizform.2.35.0
-wizform.4.73.0"""
+wizform.2.54.0
+wizform.4.28.0"""
 UpdateScript = """
 label.0
 ifPlayerIsClose.11

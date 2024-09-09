@@ -36,17 +36,11 @@ waitForUser
 exit"""
 InitScript = """
 setModel.d006s02m
-defaultWizForm.93.0.41
-defaultWizForm.140.1.39
-defaultWizForm.98.2.42
-defaultWizForm.61.3.37
-defaultWizForm.90.4.38
-spell.0.0.21
-spell.0.2.18
-spell.1.0.51
-spell.1.2.9
-spell.2.2.42
-spell.4.2.47"""
+defaultWizForm.5.0.31
+defaultWizForm.69.1.29
+defaultWizForm.55.2.32
+defaultWizForm.61.3.27
+defaultWizForm.39.4.28"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 setTalkLabels.-1.-1.2

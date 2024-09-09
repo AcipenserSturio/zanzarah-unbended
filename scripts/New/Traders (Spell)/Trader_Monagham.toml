@@ -15,66 +15,121 @@ choice.2.<Торговля>
 choice.1.<До встречи>
 waitForUser
 label.3
-setTalkLabels.-1.-1.2
-talk.<
-    Это довольно просто.
-    У меня большое количество различных заклинаний для твоих фей.
-    Но я их не просто продаю...
->
+say.<Что ты хочешь узнать?>.1
+choice.103.<Где можно найти других торговцев?>
+choice.102.<Где мне добыть Камеи?>
+choice.101.<Как я могу получить Четырёхлистный Клевер?>
+choice.100.<Назад>
 waitForUser
+label.103
 setTalkLabels.-1.-1.2
 talk.<
-    Для торговли со мной тебе необходимо получить {4*специальные камеи}.
-    Ты можешь добыть их, если выиграешь в {4*дуэли фей} с другим {4*Коллекционером} или {4*Тёмным Эльфом}.
-    Но будь внимательна, каждый торговец будет спрашивать разное количество камей, и чем сильнее заклинания, тем больше тебе их потребуется.
+    Ты можешь найти других торговцев в основных крупных поселениях — {4*Тиралине}, {4*Данморе} и {4*Монагаме}.
+	Но будь осторожна, они все требуют разное количество {4*Камей} для торговли с ними.
 >
 waitForUser
 setTalkLabels.-1.-1.0
 talk.<
-    Ты можешь найти торговцев в основных крупных поселениях - {4*Тиралине}, {4*Данморе} и {4*Монагаме} - а также в доме {4*Руфуса, Хранителя Пикси из Эндевы}.
-    Также в мире существует особый {4*четырёхлистный клевер}, знак самых выдающихся {4*Коллекционеров}, и если ты сможешь заполучить один из них, то это значительно упростит торговлю с нами, хе-хе.
+    В {4*Тиралине}, городе {4*эльфов}, ты можешь приобрести заклинания {4*Природы, Воздуха и Света}.
+	А в {4*Данморе}, деревне {4*Болотных Гоблинов}, ты можешь найти заклинания {4*Воды, Пси и Льда}.
+	Наконец, в {4*Монагаме}, деревне {4*гномов}, ты можешь купить заклинания {4*Хаоса, Огня и Металла}.
 >
 waitForUser
+goto.3
+label.102
+setTalkLabels.-1.-1.2
+talk.<
+    Это не так сложно, правда.
+	Ты можешь получить {4*Камеи Коллекционера} после победы над любым {4*Коллекционером}.
+	Обычно их можно найти в {4*деревнях и городах}, но более опытные {4*Коллекционеры} зачастую путешествуют по {4*Занзаре} в поисках новых фей...
+	или противников.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    До недавнего времени найти {4*Тёмных Эльфов} было крайне тяжелой задачей, но теперь многое изменилось.
+	Ты можешь наткнуться на них, путешествуя по всей {4*Занзаре}, — но если ты хочешь моего совета...
+	Просто поброди в окрестностях {4*Данмора} или {4*Монагама}.
+	Или ты можешь отправиться напрямую в их дом, в {4*Царство Тьмы}, но мало кто знает, как именно туда попасть.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Так или иначе, но {4*Тёмные Эльфы} гораздо более опасные противники, чем большинство {4*Коллекционеров}.
+	Если тебя заметит один из {4*Тёмных Эльфов}, то сражения будет не избежать.
+	Поэтому прежде чем вызвать одного из них на дуэль, лучше набраться опыта в сражениях с другими {4*Коллекционерами}.
+>
+waitForUser
+goto.3
+label.101
+setTalkLabels.-1.-1.0
+talk.<
+    Если ты действительно готова посвятить свою жизнь {4*дуэлям фей}, то награда обязательно найдёт свой путь к тебе.
+	Путешествуй по {4*Занзаре}, знакомься с другими {4*Коллекционерами} и выигрывай в дуэлях с {4*Тёмными Эльфами}...
+	И в один день ты сможешь получить {4*Четырёхлистный Клевер}.
+>
+waitForUser
+goto.3
+label.100
 goto.0
 label.2
-ifPlayerHasCards.1.0.107
+ifPlayerHasCards.1.0.210
 say.<
     У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
     Чем могу помочь?
 >.1
-choice.8.<Камень>
+choice.12.<Хаос>
+choice.11.<Огонь>
+choice.10.<Металл>
+choice.9.<Назад>
+waitForUser
+else
+ifPlayerHasCards.3.0.106
+say.<
+    У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
+    Чем могу помочь?
+>.1
+choice.8.<Хаос>
 choice.7.<Огонь>
 choice.6.<Металл>
 choice.5.<Назад>
 waitForUser
-else
 setTalkLabels.-1.-1.0
 talk.<
-    Принеси мне {4*одну Камею Коллекционера}, чтобы доказать, что ты являешься {4*Коллекционером}.
-    Только после этого я смогу предложить тебе какие-либо заклинания.
+    Принеси мне {4*три Камеи Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
 >
 waitForUser
 goto.0
-label.8
-setupGambling.1.1.33
-setupGambling.1.1.34
-setupGambling.1.1.131
-setupGambling.1.1.130
-setupGambling.1.1.32
-setupGambling.1.1.31
-setupGambling.1.1.30
-setupGambling.1.1.92
-setupGambling.1.1.93
-setupGambling.1.1.94
-setupGambling.1.1.141
-setupGambling.1.1.91
-setupGambling.1.1.90
+label.12
+setupGambling.1.1.50
+setupGambling.1.1.51
+setupGambling.1.1.52
+setupGambling.1.1.53
+setupGambling.1.1.54
+setupGambling.1.1.110
+setupGambling.1.1.111
+setupGambling.1.1.112
+setupGambling.1.1.113
+setupGambling.1.1.114
 setupGambling.15.3.0
 waitForUser
 goto.1
-label.7
+label.11
 ifPlayerHasCards.3.0.107
-goto.10
+setupGambling.1.1.40
+setupGambling.1.1.41
+setupGambling.1.1.42
+setupGambling.1.1.43
+setupGambling.1.1.44
+setupGambling.1.1.100
+setupGambling.1.1.101
+setupGambling.1.1.102
+setupGambling.1.1.103
+setupGambling.1.1.104
+setupGambling.15.3.0
+waitForUser
+goto.1
 else
 setTalkLabels.-1.-1.0
 talk.<
@@ -84,18 +139,18 @@ talk.<
 waitForUser
 goto.0
 label.10
-ifPlayerHasCards.3.0.106
-setupGambling.1.1.103
-setupGambling.1.1.102
-setupGambling.1.1.104
-setupGambling.1.1.101
-setupGambling.1.1.100
-setupGambling.1.1.40
-setupGambling.1.1.44
-setupGambling.1.1.41
-setupGambling.1.1.42
-setupGambling.1.1.43
-setupGambling.10.3.0
+ifPlayerHasCards.3.0.107
+setupGambling.1.1.55
+setupGambling.1.1.56
+setupGambling.1.1.57
+setupGambling.1.1.58
+setupGambling.1.1.59
+setupGambling.1.1.115
+setupGambling.1.1.116
+setupGambling.1.1.117
+setupGambling.1.1.118
+setupGambling.1.1.119
+setupGambling.15.3.0
 waitForUser
 goto.1
 else
@@ -106,25 +161,73 @@ talk.<
 >
 waitForUser
 goto.0
-label.6
-ifPlayerHasCards.6.0.106
-setupGambling.1.1.59
-setupGambling.1.1.58
-setupGambling.1.1.57
-setupGambling.1.1.56
-setupGambling.1.1.55
-setupGambling.1.1.118
-setupGambling.1.1.119
-setupGambling.1.1.116
-setupGambling.1.1.115
-setupGambling.1.1.117
+label.9
+goto.0
+label.8
+ifPlayerHasCards.1.0.106
+setupGambling.1.1.50
+setupGambling.1.1.51
+setupGambling.1.1.52
+setupGambling.1.1.53
+setupGambling.1.1.54
+setupGambling.1.1.110
+setupGambling.1.1.111
+setupGambling.1.1.112
+setupGambling.1.1.113
+setupGambling.1.1.114
 setupGambling.10.3.0
 waitForUser
 goto.1
 else
 setTalkLabels.-1.-1.0
 talk.<
-    Принеси мне {4*шесть Камей Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Принеси мне {4*одну Камею Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.7
+ifPlayerHasCards.3.0.106
+setupGambling.1.1.40
+setupGambling.1.1.41
+setupGambling.1.1.42
+setupGambling.1.1.43
+setupGambling.1.1.44
+setupGambling.1.1.100
+setupGambling.1.1.101
+setupGambling.1.1.102
+setupGambling.1.1.103
+setupGambling.1.1.104
+setupGambling.10.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*три Камеи Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.6
+ifPlayerHasCards.3.0.107
+setupGambling.1.1.55
+setupGambling.1.1.56
+setupGambling.1.1.57
+setupGambling.1.1.58
+setupGambling.1.1.59
+setupGambling.1.1.115
+setupGambling.1.1.116
+setupGambling.1.1.117
+setupGambling.1.1.118
+setupGambling.1.1.119
+setupGambling.10.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*три Камеи Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
     Только после этого я смогу предложить тебе более сильные заклинания.
 >
 waitForUser

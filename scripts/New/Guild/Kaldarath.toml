@@ -116,6 +116,8 @@ talk.<
 >
 waitForUser
 goto.2
+label.5
+goto.0
 label.7
 say.<Выбирай мудро.>.3
 choice.12.<Дикая фея>

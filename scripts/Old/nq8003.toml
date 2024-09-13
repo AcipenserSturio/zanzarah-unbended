@@ -17,10 +17,7 @@ talk.<Прочесть>
 waitForUser"""
 InitScript = """
 setModel.u003s03m
-defaultWizForm.33.0.60
-defaultWizForm.67.1.60
-defaultWizForm.42.2.60
-defaultWizForm.48.3.60"""
+defaultDeck.2.35.1"""
 UpdateScript = "lookAtPlayer.-1.1"
 DefeatedScript = """
 setCamera.1000

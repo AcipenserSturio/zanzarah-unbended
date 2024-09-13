@@ -24,7 +24,7 @@ exit"""
 InitScript = """
 setNpcType.3
 setModel.f071s26
-defaultWizForm.32.2.1"""
+defaultWizForm.32.2.37"""
 UpdateScript = """
 label.0
 lookAtPlayer.1.0

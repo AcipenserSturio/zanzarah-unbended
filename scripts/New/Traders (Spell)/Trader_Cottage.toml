@@ -93,7 +93,6 @@ choice.7.<Энергия>
 choice.6.<Тьма>
 choice.5.<Назад>
 waitForUser
-goto.0
 label.12
 ifPlayerHasCards.1.0.107
 setupGambling.1.1.30

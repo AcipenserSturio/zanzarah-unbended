@@ -1,7 +1,9 @@
-
 UID = "9023A1A4"
 Name = "79110B91"
+#Sillia (8), Phoe (37), Mykori (40)
+#From 9 to 6
 InitScript = """
+setNpcType.3
 gotoRandomLabel.9.0
 label.0
 defaultWizForm.8.0.10

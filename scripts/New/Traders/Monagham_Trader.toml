@@ -8,11 +8,10 @@ waitForUser
 label.10
 say.<Чем могу помочь?>.1
 choice.0.<Торговля>
-choice.1.<Информация о деталях гномов>
 choice.2.<До встречи>
 waitForUser
 label.0
-ifPlayerHasCards.15.0.106
+ifPlayerHasCards.5.0.106
 tradingCurrency.BAA9B8A3
 tradingItem.10.20510203
 tradingItem.12.069C5F03
@@ -22,7 +21,7 @@ tradingItem.35.2ADD9E93
 waitForUser
 goto.10
 else
-ifPlayerHasCards.7.0.106
+ifPlayerHasCards.3.0.106
 tradingCurrency.BAA9B8A3
 tradingItem.12.20510203
 tradingItem.15.069C5F03
@@ -35,21 +34,6 @@ tradingCurrency.BAA9B8A3
 tradingItem.15.20510203
 tradingItem.20.0813C113
 tradingItem.25.5762C113
-waitForUser
-goto.10
-label.1
-setTalkLabels.-1.-1.2
-talk.<
-    {4*Сапфировая деталь} улучшает фей металла, которых ты можешь поймать в диком виде.
-    {4*Рубиновая деталь} преображает фей других стихий, при этом сохраняя способности оригинальной феи.
-    Что же до {4*Детали дезинтеграции}, то она возвращает предыдущий облик феи, из которого была эволюционирована фея.
->
-waitForUser
-setTalkLabels.-1.-1.0
-talk.<
-    Ты можешь найти {4*детали инструментов}, сражаясь с {4*дикими феями Металла} на заброшенной {4*Фабрике гномов}.
-    Но будь осторожна при битвах с ними: иногда им помогают {4*феи Энергии}, которые могут опасны даже для эффективных против них фей!
->
 waitForUser
 goto.10
 label.2

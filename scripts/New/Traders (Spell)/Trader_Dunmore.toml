@@ -83,7 +83,6 @@ choice.11.<Пси>
 choice.10.<Лёд>
 choice.9.<Назад>
 waitForUser
-goto.0
 else
 say.<
     У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
@@ -94,7 +93,6 @@ choice.7.<Пси>
 choice.6.<Лёд>
 choice.5.<Назад>
 waitForUser
-goto.0
 label.12
 ifPlayerHasCards.1.0.107
 setupGambling.1.1.10

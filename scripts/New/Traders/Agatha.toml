@@ -1,5 +1,6 @@
 UID = "FDA543F4"
 Name = "E48E8DA1"
+#There is 7 and 15 Dark ELf Cameo
 TriggerScript = """
 setCamera.1003
 say.<Ты тот самый человек, о котором говорит весь Тиралин?>.0
@@ -128,7 +129,7 @@ talk.<
 waitForUser
 goto.1
 label.2
-ifPlayerHasCards.15.0.106
+ifPlayerHasCards.5.0.106
 tradingCurrency.C564B4A3
 tradingItem.20.9ED19693
 tradingItem.40.20510203
@@ -138,7 +139,7 @@ tradingItem.30.2825B8A3
 waitForUser
 goto.0
 else
-ifPlayerHasCards.7.0.106
+ifPlayerHasCards.3.0.106
 tradingCurrency.C564B4A3
 tradingItem.25.9ED19693
 tradingItem.45.20510203

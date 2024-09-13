@@ -1,6 +1,7 @@
 UID = "9023A5A4"
 Name = "79110B91"
 InitScript = """
+setNpcType.3
 gotoRandomLabel.3.0
 label.0
 defaultWizForm.110.0.10

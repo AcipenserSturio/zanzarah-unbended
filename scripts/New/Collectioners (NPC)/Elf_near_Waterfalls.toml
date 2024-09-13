@@ -38,20 +38,27 @@ label.11
 exit"""
 InitScript = """
 setModel.g300s30m
-defaultWizForm.123.0.33
-defaultWizForm.127.1.32
-defaultWizForm.130.2.31
-defaultWizForm.125.3.35
-defaultWizForm.124.4.34"""
+defaultWizForm.123.0.28
+defaultWizForm.127.1.27
+defaultWizForm.130.2.26
+defaultWizForm.125.3.30
+defaultWizForm.124.4.29"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 setCamera.1000
-setTalkLabels.-1.-1.0
+setTalkLabels.-1.-1.2
 talk.<
     Неплохо, совсем неплохо...
     Как ты видишь, эти феи имеют весьма ограниченные возможности в плане используемых стихий.
     Поэтому я думаю, мне нужно больше времени, чтобы изучить их возможности.
     Надеюсь, мы ещё как-нибудь встретимся.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Кстати, если ты случайно будешь проходить мимо {4*Мэрии Тиралина}, то не могла бы отдать им {4*мой ключ}?
+	Я точно не собираюсь возвращаться к этой скучной и неинтересной работе, когда я могу коллекционировать фей!
+	Так что забирай его себе, мне он больше не нужен.
 >
 waitForUser
 givePlayerCards.1.0.27

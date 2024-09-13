@@ -73,7 +73,17 @@ goto.3
 label.100
 goto.0
 label.2
-ifPlayerHasCards.1.0.107
+ifPlayerHasCards.1.0.210
+say.<
+    У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
+    Чем могу помочь?
+>.1
+choice.12.<Природа>
+choice.11.<Воздух>
+choice.10.<Свет>
+choice.9.<Назад>
+waitForUser
+else
 say.<
     У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
     Чем могу помочь?
@@ -83,13 +93,76 @@ choice.7.<Воздух>
 choice.6.<Свет>
 choice.5.<Назад>
 waitForUser
+label.12
+ifPlayerHasCards.1.0.107
+setupGambling.1.1.0
+setupGambling.1.1.1
+setupGambling.1.1.2
+setupGambling.1.1.3
+setupGambling.1.1.4
+setupGambling.1.1.60
+setupGambling.1.1.61
+setupGambling.1.1.62
+setupGambling.1.1.63
+setupGambling.1.1.64
+setupGambling.15.3.0
+waitForUser
+goto.1
 else
 setTalkLabels.-1.-1.0
 talk.<
-    Принеси мне {4*одну Камею Коллекционера}, чтобы доказать, что ты являешься {4*Коллекционером}.
-    Только после этого я смогу предложить тебе какие-либо заклинания.
+    Принеси мне {4*одну Камею Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
 >
 waitForUser
+goto.0
+label.11
+ifPlayerHasCards.6.0.107
+setupGambling.1.1.5
+setupGambling.1.1.6
+setupGambling.1.1.7
+setupGambling.1.1.8
+setupGambling.1.1.9
+setupGambling.1.1.65
+setupGambling.1.1.66
+setupGambling.1.1.67
+setupGambling.1.1.68
+setupGambling.1.1.69
+setupGambling.15.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*шесть Камей Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.10
+ifPlayerHasCards.9.0.107
+setupGambling.1.1.15
+setupGambling.1.1.16
+setupGambling.1.1.17
+setupGambling.1.1.18
+setupGambling.1.1.19
+setupGambling.1.1.75
+setupGambling.1.1.76
+setupGambling.1.1.77
+setupGambling.1.1.78
+setupGambling.1.1.79
+setupGambling.15.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*девять Камей Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.9
 goto.0
 label.8
 setupGambling.1.1.0
@@ -106,7 +179,7 @@ setupGambling.10.3.0
 waitForUser
 goto.1
 label.7
-ifPlayerHasCards.6.0.107
+ifPlayerHasCards.3.0.107
 setupGambling.1.1.5
 setupGambling.1.1.6
 setupGambling.1.1.7
@@ -123,13 +196,13 @@ goto.1
 else
 setTalkLabels.-1.-1.0
 talk.<
-    Принеси мне {4*шесть Камей Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Принеси мне {4*три Камеи Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
     Только после этого я смогу предложить тебе более сильные заклинания.
 >
 waitForUser
 goto.0
 label.6
-ifPlayerHasCards.9.0.107
+ifPlayerHasCards.6.0.107
 setupGambling.1.1.15
 setupGambling.1.1.16
 setupGambling.1.1.17
@@ -146,7 +219,7 @@ goto.1
 else
 setTalkLabels.-1.-1.0
 talk.<
-    Принеси мне {4*девять Камей Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Принеси мне {4*шесть Камей Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
     Только после этого я смогу предложить тебе более сильные заклинания.
 >
 waitForUser

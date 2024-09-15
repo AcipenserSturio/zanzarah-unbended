@@ -1,8 +1,8 @@
-UID = "9053D3A4"
+UID = "9023D3A4"
 Name = "79110B91"
 #Briana (42), Kalidrex (77), Violectra (44)
 #From 55 to 46
-TriggerScript = """
+InitScript = """
 setNpcType.3
 gotoRandomLabel.59.0
 label.0

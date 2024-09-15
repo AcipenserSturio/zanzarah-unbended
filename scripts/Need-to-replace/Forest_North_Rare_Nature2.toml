@@ -1,8 +1,8 @@
-UID = "9023BAA4"
+UID = "F82FD124"
 Name = "7B2D8F91"
 #Lana (79), Abery (41), Gamelin (24)
 #From 55 to 46
-InitScript = """
+TriggerScript = """
 setNpcType.3
 gotoRandomLabel.59.0
 label.0

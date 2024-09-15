@@ -2,7 +2,7 @@ UID = "9053C9A4"
 Name = "79110B91"
 #Lana (79), Callisto (16), Gamelin (24)
 #From 55 to 46
-TriggerScript = """
+InitScript = """
 setNpcType.3
 gotoRandomLabel.59.0
 label.0

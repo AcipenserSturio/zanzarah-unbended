@@ -2,7 +2,7 @@ UID = "9053C7A4"
 Name = "79110B91"
 #Mencre (12), Ohra (19), Jumrock (82)
 #From 55 to 46
-TriggerScript = """
+InitScript = """
 setNpcType.3
 gotoRandomLabel.59.0
 label.0

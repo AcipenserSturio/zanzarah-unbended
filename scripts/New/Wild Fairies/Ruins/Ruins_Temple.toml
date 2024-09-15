@@ -2,7 +2,7 @@ UID = "9053D1A4"
 Name = "79110B91"
 #Driane (75), Darbue (60), Pyphia (17)
 #From 55 to 46
-TriggerScript = """
+InitScript = """
 setNpcType.3
 gotoRandomLabel.59.0
 label.0

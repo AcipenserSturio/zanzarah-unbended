@@ -1,0 +1,43 @@
+UID = "9023B4A4"
+Name = "79110B91"
+#Worgot (0), Phoe (37), Guana (73)
+#From 19 to 16
+InitScript = """
+gotoRandomLabel.12.0
+label.0
+defaultWizForm.0.0.20
+goto.20
+label.1
+defaultWizForm.0.0.19
+goto.20
+label.2
+defaultWizForm.0.0.18
+goto.20
+label.3
+defaultWizForm.0.0.17
+goto.20
+label.4
+defaultWizForm.37.0.20
+goto.20
+label.5
+defaultWizForm.37.0.19
+goto.20
+label.6
+defaultWizForm.37.0.18
+goto.20
+label.7
+defaultWizForm.37.0.17
+goto.20
+label.8
+defaultWizForm.73.0.20
+goto.20
+label.9
+defaultWizForm.73.0.19
+goto.20
+label.10
+defaultWizForm.73.0.18
+goto.20
+label.11
+defaultWizForm.73.0.17
+goto.20
+label.20"""

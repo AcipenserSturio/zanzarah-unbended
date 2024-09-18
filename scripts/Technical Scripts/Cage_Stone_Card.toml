@@ -1,4 +1,4 @@
-UID = "9023B3A4"
+UID = "93624554"
 Name = "B18BDDB1"
 TriggerScript = """
 ifNumberOfNpcsIs.1.008C94A4

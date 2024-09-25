@@ -113,6 +113,12 @@ talk.<
 waitForUser
 goto.1
 label.2
+say.<...>.3
+choice.10.<Обмен Серебряных Сфер>
+choice.11.<Обмен Золотых Сфер>
+choice.12.<Назад>
+waitForUser
+label.10
 tradingCurrency.8E0E9503
 tradingItem.3.62689503
 tradingItem.5.ADB09503
@@ -120,6 +126,16 @@ tradingItem.1.672642b3
 tradingItem.1.1889A2B3
 tradingItem.2.79064393
 waitForUser
+goto.0
+label.11
+tradingCurrency.62689503
+tradingItem.2.ADB09503
+tradingItem.1.79064393
+tradingItem.4.EAD36213
+tradingItem.8.B99EF113
+waitForUser
+goto.0
+label.12
 goto.0
 label.7
 goto.0

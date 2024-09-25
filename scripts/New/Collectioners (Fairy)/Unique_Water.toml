@@ -1,7 +1,7 @@
 UID = "4D105FA4"
 Name = "05360321"
 TriggerScript = """
-playAmyVoice.4
+playAmyVoice.5
 say.<Пара красных глаз изучающе смотрят на тебя.>.0
 setCamera.1000
 waitForUser

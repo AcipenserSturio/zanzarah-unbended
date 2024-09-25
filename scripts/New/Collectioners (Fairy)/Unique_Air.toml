@@ -1,7 +1,7 @@
 UID = "72861934"
 Name = "05360321"
 TriggerScript = """
-playAmyVoice.4
+playAmyVoice.5
 say.<Пара красных глаз изучающе смотрят на тебя.>.0
 setCamera.1000
 waitForUser
@@ -10,7 +10,7 @@ waitForUser
 fight.-1.0"""
 InitScript = """
 setNpcType.3
-defaultWizForm.135.0.31
+defaultWizForm.134.0.31
 defaultWizForm.79.1.28
 defaultWizForm.17.2.28
 defaultWizForm.88.3.31

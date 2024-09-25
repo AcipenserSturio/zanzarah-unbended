@@ -12,7 +12,7 @@ InitScript = """
 setNpcType.3
 defaultWizForm.132.0.30
 defaultWizForm.86.1.31
-defaultWizForm.90.2.27
+defaultWizForm.89.2.27
 defaultWizForm.63.3.29
 defaultWizForm.13.4.27"""
 DefeatedScript = """

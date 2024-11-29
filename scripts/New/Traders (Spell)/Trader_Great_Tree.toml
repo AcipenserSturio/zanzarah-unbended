@@ -1,0 +1,185 @@
+UID = "F82FD124"
+Name = "342ACD21"
+TriggerScript = """
+setCamera.1000
+playAnimation.13.-1
+say.<Коллекционер фей.>.0
+waitForUser
+label.0
+say.<
+    У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
+    Чем могу помочь?
+>.1
+choice.3.<Диалог>
+choice.2.<Торговля>
+choice.1.<До встречи>
+waitForUser
+label.3
+say.<Что ты хочешь узнать?>.1
+choice.103.<Где можно найти других торговцев?>
+choice.102.<Где мне добыть Камеи?>
+choice.101.<Как я могу получить Четырёхлистный Клевер?>
+choice.100.<Назад>
+waitForUser
+label.103
+setTalkLabels.-1.-1.2
+talk.<
+    Ты можешь найти других торговцев в основных крупных поселениях — {4*Тиралине}, {4*Данморе} и {4*Монагаме}.
+	Но будь осторожна, они все требуют разное количество {4*Камей} для торговли с ними.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    В {4*Тиралине}, городе {4*эльфов}, ты можешь приобрести заклинания {4*Природы, Воздуха и Света}.
+	А в {4*Данморе}, деревне {4*Болотных Гоблинов}, ты можешь найти заклинания {4*Воды, Пси и Льда}.
+	Наконец, в {4*Монагаме}, деревне {4*гномов}, ты можешь купить заклинания {4*Хаоса, Огня и Металла}.
+>
+waitForUser
+goto.3
+label.102
+setTalkLabels.-1.-1.2
+talk.<
+    Это не так сложно, правда.
+	Ты можешь получить {4*Камеи Коллекционера} после победы над любым {4*Коллекционером}.
+	Обычно их можно найти в {4*деревнях и городах}, но более опытные {4*Коллекционеры} зачастую путешествуют по {4*Занзаре} в поисках новых фей...
+	или противников.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    До недавнего времени найти {4*Тёмных Эльфов} было крайне тяжелой задачей, но теперь многое изменилось.
+	Ты можешь наткнуться на них, путешествуя по всей {4*Занзаре}, — но если ты хочешь моего совета...
+	Просто поброди в окрестностях {4*Данмора} или {4*Монагама}.
+	Или ты можешь отправиться напрямую в их дом, в {4*Ц,арство Тьмы}, но мало кто знает, как именно туда попасть.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Так или иначе, но {4*Тёмные Эльфы} гораздо более опасные противники, чем большинство {4*Коллекционеров}.
+	Если тебя заметит один из {4*Тёмных Эльфов}, то сражения будет не избежать.
+	Поэтому прежде чем вызвать одного из них на дуэль, лучше набраться опыта в сражениях с другими {4*Коллекционерами}.
+>
+waitForUser
+goto.3
+label.101
+setTalkLabels.-1.-1.0
+talk.<
+    Если ты действительно готова посвятить свою жизнь {4*дуэлям фей}, то награда обязательно найдёт свой путь к тебе.
+	Путешествуй по {4*Занзаре}, знакомься с другими {4*Коллекционерами} и выигрывай в дуэлях с {4*Тёмными Эльфами}...
+	И в один день ты сможешь получить {4*Четырёхлистный Клевер}.
+>
+waitForUser
+goto.3
+label.100
+goto.0
+label.2
+ifPlayerHasCards.1.0.210
+say.<
+    У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
+    Чем могу помочь?
+>.1
+choice.10.<Активные заклинания>
+choice.9.<Пассивные заклинания>
+choice.8.<Назад>
+waitForUser
+else
+say.<
+    У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
+    Чем могу помочь?
+>.1
+choice.7.<Активные заклинания>
+choice.6.<Пассивные заклинания>
+choice.5.<Назад>
+waitForUser
+label.7
+ifPlayerHasCards.9.0.106
+setupGambling.1.1.120
+setupGambling.1.1.121
+setupGambling.1.1.122
+setupGambling.1.1.123
+setupGambling.1.1.124
+setupGambling.1.1.125
+setupGambling.1.1.126
+setupGambling.1.1.127
+setupGambling.1.1.128
+setupGambling.1.1.129
+setupGambling.1.1.130
+setupGambling.1.1.131
+setupGambling.15.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*девять Камей Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.6
+ifPlayerHasCards.9.0.107
+setupGambling.1.1.132
+setupGambling.1.1.133
+setupGambling.1.1.134
+setupGambling.1.1.135
+setupGambling.1.1.136
+setupGambling.1.1.137
+setupGambling.1.1.139
+setupGambling.1.1.140
+setupGambling.1.1.141
+setupGambling.1.1.142
+setupGambling.1.1.143
+setupGambling.1.1.144
+setupGambling.15.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*девять Камей Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.5
+goto.0
+label.10
+setupGambling.1.1.120
+setupGambling.1.1.121
+setupGambling.1.1.122
+setupGambling.1.1.123
+setupGambling.1.1.124
+setupGambling.1.1.125
+setupGambling.1.1.126
+setupGambling.1.1.127
+setupGambling.1.1.128
+setupGambling.1.1.129
+setupGambling.1.1.130
+setupGambling.1.1.131
+setupGambling.15.3.0
+waitForUser
+goto.1
+label.9
+setupGambling.1.1.132
+setupGambling.1.1.133
+setupGambling.1.1.134
+setupGambling.1.1.135
+setupGambling.1.1.136
+setupGambling.1.1.137
+setupGambling.1.1.139
+setupGambling.1.1.140
+setupGambling.1.1.141
+setupGambling.1.1.142
+setupGambling.1.1.143
+setupGambling.1.1.144
+setupGambling.15.3.0
+waitForUser
+goto.1
+label.8
+goto.0
+label.1
+exit"""
+InitScript = """
+setCollision.0
+setModel.w002s02m"""
+UpdateScript = "lookAtPlayer.0.1"

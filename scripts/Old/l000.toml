@@ -1,7 +1,7 @@
 UID = "44141584"
 Name = "B18BDDB1"
 TriggerScript = """
-ifPlayerHasCards.1.0.70
+ifPlayerHasCards.1.0.108
 delay.5
 setCamera.1007
 playSound.1

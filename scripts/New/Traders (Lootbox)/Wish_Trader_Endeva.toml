@@ -231,5 +231,5 @@ givePlayerCards.1.0.208
 exit
 label.1
 exit"""
-InitScript = "setModel.b007s02m"
+InitScript = "setModel.w004s04m"
 UpdateScript = "lookAtPlayer.0.1"

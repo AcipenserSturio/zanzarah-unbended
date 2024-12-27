@@ -84,7 +84,6 @@ choice.10.<Металл>
 choice.9.<Назад>
 waitForUser
 else
-ifPlayerHasCards.3.0.106
 say.<
     У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
     Чем могу помочь?
@@ -94,14 +93,8 @@ choice.7.<Огонь>
 choice.6.<Металл>
 choice.5.<Назад>
 waitForUser
-setTalkLabels.-1.-1.0
-talk.<
-    Принеси мне {4*три Камеи Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
-    Только после этого я смогу предложить тебе более сильные заклинания.
->
-waitForUser
-goto.0
 label.12
+ifPlayerHasCards.3.0.106
 setupGambling.1.1.50
 setupGambling.1.1.51
 setupGambling.1.1.52
@@ -115,7 +108,26 @@ setupGambling.1.1.114
 setupGambling.15.3.0
 waitForUser
 goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*три Камеи Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
 label.11
+ifPlayerHasCards.3.0.106
+goto.98
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*три Камеи Коллекционера и три Камеи Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.98
 ifPlayerHasCards.3.0.107
 setupGambling.1.1.40
 setupGambling.1.1.41
@@ -139,6 +151,17 @@ talk.<
 waitForUser
 goto.0
 label.10
+ifPlayerHasCards.3.0.106
+goto.99
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*три Камеи Коллекционера и три Камеи Тёмных Эльфов}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.99
 ifPlayerHasCards.3.0.107
 setupGambling.1.1.55
 setupGambling.1.1.56

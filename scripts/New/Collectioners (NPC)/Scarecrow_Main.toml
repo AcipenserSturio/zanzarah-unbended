@@ -33,9 +33,16 @@ talk.<
 waitForUser
 exit"""
 InitScript = """
+ifNpcModifierHasValue.0
 setNpcType.4
 setModel.v001s01
-defaultWizForm.27.2.7"""
+defaultWizForm.10.2.5
+endIf
+ifNpcModifierHasValue.1
+setNpcType.4
+setModel.v001s01
+defaultWizForm.27.2.7
+endIf"""
 DefeatedScript = """
 createDynamicItems.60.3.-1
 playSound.0

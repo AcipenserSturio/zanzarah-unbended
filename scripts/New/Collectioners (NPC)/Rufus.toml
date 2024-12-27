@@ -15,10 +15,17 @@ waitForUser
 setCamera.1006
 fight.223.0"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.g202s22m
+defaultWizForm.0.0.2
+defaultWizForm.8.4.3
+endIf
+ifNpcModifierHasValue.1
 setModel.g202s22m
 wizform.0.43.0
 wizform.2.54.0
-wizform.4.28.0"""
+wizform.4.28.0
+endIf"""
 UpdateScript = """
 label.0
 ifPlayerIsClose.11
@@ -32,7 +39,7 @@ setCamera.1000
 setTalkLabels.-1.-1.2
 talk.<
     В битвах с {4*Коллекционерами} важно знать об {4*эффективностях} твоих фей.
-    Например, {4*Природа} наносит увеличенный урон {4*Пси} и {4*Хаосу}, но также уязвима перед {4*Огнём}.
+    Например, {4*Природа} наносит увеличенный урон {4*Камню} и {4*Пси}, но также уязвима перед {4*Огнём}.
     Помни об этом каждый раз, как тебе придётся сражаться с кем-то из {4*Коллекционеров}.
 >
 waitForUser

@@ -1,7 +1,14 @@
 UID = "30213A04"
 Name = "C86EAF91"
 InitScript = """
+ifNpcModifierHasValue.0
 setNpcType.3
 setCollision.0
-defaultWizForm.32.2.10"""
+defaultWizForm.11.2.5
+endIf
+ifNpcModifierHasValue.1
+setNpcType.3
+setCollision.0
+defaultWizForm.32.2.10
+endIf"""
 UpdateScript = "lookAtPlayer.-1.2"

@@ -1,0 +1,62 @@
+UID = "9B19DD14"
+Name = "E792AC31"
+TriggerScript = """
+ifPlayerHasCards.1.0.56
+deployNpcAtTrigger.13.1
+setCamera.3001
+playAnimation.13.-1
+say.<Привет, путешественник.>.0
+waitForUser
+setCamera.1000
+changeWaypoint.-1.-1
+talk.<
+    Ты спасла нашу лесную хижину от {4*мерзких кустов}! Огромное тебе спасибо, наконец я могу вернуться домой к своей любимой жене.
+>
+waitForUser
+changeWaypoint.0.1
+talk.<Просто заходи, когда будешь проходить мимо хижины.>
+waitForUser
+changeWaypoint.1.2
+setNpcModifier.212.11.0
+removeNpc
+exit
+endIf
+setCamera.1000
+playAnimation.13.-1
+say.<Я тоже путешествую в этих местах.>.0
+waitForUser
+ifPlayerHasCards.1.0.47
+setTalkLabels.-1.-1.2
+talk.<
+    Ты нашла потерянную {4*Карту Природы}!
+	Если ты выберешь {4*Фею Природы} в качестве активной феи, то она уничтожит терновые кусты вокруг нашей {4*лесной хихины}.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Пожалуйста, помоги нам! Мы с женой совсем отчаялись! Сорняки здесь уже все растения задушили!
+>
+waitForUser
+exit
+endIf
+setTalkLabels.-1.-1.2
+talk.<
+    Я пришел из лесов {4*Занзары}. 
+	Я живу с женой в уютной хижине. 
+	Но с недавних пор {4*колючие кусты} покрыли весь наш дом.
+>
+waitForUser
+talk.<
+    Так что я путешествую по всей {4*Занзаре} в поисках помощи. 
+	Когда я добрался до {4*Данмора}, я услышал о магическом месте на болоте, круглом камне, окруженном призрачными огоньками.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Но для меня слишком опасно туда идти. 
+	Только Повелитель фей мог бы осмелиться попробовать.
+>
+waitForUser
+exit"""
+InitScript = "setModel.w001s01m"
+UpdateScript = "lookAtPlayer.0.1"

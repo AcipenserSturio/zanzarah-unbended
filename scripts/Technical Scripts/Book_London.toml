@@ -20,7 +20,7 @@ waitForUser
 exit
 endIf
 say.<Last time talking>.0
-waitForUser
+waitForUser"""
 InitScript = """
 setNpcType.4
 setModel.i001si01

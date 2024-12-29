@@ -8,13 +8,20 @@ delay.15
 setCamera.1006
 fight.-1.1"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.g004s03m
+defaultWizForm.49.0.20
+defaultWizForm.49.4.20
+endIf
+ifNpcModifierHasValue.1
 setNpcType.3
 setCollision.0
 defaultWizForm.39.0.36
 defaultWizForm.43.1.36
 defaultWizForm.39.2.36
 defaultWizForm.43.3.36
-defaultWizForm.39.4.36"""
+defaultWizForm.39.4.36
+endIf"""
 UpdateScript = """
 label.0
 idle

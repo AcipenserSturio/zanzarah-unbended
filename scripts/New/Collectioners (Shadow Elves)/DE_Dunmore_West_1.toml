@@ -7,6 +7,12 @@ say.<Человеческим духом пахнет?>.0
 waitForUser
 fight.-1.0"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.b016s00m
+defaultDeck.0.11.1
+exit
+endIf
+ifNpcModifierHasValue.1
 setModel.b016s00m
 gotoRandomLabel.3.0
 label.0
@@ -27,7 +33,9 @@ defaultWizForm.87.1.11
 defaultWizForm.47.2.10
 defaultWizForm.53.3.10
 goto.3
-label.3"""
+label.3
+exit
+endIf"""
 UpdateScript = """
 label.0
 lookAtPlayer.10.1

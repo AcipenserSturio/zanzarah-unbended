@@ -32,11 +32,19 @@ talk.<Жаль, Я всё ещё ищу достойного соперника.
 waitForUser
 label.11"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.g004s03m
+defaultWizForm.4.0.17
+defaultWizForm.5.1.13
+defaultWizForm.4.2.11
+endIf
+ifNpcModifierHasValue.1
 setModel.b012s00m
 defaultWizForm.88.0.8
 defaultWizForm.8.1.9
 defaultWizForm.4.2.9
-defaultWizForm.81.3.7"""
+defaultWizForm.81.3.7
+endIf"""
 UpdateScript = "lookAtPlayer.-1.1"
 DefeatedScript = """
 setCamera.3005

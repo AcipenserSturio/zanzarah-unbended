@@ -15,12 +15,21 @@ talk.<
 waitForUser
 fight.-1.0"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.d004s00m
+defaultWizForm.6.0.21
+defaultWizForm.92.1.26
+defaultWizForm.54.2.33
+defaultWizForm.82.3.31
+endIf
+ifNpcModifierHasValue.1
 setModel.d004s00m
 defaultWizForm.141.0.54
 defaultWizForm.123.1.55
 defaultWizForm.113.2.51
 defaultWizForm.115.3.51
-defaultWizForm.48.4.53"""
+defaultWizForm.48.4.53
+endIf"""
 UpdateScript = """
 label.0
 idle

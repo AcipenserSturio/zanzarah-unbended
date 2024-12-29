@@ -44,12 +44,20 @@ talk.<Хвала Друидам, а ведь я далеко не самый с�
 waitForUser
 exit"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.b009s00m
+defaultWizForm.28.0.25
+defaultWizForm.28.1.21
+defaultWizForm.29.2.28
+endIf
+ifNpcModifierHasValue.1
 setModel.b009s00m
 defaultWizForm.103.0.48
 defaultWizForm.77.1.49
 defaultWizForm.114.2.48
 defaultWizForm.138.3.46
-defaultWizForm.11.4.47"""
+defaultWizForm.11.4.47
+endIf"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 setTalkLabels.-1.-1.0

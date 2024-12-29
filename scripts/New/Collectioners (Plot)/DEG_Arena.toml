@@ -21,10 +21,18 @@ waitForUser
 setCamera.1006
 fight.225.1"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.u000s00m
+defaultWizForm.128.0.20
+defaultWizForm.57.2.22
+defaultWizForm.57.4.15
+endIf
+ifNpcModifierHasValue.1
 setModel.u000s00m
 defaultWizForm.189.0.28
-defaultWizForm.31.1.25
-defaultWizForm.142.2.24"""
+defaultWizForm.31.2.25
+defaultWizForm.142.4.24
+endIf"""
 UpdateScript = """
 label.0
 lookAtPlayer.2.1

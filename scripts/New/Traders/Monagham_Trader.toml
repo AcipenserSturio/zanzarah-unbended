@@ -11,6 +11,18 @@ choice.0.<Торговля>
 choice.2.<До встречи>
 waitForUser
 label.0
+ifPlayerHasCards.1.0.210
+goto.100
+else
+tradingCurrency.BAA9B8A3
+tradingItem.10.20510203
+tradingItem.12.069C5F03
+tradingItem.13.0813C113
+tradingItem.20.5762C113
+tradingItem.15.252A4FA3
+waitForUser
+goto.10
+label.100
 ifPlayerHasCards.5.0.106
 tradingCurrency.BAA9B8A3
 tradingItem.10.20510203

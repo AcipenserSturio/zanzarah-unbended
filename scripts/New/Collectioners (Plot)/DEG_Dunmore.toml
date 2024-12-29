@@ -24,12 +24,22 @@ talk.<
 >
 waitForUser"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.u000s00m
+defaultWizForm.10.0.18
+defaultWizForm.11.1.11
+defaultWizForm.44.2.4
+defaultWizForm.55.3.5
+defaultWizForm.11.4.13
+endIf
+ifNpcModifierHasValue.1
 setModel.u000s00m
 defaultWizForm.195.0.8
 defaultWizForm.23.1.6
 defaultWizForm.67.2.5
 defaultWizForm.63.3.6
-defaultWizForm.44.4.8"""
+defaultWizForm.44.4.8
+endIf"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 removeNpcAtTrigger.63

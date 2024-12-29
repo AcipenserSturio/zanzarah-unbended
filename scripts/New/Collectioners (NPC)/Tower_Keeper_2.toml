@@ -25,12 +25,20 @@ setTalkLabels.-1.-1.0
 talk.<Что же, такое решение более безопасно для тебя и твоих фей!>
 waitForUser"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.b009s00m
+defaultWizForm.6.0.20
+defaultWizForm.6.1.25
+defaultWizForm.92.2.30
+endIf
+ifNpcModifierHasValue.1
 setModel.b010s00m
 defaultWizForm.139.0.47
 defaultWizForm.133.1.49
 defaultWizForm.25.2.50
 defaultWizForm.70.3.46
-defaultWizForm.93.4.48"""
+defaultWizForm.93.4.48
+endIf"""
 UpdateScript = """
 label.0
 idle

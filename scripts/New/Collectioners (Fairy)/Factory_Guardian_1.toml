@@ -29,12 +29,18 @@ waitForUser
 setCamera.1006
 fight.1022.1"""
 InitScript = """
+ifNpcModifierHasValue.0
+setNpcType.3
+defaultWizForm.87.3.40
+endIf
+ifNpcModifierHasValue.1
 setNpcType.3
 defaultWizForm.139.0.19
 defaultWizForm.12.1.18
 defaultWizForm.129.2.19
 defaultWizForm.28.3.17
-defaultWizForm.130.4.16"""
+defaultWizForm.130.4.16
+endIf"""
 UpdateScript = """
 label.0
 idle

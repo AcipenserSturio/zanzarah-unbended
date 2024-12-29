@@ -36,10 +36,19 @@ exit
 label.1
 exit"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.d004s00m
+defaultWizForm.91.0.30
+defaultWizForm.147.1.25
+defaultWizForm.148.2.34
+defaultWizForm.149.3.19
+endIf
+ifNpcModifierHasValue.1
 setModel.d004s00m
 defaultWizForm.147.0.15
 defaultWizForm.148.2.13
-defaultWizForm.149.4.17"""
+defaultWizForm.149.4.17
+endIf"""
 UpdateScript = "lookAtPlayer.-1.1"
 DefeatedScript = """
 setCamera.1000

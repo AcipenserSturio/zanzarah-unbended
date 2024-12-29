@@ -29,8 +29,14 @@ fight.225.1
 label.2
 exit"""
 InitScript = """
+ifNpcModifierHasValue.0
 setNpcType.3
-defaultWizForm.210.2.16"""
+defaultWizForm.210.2.38
+endIf
+ifNpcModifierHasValue.1
+setNpcType.3
+defaultWizForm.210.2.16
+endIf"""
 UpdateScript = """
 lookAtPlayer.5.0"""
 DefeatedScript = """

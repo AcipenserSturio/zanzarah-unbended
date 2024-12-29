@@ -25,12 +25,21 @@ setTalkLabels.-1.-1.0
 talk.<Я уверен, что выиграю!>
 waitForUser"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.b011s00m
+defaultWizForm.7.0.28
+defaultWizForm.6.1.20
+defaultWizForm.12.2.23
+defaultWizForm.29.3.9
+endIf
+ifNpcModifierHasValue.1
 setModel.b011s00m
 defaultWizForm.131.0.54
 defaultWizForm.17.1.53
 defaultWizForm.132.2.51
 defaultWizForm.118.3.52
-defaultWizForm.48.4.52"""
+defaultWizForm.48.4.52
+endIf"""
 UpdateScript = """
 label.0
 idle

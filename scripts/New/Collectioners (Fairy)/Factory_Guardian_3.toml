@@ -1,7 +1,13 @@
 UID = "54F25A04"
 Name = "F566BE01"
 InitScript = """
+ifNpcModifierHasValue.0
+setNpcType.3
+defaultWizForm.39.3.52
+endIf
+ifNpcModifierHasValue.1
 setNpcType.3
 defaultWizForm.43.0.29
 defaultWizForm.28.2.27
-defaultWizForm.43.4.28"""
+defaultWizForm.43.4.28
+endIf"""

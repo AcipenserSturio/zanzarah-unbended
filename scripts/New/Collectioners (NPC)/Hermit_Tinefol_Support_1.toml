@@ -1,7 +1,11 @@
 UID = "DF3258B4"
 Name = "B18BDDB1"
 InitScript = """
+ifNpcModifierHasValue.0
+endIf
+ifNpcModifierHasValue.1
 setNpcType.3
 setCollision.0
-defaultWizForm.148.2.13"""
+defaultWizForm.148.2.13
+endIf"""
 UpdateScript = "lookAtPlayer.0.2"

@@ -1,6 +1,11 @@
 UID = "E856B204"
 Name = "97688F91"
 InitScript = """
+ifNpcModifierHasValue.0
 setModel.u003s03m
-defaultDeck.0.5.1"""
+endIf
+ifNpcModifierHasValue.1
+setModel.u003s03m
+defaultDeck.0.5.1
+endIf"""
 UpdateScript = "lookAtPlayer.0.1"

@@ -33,7 +33,7 @@ waitForUser
 label.11"""
 InitScript = """
 ifNpcModifierHasValue.0
-setModel.g004s03m
+setModel.b012s00m
 defaultWizForm.4.0.17
 defaultWizForm.5.1.13
 defaultWizForm.4.2.11

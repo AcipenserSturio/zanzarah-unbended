@@ -167,11 +167,20 @@ label.5
 goto.0
 label.11"""
 InitScript = """
+ifNpcModifierHasValue.0
+setModel.g207s23m
+movementSpeed.10
+defaultWizForm.8.0.4
+defaultWizForm.0.1.4
+defaultWizForm.5.2.5
+endIf
+ifNpcModifierHasValue.1
 setModel.g207s23m
 movementSpeed.10
 defaultWizForm.21.0.5
 defaultWizForm.79.1.6
-defaultWizForm.48.2.5"""
+defaultWizForm.48.2.5
+endIf"""
 UpdateScript = """
 label.0
 moveSystem.1.2

@@ -9,7 +9,7 @@ setCamera.1006
 fight.-1.0"""
 InitScript = """
 ifNpcModifierHasValue.0
-setModel.g004s03m
+setModel.u003s03m
 defaultWizForm.10.0.5
 defaultWizForm.54.1.10
 defaultWizForm.53.2.8

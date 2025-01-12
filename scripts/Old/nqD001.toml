@@ -3,7 +3,7 @@ Name = "E95016B1"
 TriggerScript = """
 setCamera.1002
 playAnimation.13.-1
-ifPlayerHasCards.1.0.26
+ifPlayerHasCards.1.0.72
 say.<Не верь Друиду!>.0
 waitForUser
 setTalkLabels.-1.-1.0

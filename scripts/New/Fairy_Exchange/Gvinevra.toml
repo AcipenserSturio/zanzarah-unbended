@@ -32,48 +32,48 @@ choice.2.<Назад>
 waitForUser
 label.5
 say.<...>.3
-choice.9.<Расроу ({4*2 Рунических Свитка})>
-choice.8.<Сегбуз ({4*6 Рунических Свитков})>
-choice.7.<Скелбо ({4*6 Рунических Свитков})>
+choice.9.<Расроу ({4*6 Печатей Страны Утра})>
+choice.8.<Сегбуз ({4*10 Печатей Страны Утра})>
+choice.7.<Скелбо ({4*6 Печатей Страны Утра})>
 choice.6.<Далее>
 waitForUser
 label.9
-ifPlayerHasCards.2.0.102
-removePlayerCards.2.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.10
 exit
 else
 goto.30
 label.8
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.10.0.235
+removePlayerCards.10.0.235
 givePlayerCards.1.2.32
 exit
 else
 goto.30
 label.7
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.52
 exit
 else
 goto.30
 label.6
 say.<...>.3
-choice.12.<Калидрекс ({4*4 Рунических Свитка})>
-choice.11.<Стрикс ({4*2 Рунических Свитка})>
+choice.12.<Калидрекс ({4*8 Печатей Страны Утра})>
+choice.11.<Стрикс ({4*8 Печатей Страны Утра})>
 choice.10.<Назад>
 waitForUser
 label.12
-ifPlayerHasCards.4.0.102
-removePlayerCards.4.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.77
 exit
 else
 goto.30
 label.11
-ifPlayerHasCards.2.0.102
-removePlayerCards.2.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.83
 exit
 else
@@ -82,48 +82,48 @@ label.10
 goto.0
 label.4
 say.<...>.3
-choice.16.<Каллисто ({4*8 Рунических Свитков})>
-choice.15.<Гаэр ({4*6 Рунических Свитков})>
-choice.14.<Пикс ({4*8 Рунических Свитков})>
+choice.16.<Каллисто ({4*8 Печатей Страны Утра})>
+choice.15.<Гаэр ({4*8 Печатей Страны Утра})>
+choice.14.<Пикс ({4*8 Печатей Страны Утра})>
 choice.13.<Далее>
 waitForUser
 label.16
-ifPlayerHasCards.8.0.102
-removePlayerCards.8.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.16
 exit
 else
 goto.30
 label.15
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.35
 exit
 else
 goto.30
 label.14
-ifPlayerHasCards.8.0.102
-removePlayerCards.8.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.54
 exit
 else
 goto.30
 label.13
 say.<...>.3
-choice.18.<Ферикс ({4*10 Рунических Свитков})>
-choice.17.<Зана ({4*6 Рунических Свитков})>
+choice.18.<Ферикс ({4*10 Печатей Страны Утра})>
+choice.17.<Зана ({4*6 Печатей Страны Утра})>
 choice.26.<Назад>
 waitForUser
 label.18
-ifPlayerHasCards.10.0.102
-removePlayerCards.10.0.102
+ifPlayerHasCards.10.0.235
+removePlayerCards.10.0.235
 givePlayerCards.1.2.55
 exit
 else
 goto.30
 label.17
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.67
 exit
 else
@@ -132,48 +132,48 @@ label.26
 goto.0
 label.3
 say.<...>.3
-choice.22.<Акритар ({4*10 Рунических Свитков})>
-choice.21.<Бриана ({4*10 Рунических Свитков})>
-choice.20.<Дартис ({4*8 Рунических Свитков})>
+choice.22.<Акритар ({4*8 Печатей Страны Утра})>
+choice.21.<Бриана ({4*8 Печатей Страны Утра})>
+choice.20.<Раэлим ({4*6 Печатей Страны Утра})>
 choice.19.<Далее>
 waitForUser
 label.22
-ifPlayerHasCards.10.0.102
-removePlayerCards.10.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.27
 exit
 else
 goto.30
 label.21
-ifPlayerHasCards.10.0.102
-removePlayerCards.10.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.42
 exit
 else
 goto.30
 label.20
-ifPlayerHasCards.8.0.102
-removePlayerCards.8.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.45
 exit
 else
 goto.30
 label.19
 say.<...>.3
-choice.25.<Ноксис ({4*8 Рунических Свитков})>
-choice.24.<Турнокс ({4*10 Рунических Свитков})>
+choice.25.<Нокс ({4*6 Печатей Страны Утра})>
+choice.24.<Турнокс ({4*8 Печатей Страны Утра})>
 choice.23.<Назад>
 waitForUser
 label.25
-ifPlayerHasCards.8.0.102
-removePlayerCards.8.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.56
 exit
 else
 goto.30
 label.24
-ifPlayerHasCards.10.0.102
-removePlayerCards.10.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.57
 exit
 else

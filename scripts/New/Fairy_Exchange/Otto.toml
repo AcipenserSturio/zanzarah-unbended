@@ -26,96 +26,96 @@ choice.2.<Назад>
 waitForUser
 label.5
 say.<...>.3
-choice.9.<Грем ({4*2 Рунических Свитка})>
-choice.8.<Гремор ({4*4 Рунических Свитка})>
-choice.7.<Мукори ({4*2 Рунических Свитка})>
+choice.9.<Грем ({4*4 Печати Страны Утра})>
+choice.8.<Гремор ({4*6 Печатей Страны Утра})>
+choice.7.<Мукори ({4*2 Печати Страны Утра})>
 choice.6.<Далее>
 waitForUser
 label.9
-ifPlayerHasCards.2.0.102
-removePlayerCards.2.0.102
+ifPlayerHasCards.4.0.235
+removePlayerCards.4.0.235
 givePlayerCards.1.2.6
 exit
 else
 goto.32
 label.8
-ifPlayerHasCards.4.0.102
-removePlayerCards.4.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.7
 exit
 else
 goto.32
 label.7
-ifPlayerHasCards.2.0.102
-removePlayerCards.2.0.102
+ifPlayerHasCards.2.0.235
+removePlayerCards.2.0.235
 givePlayerCards.1.2.40
 exit
 else
 goto.32
 label.6
 say.<...>.3
-choice.13.<Абери ({4*4 Рунических Свитка})>
-choice.12.<Весбат ({4*2 Рунических Свитка})>
-choice.11.<Стобат ({4*4 Рунических Свитка})>
+choice.13.<Абери ({4*4 Печати Страны Утра})>
+choice.12.<Весбат ({4*4 Печати Страны Утра})>
+choice.11.<Стобат ({4*6 Печатей Страны Утра})>
 choice.10.<Далее>
 waitForUser
 label.13
-ifPlayerHasCards.4.0.102
-removePlayerCards.4.0.102
+ifPlayerHasCards.4.0.235
+removePlayerCards.4.0.235
 givePlayerCards.1.2.41
 exit
 else
 goto.32
 label.12
-ifPlayerHasCards.2.0.102
-removePlayerCards.2.0.102
+ifPlayerHasCards.4.0.235
+removePlayerCards.4.0.235
 givePlayerCards.1.2.2
 exit
 else
 goto.32
 label.11
-ifPlayerHasCards.4.0.102
-removePlayerCards.4.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.3
 exit
 else
 goto.32
 label.10
 say.<...>.3
-choice.17.<Туберри ({4*4 Рунических Свитка})>
-choice.16.<ДжамДжам ({4*2 Рунических Свитка})>
-choice.15.<Фалеон ({4*4 Рунических Свитка})>
+choice.17.<Туберри ({4*6 Печатей Страны Утра})>
+choice.16.<ДжамДжам ({4*6 Печатей Страны Утра})>
+choice.15.<Фалеон ({4*6 Печатей Страны Утра})>
 choice.14.<Далее>
 waitForUser
 label.17
-ifPlayerHasCards.4.0.102
-removePlayerCards.4.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.18
 exit
 else
 goto.32
 label.16
-ifPlayerHasCards.2.0.102
-removePlayerCards.2.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.81
 exit
 else
 goto.32
 label.15
-ifPlayerHasCards.4.0.102
-removePlayerCards.4.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.88
 exit
 else
 goto.32
 label.14
 say.<...>.3
-choice.19.<Галеон ({4*6 Рунических Свитков})>
+choice.19.<Галеон ({4*8 Печатей Страны Утра})>
 choice.18.<Назад>
 waitForUser
 label.19
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.89
 exit
 else
@@ -124,40 +124,40 @@ label.18
 goto.30
 label.4
 say.<...>.3
-choice.23.<Охра ({4*6 Рунических Свитков})>
-choice.22.<Электра ({4*6 Рунических Свитков})>
-choice.21.<Дарбью ({4*8 Рунических Свитков})>
+choice.23.<Охра ({4*8 Печатей Страны Утра})>
+choice.22.<Электра ({4*6 Печатей Страны Утра})>
+choice.21.<Дарбью ({4*8 Печатей Страны Утра})>
 choice.20.<Далее>
 waitForUser
 label.23
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.19
 exit
 else
 goto.32
 label.22
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.6.0.235
+removePlayerCards.6.0.235
 givePlayerCards.1.2.43
 exit
 else
 goto.32
 label.21
-ifPlayerHasCards.8.0.102
-removePlayerCards.8.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.60
 exit
 else
 goto.32
 label.20
 say.<...>.3
-choice.25.<Джина ({4*8 Рунических Свитков})>
+choice.25.<Джина ({4*8 Печатей Страны Утра})>
 choice.24.<Назад>
 waitForUser
 label.25
-ifPlayerHasCards.8.0.102
-removePlayerCards.8.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.85
 exit
 else
@@ -166,28 +166,28 @@ label.24
 goto.30
 label.3
 say.<...>.3
-choice.29.<Прототип \"Минари\" ({4*6 Рунических Свитков})>
-choice.28.<Прототип \"Мегари\" ({4*6 Рунических Свитков})>
-choice.27.<Прототип \"Гигарекс\" ({4*6 Рунических Свитков})>
+choice.29.<Прототип \"Минари\" ({4*8 Печатей Страны Утра})>
+choice.28.<Прототип \"Мегари\" ({4*10 Печатей Страны Утра})>
+choice.27.<Прототип \"Гигарекс\" ({4*10 Печатей Страны Утра})>
 choice.26.<Назад>
 waitForUser
 label.29
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.8.0.235
+removePlayerCards.8.0.235
 givePlayerCards.1.2.39
 exit
 else
 goto.32
 label.28
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.10.0.235
+removePlayerCards.10.0.235
 givePlayerCards.1.2.49
 exit
 else
 goto.32
 label.27
-ifPlayerHasCards.6.0.102
-removePlayerCards.6.0.102
+ifPlayerHasCards.10.0.235
+removePlayerCards.10.0.235
 givePlayerCards.1.2.87
 exit
 else
@@ -196,7 +196,7 @@ label.26
 goto.30
 label.32
 playAnimation.13.-1
-say.<Гном жестом показывает, что у тебя недостаточно {4*Рунических Свитков} для обмена.>.0
+say.<Гном жестом показывает, что у тебя недостаточно {4*Печатей Страны Утра} для обмена.>.0
 waitForUser
 goto.30
 label.33

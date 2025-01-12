@@ -89,7 +89,7 @@ goto.0
 else
 goto.99
 label.11
-ifPlayerHasCards.1.0.15
+ifPlayerHasCards.1.0.56
 goto.0
 else
 goto.99

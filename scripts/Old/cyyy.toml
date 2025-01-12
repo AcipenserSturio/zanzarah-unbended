@@ -76,7 +76,7 @@ ifNpcModifierHasValue.71
 givePlayerCards.1.0.71
 endIf
 ifNpcModifierHasValue.72
-givePlayerCards.1.0.72
+givePlayerCards.1.0.19
 endIf
 setNpcModifier.-1.-1.1
 delay.10

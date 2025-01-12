@@ -1,7 +1,7 @@
 UID = "252FAF24"
 Name = "589BCFB1"
 TriggerScript = """
-ifPlayerHasCards.1.0.102
+ifPlayerHasCards.1.0.235
 goto.30
 else
 goto.31

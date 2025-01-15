@@ -24,7 +24,7 @@ choice.103.<Торговля>
 choice.101.<До встречи>
 waitForUser
 label.103
-ifPlayerHasCards.1.0.210
+ifPlayerHasCards.1.0.209
 goto.104
 else
 tradingCurrency.C564B4A3

@@ -23,7 +23,7 @@ choice.3.<Обмен>
 choice.4.<До встречи>
 waitForUser
 label.7
-ifPlayerHasCards.1.0.210
+ifPlayerHasCards.1.0.209
 goto.100
 else
 tradingCurrency.C564B4A3

@@ -24,15 +24,22 @@ waitForUser
 label.103
 setTalkLabels.-1.-1.2
 talk.<
-    Ты можешь найти других торговцев в основных крупных поселениях — {4*Тиралине}, {4*Данморе} и {4*Монагаме}.
+    Ты можешь найти других торговцев в основных крупных поселениях — {4*Эндеве}, {4*Тиралине}, {4*Данморе}, {4*Монагаме}, а также {4*Великом Дереве}.
 	Но будь осторожна, они все требуют разное количество {4*Камей} для торговли с ними.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+	В {4*Доме Охотника Пикси} возле {4*Эндевы} ты можешь обнаружить заклинания {4*Камня, Тьмы и Энергии};
+    в {4*Тиралине}, городе {4*эльфов}, ты можешь приобрести заклинания {4*Природы, Света и Воздуха};
+	в {4*Данморе}, деревне {4*болотных гоблинов}, ты можешь найти заклинания {4*Воды, Пси и Льда};
+	в {4*Монагаме}, деревне {4*гномов}, ты можешь купить заклинания {4*Хаоса, Металла и Огня}. 
 >
 waitForUser
 setTalkLabels.-1.-1.0
 talk.<
-    В {4*Тиралине}, городе {4*эльфов}, ты можешь приобрести заклинания {4*Природы, Воздуха и Света}.
-	А в {4*Данморе}, деревне {4*Болотных Гоблинов}, ты можешь найти заклинания {4*Воды, Пси и Льда}.
-	Наконец, в {4*Монагаме}, деревне {4*гномов}, ты можешь купить заклинания {4*Хаоса, Огня и Металла}.
+    Наконец, на {4*Великом Дереве} ты найдёшь самые мощные из доступных заклинаний всех стихий.
+	Но учти, тебе нужно быть {4*очень сильным Коллекционером}, чтобы иметь возможность заполучить некоторые из них.
 >
 waitForUser
 goto.3
@@ -73,15 +80,15 @@ goto.3
 label.100
 goto.0
 label.2
-ifPlayerHasCards.1.0.210
+ifPlayerHasCards.1.0.209
 say.<
     У меня огромный выбор {4*активных} и {4*пассивных} заклинаний.
     Чем могу помочь?
 >.1
-choice.12.<Природа>
-choice.11.<Воздух>
+choice.11.<Природа>
 choice.10.<Свет>
-choice.9.<Назад>
+choice.9.<Воздух>
+choice.5.<Назад>
 waitForUser
 else
 say.<
@@ -89,11 +96,11 @@ say.<
     Чем могу помочь?
 >.1
 choice.8.<Природа>
-choice.7.<Воздух>
-choice.6.<Свет>
+choice.7.<Свет>
+choice.6.<Воздух>
 choice.5.<Назад>
 waitForUser
-label.12
+label.11
 ifPlayerHasCards.1.0.107
 setupGambling.1.1.0
 setupGambling.1.1.1
@@ -116,7 +123,30 @@ talk.<
 >
 waitForUser
 goto.0
-label.11
+label.10
+ifPlayerHasCards.3.0.107
+setupGambling.1.1.15
+setupGambling.1.1.16
+setupGambling.1.1.17
+setupGambling.1.1.18
+setupGambling.1.1.19
+setupGambling.1.1.75
+setupGambling.1.1.76
+setupGambling.1.1.77
+setupGambling.1.1.78
+setupGambling.1.1.79
+setupGambling.15.3.0
+waitForUser
+goto.1
+else
+setTalkLabels.-1.-1.0
+talk.<
+    Принеси мне {4*три Камеи Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
+    Только после этого я смогу предложить тебе более сильные заклинания.
+>
+waitForUser
+goto.0
+label.9
 ifPlayerHasCards.6.0.107
 setupGambling.1.1.5
 setupGambling.1.1.6
@@ -139,31 +169,6 @@ talk.<
 >
 waitForUser
 goto.0
-label.10
-ifPlayerHasCards.9.0.107
-setupGambling.1.1.15
-setupGambling.1.1.16
-setupGambling.1.1.17
-setupGambling.1.1.18
-setupGambling.1.1.19
-setupGambling.1.1.75
-setupGambling.1.1.76
-setupGambling.1.1.77
-setupGambling.1.1.78
-setupGambling.1.1.79
-setupGambling.15.3.0
-waitForUser
-goto.1
-else
-setTalkLabels.-1.-1.0
-talk.<
-    Принеси мне {4*девять Камей Коллекционера}, чтобы доказать, что ты являешься опытным {4*Коллекционером}.
-    Только после этого я смогу предложить тебе более сильные заклинания.
->
-waitForUser
-goto.0
-label.9
-goto.0
 label.8
 setupGambling.1.1.0
 setupGambling.1.1.1
@@ -180,16 +185,16 @@ waitForUser
 goto.1
 label.7
 ifPlayerHasCards.3.0.107
-setupGambling.1.1.5
-setupGambling.1.1.6
-setupGambling.1.1.7
-setupGambling.1.1.8
-setupGambling.1.1.9
-setupGambling.1.1.65
-setupGambling.1.1.66
-setupGambling.1.1.67
-setupGambling.1.1.68
-setupGambling.1.1.69
+setupGambling.1.1.15
+setupGambling.1.1.16
+setupGambling.1.1.17
+setupGambling.1.1.18
+setupGambling.1.1.19
+setupGambling.1.1.75
+setupGambling.1.1.76
+setupGambling.1.1.77
+setupGambling.1.1.78
+setupGambling.1.1.79
 setupGambling.10.3.0
 waitForUser
 goto.1
@@ -203,16 +208,16 @@ waitForUser
 goto.0
 label.6
 ifPlayerHasCards.6.0.107
-setupGambling.1.1.15
-setupGambling.1.1.16
-setupGambling.1.1.17
-setupGambling.1.1.18
-setupGambling.1.1.19
-setupGambling.1.1.75
-setupGambling.1.1.76
-setupGambling.1.1.77
-setupGambling.1.1.78
-setupGambling.1.1.79
+setupGambling.1.1.5
+setupGambling.1.1.6
+setupGambling.1.1.7
+setupGambling.1.1.8
+setupGambling.1.1.9
+setupGambling.1.1.65
+setupGambling.1.1.66
+setupGambling.1.1.67
+setupGambling.1.1.68
+setupGambling.1.1.69
 setupGambling.10.3.0
 waitForUser
 goto.1

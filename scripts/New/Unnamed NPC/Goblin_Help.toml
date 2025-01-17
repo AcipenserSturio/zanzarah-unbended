@@ -60,4 +60,4 @@ exit"""
 InitScript = """
 setModel.e002s02m
 defaultWizForm.81.0.13"""
-UpdateScript = "lookAtPlayer.0.0"
+UpdateScript = "lookAtPlayer.-1.1"

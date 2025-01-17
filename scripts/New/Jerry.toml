@@ -11,9 +11,38 @@ choice.2.<Обмен>
 choice.1.<Уйти>
 waitForUser
 label.2
+say.<...>.1
+choice.7.<Купить 1 кристалл по 5 монет>
+choice.6.<Купить 10 кристаллов за 50 монет>
+choice.5.<Купить 25 кристаллов за 125 монет>
+choice.4.<Назад>
+waitForUser
+label.7
 tradingCurrency.C564B4A3
 tradingItem.5.BAA9B8A3
 waitForUser
+goto.0
+label.6
+ifPlayerHasCards.50.0.4
+removePlayerCards.50.0.4
+givePlayerCards.10.0.6
+exit
+else
+setTalkLabels.-1.-1.0
+talk.<Пикси недоумённо качает головой. Похоже, у тебя недостаточно денег для этой покупки.>
+waitForUser
+goto.0
+label.5
+ifPlayerHasCards.125.0.4
+removePlayerCards.125.0.4
+givePlayerCards.25.0.6
+exit
+else
+setTalkLabels.-1.-1.0
+talk.<Пикси недоумённо качает головой. Похоже, у тебя недостаточно денег для этой покупки.>
+waitForUser
+goto.0
+label.4
 goto.0
 label.3
 setTalkLabels.-1.-1.2

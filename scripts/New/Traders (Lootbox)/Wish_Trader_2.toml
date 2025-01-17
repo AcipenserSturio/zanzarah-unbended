@@ -53,6 +53,8 @@ talk.<
 >
 waitForUser
 goto.0
+label.5
+goto.0
 label.3
 setTalkLabels.10.11.1
 talk.<

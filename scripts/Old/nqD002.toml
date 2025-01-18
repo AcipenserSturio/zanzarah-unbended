@@ -1,6 +1,7 @@
 UID = "C04B4184"
 Name = "2B4B0221"
 TriggerScript = """
+setNpcModifier.1050.18.1000
 deployNpcAtTrigger.12.1
 setCamera.3001
 changeWaypoint.1.2

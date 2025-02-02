@@ -9,7 +9,7 @@ fight.-1.0"""
 InitScript = """
 ifNpcModifierHasValue.0
 setModel.u002s02m
-defaultDeck.2.60.1
+defaultDeck.2.30.1
 exit
 endIf
 ifNpcModifierHasValue.1

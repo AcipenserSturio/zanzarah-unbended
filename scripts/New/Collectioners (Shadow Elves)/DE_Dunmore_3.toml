@@ -9,13 +9,13 @@ setCamera.1006
 fight.-1.0"""
 InitScript = """
 ifNpcModifierHasValue.0
-setModel.u003s03m
+setModel.u006s06m
 defaultWizForm.10.0.5
 defaultWizForm.54.1.10
 defaultWizForm.53.2.8
 endIf
 ifNpcModifierHasValue.1
-setModel.u003s03m
+setModel.u006s06m
 gotoRandomLabel.3.0
 label.0
 defaultWizForm.61.0.9

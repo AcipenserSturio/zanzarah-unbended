@@ -8,12 +8,12 @@ waitForUser
 fight.-1.0"""
 InitScript = """
 ifNpcModifierHasValue.0
-setModel.u002s02m
+setModel.u007s07m
 defaultDeck.1.25.1
 exit
 endIf
 ifNpcModifierHasValue.1
-setModel.u002s02m
+setModel.u007s07m
 gotoRandomLabel.3.0
 label.0
 defaultWizForm.18.0.18

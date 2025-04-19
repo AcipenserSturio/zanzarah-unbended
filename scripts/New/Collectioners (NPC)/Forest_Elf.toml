@@ -3,15 +3,13 @@ Name = "BDE38F91"
 TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
-ifNpcModifierHasValue.0
+ifNpcModifierHasValue.6
 goto.1
-endIf
-say.<Опять ты...>.0
-waitForUser
-talk.<Оставь меня, мне хватит.>
-waitForUser
-exit
-label.1
+else
+ifNpcModifierHasValue.5
+goto.1
+else
+label.0
 say.<Что человек делает в лесу?>.0
 waitForUser
 setTalkLabels.10.11.1
@@ -25,27 +23,62 @@ setCamera.1006
 fight.-1.0
 exit
 label.11
+exit
+label.1
+say.<Опять ты...>.0
+waitForUser
+talk.<Оставь меня, мне хватит.>
+waitForUser
 exit"""
 InitScript = """
 ifNpcModifierHasValue.0
 setModel.g300s30m
-movementSpeed.14
 defaultWizForm.0.0.9
 defaultWizForm.167.2.11
 defaultWizForm.9.4.9
 endIf
 ifNpcModifierHasValue.1
 setModel.g300s30m
-movementSpeed.14
 defaultWizForm.23.0.13
 defaultWizForm.47.1.14
 defaultWizForm.73.2.14
 defaultWizForm.43.3.15
+endIf
+ifNpcModifierHasValue.2
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.3
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.4
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.5
+setModel.g300s30m
+defaultWizForm.0.0.9
+endIf
+ifNpcModifierHasValue.6
+setModel.g300s30m
+defaultWizForm.23.0.13
+endIf
+ifNpcModifierHasValue.7
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.8
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.9
+setModel.g300s30m
 endIf"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
+ifNpcModifierHasValue.1
+setNpcModifier.-1.-1.6
+endIf
+ifNpcModifierHasValue.0
+setNpcModifier.-1.-1.5
+endIf
 setCamera.1000
-setNpcModifier.-1.-1.1
 setTalkLabels.-1.-1.0
 talk.<
     Глазам своим не верю! Человек умудрился победить моих фей! Что дальше будет?!

@@ -3,18 +3,12 @@ Name = "C82ECC31"
 TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
-ifNpcModifierHasValue.0
+ifNpcModifierHasValue.6
 goto.1
-endIf
-say.<Ты всё ещё здесь?>.0
-waitForUser
-talk.<
-    Как только я найду новых фей, я снова вызову тебя на бой, ты меня слышишь?!
-    И тогда я ни за что не проиграю тебе снова!
->
-waitForUser
-exit
-label.1
+else
+ifNpcModifierHasValue.5
+goto.1
+else
 say.<Что человек делает здесь?>.0
 waitForUser
 setTalkLabels.10.11.1
@@ -29,6 +23,15 @@ setCamera.1006
 fight.-1.0
 exit
 label.11
+exit
+label.1
+say.<Ты всё ещё здесь?>.0
+waitForUser
+talk.<
+    Как только я найду новых фей, я снова вызову тебя на бой, ты меня слышишь?!
+    И тогда я ни за что не проиграю тебе снова!
+>
+waitForUser
 exit"""
 InitScript = """
 ifNpcModifierHasValue.0
@@ -45,11 +48,42 @@ defaultWizForm.54.1.17
 defaultWizForm.28.2.17
 defaultWizForm.5.3.19
 defaultWizForm.19.4.18
+endIf
+ifNpcModifierHasValue.2
+setModel.g204s20m
+endIf
+ifNpcModifierHasValue.3
+setModel.g204s20m
+endIf
+ifNpcModifierHasValue.4
+setModel.g204s20m
+endIf
+ifNpcModifierHasValue.5
+setModel.g204s20m
+defaultWizForm.6.0.31
+endIf
+ifNpcModifierHasValue.6
+setModel.g204s20m
+defaultWizForm.89.0.19
+endIf
+ifNpcModifierHasValue.7
+setModel.g204s20m
+endIf
+ifNpcModifierHasValue.8
+setModel.g204s20m
+endIf
+ifNpcModifierHasValue.9
+setModel.g204s20m
 endIf"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
 setCamera.1000
-setNpcModifier.-1.-1.1
+ifNpcModifierHasValue.1
+setNpcModifier.-1.-1.6
+endIf
+ifNpcModifierHasValue.0
+setNpcModifier.-1.-1.5
+endIf
 setTalkLabels.-1.-1.0
 talk.<
     Что? Как ты смогла меня победить?

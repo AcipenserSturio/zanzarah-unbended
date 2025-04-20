@@ -5,7 +5,29 @@ setCamera.1003
 playAnimation.13.-1
 say.<Рад тебя снова видеть, Эми.>.0
 waitForUser
-ifNpcModifierHasValue.1
+ifNpcModifierHasValue.6
+goto.0
+else
+ifNpcModifierHasValue.5
+goto.0
+else
+setCamera.3003
+setTalkLabels.-1.-1.2
+talk.<
+    Ты уже пробовала {4*ловить новых фей} для своей колоды?
+    Без этого ты не сможешь сражаться наравне с другими {4*Коллекционерами}.
+    Ты можешь не использовать всех {4*пятерых фей} во время боя, но твои феи всегда должны быть готовы к любым неожиданным битвам.
+>
+waitForUser
+setCamera.1006
+setTalkLabels.10.11.1
+talk.<
+    Только в сражениях с другими {4*Коллекционерами} ты можешь получить бесценный {4*опыт} для своих фей.
+    Ты не против {4*тренировочного боя}?
+>
+waitForUser
+label.10
+fight.-1.0
 label.0
 say.<{4*Эндева} может показаться скучным местом, однако многие находят здесь желанное уединение от остального мира.>.3
 choice.1.<Диалог>
@@ -14,12 +36,11 @@ waitForUser
 label.1
 say.<
     Возможно, тебе будет интересно узнать больше об истории {4*Занзары}?
-    
 >.3
 choice.2.<Облачная Арена>
 choice.3.<Библиотека Тиралина>
 choice.4.<Камеи Коллекционера>
-choice.5.<До встречи>
+choice.5.<Назад>
 waitForUser
 label.2
 setTalkLabels.-1.-1.2
@@ -57,7 +78,7 @@ talk.<
     Возможно, когда-то найдётся и тот, кто сможет выяснить всю правду об этой истории.
 >
 waitForUser
-goto.0
+goto.1
 label.3
 setTalkLabels.-1.-1.2
 talk.<
@@ -105,7 +126,7 @@ talk.<
     и мне хотелось бы узнать больше о причинах этого.
 >
 waitForUser
-goto.0
+goto.1
 label.4
 setTalkLabels.-1.-1.2
 talk.<
@@ -144,28 +165,11 @@ talk.<
     Но возможно ты сможешь показать своим примером, насколько глубоко они ошибаются в этом.
 >
 waitForUser
-goto.0
-else
-setCamera.3003
-setTalkLabels.-1.-1.2
-talk.<
-    Ты уже пробовала {4*ловить новых фей} для своей колоды?
-    Без этого ты не сможешь сражаться наравне с другими {4*Коллекционерами}.
-    Ты можешь не использовать всех {4*пятерых фей} во время боя, но твои феи всегда должны быть готовы к любым неожиданным битвам.
->
-waitForUser
-setCamera.1006
-setTalkLabels.10.11.1
-talk.<
-    Только в сражениях с другими {4*Коллекционерами} ты можешь получить бесценный {4*опыт} для своих фей.
-    Ты не против {4*тренировочного боя}?
->
-waitForUser
-label.10
-fight.-1.0
+goto.1
 label.5
 goto.0
-label.11"""
+label.11
+exit"""
 InitScript = """
 ifNpcModifierHasValue.0
 setModel.g207s23m
@@ -180,6 +184,40 @@ movementSpeed.10
 defaultWizForm.21.0.5
 defaultWizForm.79.1.6
 defaultWizForm.48.2.5
+endIf
+ifNpcModifierHasValue.2
+setModel.g207s23m
+movementSpeed.10
+endIf
+ifNpcModifierHasValue.3
+setModel.g207s23m
+movementSpeed.10
+endIf
+ifNpcModifierHasValue.4
+setModel.g207s23m
+movementSpeed.10
+endIf
+ifNpcModifierHasValue.5
+setModel.g207s23m
+movementSpeed.10
+defaultWizForm.8.0.4
+endIf
+ifNpcModifierHasValue.6
+setModel.g207s23m
+movementSpeed.10
+defaultWizForm.21.0.5
+endIf
+ifNpcModifierHasValue.7
+setModel.g207s23m
+movementSpeed.10
+endIf
+ifNpcModifierHasValue.8
+setModel.g207s23m
+movementSpeed.10
+endIf
+ifNpcModifierHasValue.9
+setModel.g207s23m
+movementSpeed.10
 endIf"""
 UpdateScript = """
 label.0
@@ -195,6 +233,12 @@ playAnimation.0.-1
 lookAtPlayer.20.1
 goto.0"""
 DefeatedScript = """
+ifNpcModifierHasValue.1
+setNpcModifier.-1.-1.6
+endIf
+ifNpcModifierHasValue.0
+setNpcModifier.-1.-1.5
+endIf
 setTalkLabels.-1.-1.2
 talk.<
     Это было не так уж и сложно, ведь правда?
@@ -223,6 +267,5 @@ talk.<
     О последнем я постоянно забываю сам, так что не повторяй моих ошибок.
 >
 waitForUser
-setNpcModifier.-1.-1.1
 givePlayerCards.1.0.107"""
 VictoriousScript = "killPlayer"

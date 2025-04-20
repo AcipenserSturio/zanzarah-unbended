@@ -3,19 +3,12 @@ Name = "BDE38F91"
 TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
-ifNpcModifierHasValue.0
-say.<Ох, путешественник в таком месте...>.0
-waitForUser
-goto.0
+ifNpcModifierHasValue.6
+goto.1
 else
-say.<
-    Это снова ты?
-    Если ты хочешь дружеский совет, то не советую пытаться изучить пещеру в другой стороне этого места - там обитают очень {4*опасные феи}...
->.0
-waitForUser
-exit
-endIf
-label.0
+ifNpcModifierHasValue.5
+goto.1
+else
 setTalkLabels.-1.-1.2
 talk.<
     Долгое время я коллекционеровал редких фей, которые сейчас практически не встречаются в диком виде.
@@ -35,6 +28,15 @@ setCamera.1006
 fight.-1.-1
 exit
 label.11
+exit
+label.1
+say.<Ох, путешественник в таком месте...>.0
+waitForUser
+say.<
+    Это снова ты?
+    Если ты хочешь дружеский совет, то не советую пытаться изучить пещеру в другой стороне этого места - там обитают очень {4*опасные феи}...
+>.0
+waitForUser
 exit"""
 InitScript = """
 ifNpcModifierHasValue.0
@@ -52,9 +54,41 @@ defaultWizForm.127.1.27
 defaultWizForm.130.2.26
 defaultWizForm.125.3.30
 defaultWizForm.124.4.29
+endIf
+ifNpcModifierHasValue.2
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.3
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.4
+setModel.g300s30m
+defaultWizForm.71.0.45
+endIf
+ifNpcModifierHasValue.5
+setModel.g300s30m
+defaultWizForm.123.0.28
+endIf
+ifNpcModifierHasValue.6
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.7
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.8
+setModel.g300s30m
+endIf
+ifNpcModifierHasValue.9
+setModel.g300s30m
 endIf"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
+ifNpcModifierHasValue.1
+setNpcModifier.-1.-1.6
+endIf
+ifNpcModifierHasValue.0
+setNpcModifier.-1.-1.5
+endIf
 setCamera.1000
 setTalkLabels.-1.-1.2
 talk.<
@@ -72,5 +106,4 @@ talk.<
 >
 waitForUser
 givePlayerCards.1.0.27
-givePlayerCards.1.0.107
-setNpcModifier.-1.-1.1"""
+givePlayerCards.1.0.107"""

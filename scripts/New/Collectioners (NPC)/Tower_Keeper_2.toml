@@ -49,7 +49,6 @@ lookAtPlayer.5.1
 endIf
 goto.0"""
 DefeatedScript = """
-setTalkLabels.-1.-1.0
 setCamera.3000
 setTalkLabels.-1.-1.0
 talk.<

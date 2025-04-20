@@ -29,10 +29,18 @@ changeWaypoint.3.2
 playAnimation.0.-1
 exit"""
 InitScript = """
+ifNpcModifierHasValue.0
 setModel.g004s03m
 defaultWizForm.69.0.3
 defaultWizForm.25.2.5
-defaultWizForm.40.4.2"""
+defaultWizForm.40.4.2
+endIf
+ifNpcModifierHasValue.1
+setModel.g004s03m
+defaultWizForm.50.0.8
+defaultWizForm.25.2.10
+defaultWizForm.40.4.7
+endIf"""
 UpdateScript = """
 label.0
 idle

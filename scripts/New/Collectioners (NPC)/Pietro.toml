@@ -3,20 +3,17 @@ Name = "7066FC91"
 TriggerScript = """
 setCamera.1000
 playAnimation.13.-1
-ifNpcModifierHasValue.2
-goto.100
-else
-ifNpcModifierHasValue.1
-label.100
-say.<Я всегда рад видеть тебя, Эми.>.0
+say.<Я всегда рад видеть тебя, человек.>.0
 waitForUser
+ifNpcModifierHasValue.6
 goto.101
 else
-ifNpcModifierHasValue.0
+ifNpcModifierHasValue.5
+goto.101
+else
 say.<Значит, это ты, Эми, человек из Предсказания?>.0
 waitForUser
-setNpcModifier.-1.-1.1
-label.0
+label.100
 say.<Здесь так скучно... Не могу понять, что только Гоблины находят в этом месте.>.1
 choice.3.<Диалог>
 choice.2.<Дуэль>
@@ -54,21 +51,33 @@ talk.<
 	Они всегда помогали нам, когда мы больше всего в них нуждались.
 >
 waitForUser
-ifNpcModifierHasValue.2
+ifNpcModifierHasValue.6
+goto.101
+else
+ifNpcModifierHasValue.5
 goto.101
 else
 ifNpcModifierHasValue.1
-goto.0
+goto.100
+else
+ifNpcModifierHasValue.0
+goto.100
+endIf
 label.2
 setTalkLabels.10.11.1
-talk.<Ты хочешь вызвать меня на дуэль? Почему бы и нет. Ты определённо сильный {4*Коллекционер}, раз уж смогла добраться сюда. Просто скажи, как будешь готова.>
+talk.<
+	Ты хочешь вызвать меня на дуэль?
+	Почему бы и нет.
+	Ты определённо сильный {4*Коллекционер}, раз уж смогла добраться сюда.
+	Просто скажи, как будешь готова.
+>
 waitForUser
 label.10
 setCamera.1006
 fight.-1.0
 exit
 label.11
-goto.0
+goto.100
 label.1
 exit"""
 InitScript = """
@@ -87,11 +96,42 @@ defaultWizForm.70.1.27
 defaultWizForm.41.2.29
 defaultWizForm.39.3.28
 defaultWizForm.12.4.27
+endIf
+ifNpcModifierHasValue.2
+setModel.g301s31m
+endIf
+ifNpcModifierHasValue.3
+setModel.g301s31m
+endIf
+ifNpcModifierHasValue.4
+setModel.g301s31m
+endIf
+ifNpcModifierHasValue.5
+setModel.g301s31m
+defaultWizForm.50.0.25
+endIf
+ifNpcModifierHasValue.6
+setModel.g301s31m
+defaultWizForm.47.0.26
+endIf
+ifNpcModifierHasValue.7
+setModel.g301s31m
+endIf
+ifNpcModifierHasValue.8
+setModel.g301s31m
+endIf
+ifNpcModifierHasValue.9
+setModel.g301s31m
 endIf"""
 UpdateScript = "lookAtPlayer.0.1"
 DefeatedScript = """
+ifNpcModifierHasValue.1
+setNpcModifier.-1.-1.6
+endIf
+ifNpcModifierHasValue.0
+setNpcModifier.-1.-1.5
+endIf
 setCamera.1000
-setNpcModifier.-1.-1.2
 setTalkLabels.-1.-1.0
 talk.<
     Это была отличная битва.

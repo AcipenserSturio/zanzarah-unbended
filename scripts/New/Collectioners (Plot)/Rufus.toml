@@ -17,8 +17,13 @@ fight.223.0"""
 InitScript = """
 ifNpcModifierHasValue.0
 setModel.g202s22m
-defaultWizForm.0.0.2
-defaultWizForm.8.4.3
+gotoRandomLabel.3.0
+label.0
+wizform.2.8.4
+label.1
+wizform.2.4.4
+label.2
+wizform.2.6.4
 endIf
 ifNpcModifierHasValue.1
 setModel.g202s22m

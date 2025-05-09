@@ -9,16 +9,22 @@ say.<Нежданный гость!>.0
 goto.12
 label.11
 say.<Добро пожаловать, Повелительница фей.>.0
-label.12
 waitForUser
-ifPlayerHasCards.1.0.48
-goto.20
-else
+label.12
+ifPlayerHasCards.1.0.57
+setTalkLabels.-1.-1.0
+talk.<
+    Я вижу, у тебя уже есть {4*Элементальный Ключ Земли}.
+    Я не думаю, что я могу помочь тебе чем-нибудь ещё.
+>
+waitForUser
+exit
+endIf
+ifNpcModifierHasValue.0
 setTalkLabels.-1.-1.2
 talk.<
     Я охраняю доступ к {4*сокровищам гномов}.
     Я хотел бы помочь тебе в поисках, но сначала ты должна доказать, что являешься другом нашего народа.
-    
 >
 waitForUser
 talk.<
@@ -33,20 +39,16 @@ talk.<
     Это будет доказательством того, что ты достойна наших сокровищ!
 >
 waitForUser
-exit
+setNpcModifier.-1.-1.1
+goto.12
 endIf
-label.20
+ifPlayerHasCards.1.0.48
 setTalkLabels.-1.-1.0
-ifNpcModifierHasValue.0
 talk.<О, у тебя {4*Карта Пси Магии}, минутку...>
 waitForUser
-setNpcModifier.-1.-1.1
 setCamera.3000
-else
-talk.<Я помогу тебе...>
-waitForUser
-endIf
 createSceneObjects.0
+endIf
 exit"""
 InitScript = "setModel.b019s00m"
 UpdateScript = "lookAtPlayer.0.1"

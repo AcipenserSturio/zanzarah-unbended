@@ -128,4 +128,5 @@ label.3
 exit"""
 InitScript = """
 setNpcType.4
-setModel.g011s05m"""
+setModel.g011s05m
+defaultWizForm.91.0.8"""

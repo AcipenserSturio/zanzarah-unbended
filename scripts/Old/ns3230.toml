@@ -11,15 +11,16 @@ endIf
 label.100
 say.<Эми, рада тебя видеть!>.0
 waitForUser
+ifNpcModifierHasValue.0
+goto.300
+endIf
+ifNpcModifierHasValue.1
+goto.300
+endIf
 ifNpcModifierHasValue.2
-setTalkLabels.-1.-1.0
-talk.<
-    Благодарю тебя за спасение моего друга {4*Лассе}.
-    {4*Белому Друиду} точно нельзя верить.
->
-waitForUser
-exit
-else
+goto.400
+endIf
+label.300
 setTalkLabels.-1.-1.0
 talk.<
     Это ужасно.
@@ -31,6 +32,14 @@ waitForUser
 givePlayerCards.1.2.45
 removeWizForms
 setNpcModifier.-1.-1.2
+exit
+label.400
+setTalkLabels.-1.-1.0
+talk.<
+    Благодарю тебя за спасение моего друга {4*Лассе}.
+    {4*Белому Друиду} точно нельзя верить.
+>
+waitForUser
 exit
 endIf
 label.200

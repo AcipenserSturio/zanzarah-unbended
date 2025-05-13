@@ -40,8 +40,13 @@ talk.<
     А мне пора вернуться домой.
 >
 waitForUser
-modifyTrigger.0.3202.7
+ifPlayerHasCards.1.0.58
+setNpcModifier.2411.69.1
+goto.0
+else
 setNpcModifier.2411.69.0
+label.0
+modifyTrigger.0.3202.7
 givePlayerCards.1.0.58
 changeWaypoint.10.11
 removeNpc

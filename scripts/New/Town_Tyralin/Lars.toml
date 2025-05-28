@@ -112,6 +112,8 @@ talk.<
 >
 waitForUser
 goto.4
+label.5
+goto.0
 label.3
 tradingCurrency.C564B4A3
 tradingItem.60.8E0E9503

@@ -44,8 +44,122 @@ goto.0
 label.1
 exit"""
 InitScript = """
-ifNpcModifierHasValue.0
 setModel.b029s31m
+UID = "CDE4C594"
+Name = "6D58FDB1"
+TriggerScript = """
+playAnimation.13.-1
+setCamera.1000
+say.<Добро пожаловать.>.0
+waitForUser
+label.0
+say.<
+    Если ты пришла ради тренировки своих фей, то тебе лучше быть готовой к вызову.
+    С этими феями что-то не так...
+>.3
+choice.4.<Диалог>
+choice.3.<Тренировка>
+choice.2.<Торговля>
+choice.1.<До встречи>
+waitForUser
+label.2
+tradingCurrency.C564B4A3
+tradingItem.10.21F89313
+tradingItem.10.140F9713
+tradingItem.15.A9C69713
+tradingItem.25.761F9713
+tradingItem.25.64979713
+waitForUser
+goto.0
+label.3
+fight.-1.0
+label.4
+say.<
+    Тебе тоже нравится, как уютно выглядит мой дом?
+	Мне нравится жить в комфорте.
+>.3
+choice.8.<Забытые Дороги>
+choice.7.<Нравы Гоблинов>
+choice.6.<Мистическая Призма>
+choice.5.<Назад>
+waitForUser
+label.8
+setTalkLabels.-1.-1.2
+talk.<
+    Если ты думаешь, что ты первая, кто заметил, что мои карты не до конца точные — нет, ты не была первой!
+	Они были нарисованы ещё кем-то во времена {4*Раскола}, и я не знаю, кто именно их нарисовал.
+	Однако если ты хочешь мой совет, то никогда не сходи с дороги и всегда иди направо или налево — и тебе не понадобится никакая карта.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Конечно, эти земли далеко не являются всеми землями {4*Занзары} — и в ней ещё много удивительных мест, о которых ты можешь узнать из чужих рассказов или книг.
+	Когда-то руны были у каждого, и они использовались для лёгкого перемещения по всем этим таинственным местам.
+	Но после {4*Раскола} многие из нас обнаружили, что большинство рун перестало работать.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Но если {4*Предсказание} действительно является правдой, и ты пришла уничтожить {4*Стража}, тогда всё может измениться.
+	Хотя я уже слишком ленив для далёких путешествий, такой {4*Коллекционер фей} как ты всегда имеет возможность открыть для себя новые дороги.
+	Или, быть может, магия рун снова вернётся к нам, и тогда всё придёт обратно в норму.
+>
+waitForUser
+goto.4
+label.7
+setTalkLabels.-1.-1.2
+talk.<
+    {4*Болотные Гоблины} сильно отличаются от других рас {4*Занзары}, — мы не любим использовать {4*золото} и {4*кристаллы} для торговли, предпочитая обмен.
+	Также {4*гоблины} считают, что нельзя иметь слишком много вещей: чем у тебя их больше, тем сложнее будет покинуть этот мир, когда наступит твоё время.
+	Но, по большей части, это всё просто пережитки прошлого.
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Многие {4*гоблины} теперь живут в {4*Тиралине}.
+	{4*Эльфы} не особенно жалуют нас: им не нравится, что мы не делаем различий между расами, и доверяем только собственным суждениям о других.
+	Но {4*Тиралин} — единственный город в этой части {4*Занзары}, и поэтому многие стремятся туда, пускай он таит в себе много опасностей.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    К тому же, мы самые лучшие рассказчики историй, и зачастую мы путешествуем только для того, чтобы найти какую-нибудь новенькую байку.
+	Но сколько бы мы ни путешествовали, мы всегда помним о своём доме: и возвращаемся туда, где находится наше место рождения.
+	Иногда я хочу увидеть море, как и многие из нас, но всё, что у нас есть, - это квакующие лягушки и булькающее болото...
+>
+waitForUser
+goto.4
+label.6
+setTalkLabels.-1.-1.2
+talk.<
+    Ты можешь поверить в это?
+	Я получил эту {4*призму} от одного из {4*Тёмных Эльфов} в знак нашей дружбы.
+	Именно благодаря ей я смог получить всё, то, что сейчас есть у меня, а именно: прекрасную мягкую кровать заместо травяной циновки!
+>
+waitForUser
+setTalkLabels.-1.-1.2
+talk.<
+    Меня не волнует, что думают об этом остальные, — эти двуличные {4*эльфы} ненавидят всех, кто не думает так же, как они!
+	И {4*гоблины} ничем не лучше них: они все завидуют тем, кто имеет больше золота, чем в их собственных карманах!
+	Но {4*Тёмные Эльфы} и {4*гномы} другие.
+	Тебе не стоит доверять скверным слухам, которые распространяют о них в {4*Тиралине}.
+>
+waitForUser
+setTalkLabels.-1.-1.0
+talk.<
+    Я слышал, что у кого-то есть совершенно невредимая {4*призма}...
+	К сожалению, её магия постепенно угасает, поэтому эти феи уже не такие сильные, как были раньше.
+    Я бы очень хотел найти способ восстановить её обратно: не хотелось бы лишаться той вещи, благодаря которой я обрёл всё, что только хотел в этой жизни.
+>
+waitForUser
+goto.4
+label.5
+goto.0
+label.1
+exit"""
+InitScript = """
+ifNpcModifierHasValue.0
+setModel.g001s01m
 gotoRandomLabel.84.0
 label.0
 defaultWizForm.80.0.38
@@ -618,184 +732,184 @@ goto.253
 label.189
 defaultWizForm.36.2.39
 goto.253
-label.390
+label.190
 defaultWizForm.42.2.39
 goto.253
-label.391
+label.191
 defaultWizForm.32.2.39
 goto.253
-label.392
+label.192
 defaultWizForm.49.2.39
 goto.253
-label.393
+label.193
 defaultWizForm.80.2.40
 goto.253
-label.394
+label.194
 defaultWizForm.63.2.40
 goto.253
-label.395
+label.195
 defaultWizForm.70.2.40
 goto.253
-label.396
+label.196
 defaultWizForm.70.2.40
 goto.253
-label.397
+label.197
 defaultWizForm.61.2.40
 goto.253
-label.398
+label.198
 defaultWizForm.17.2.40
 goto.253
-label.399
+label.199
 defaultWizForm.18.2.40
 goto.253
-label.400
+label.200
 defaultWizForm.59.2.40
 goto.253
-label.401
+label.201
 defaultWizForm.36.2.40
 goto.253
-label.402
+label.202
 defaultWizForm.42.2.40
 goto.253
-label.403
+label.203
 defaultWizForm.32.2.40
 goto.253
-label.404
+label.204
 defaultWizForm.49.2.40
 goto.253
-label.405
+label.205
 defaultWizForm.80.2.41
 goto.253
-label.406
+label.206
 defaultWizForm.63.2.41
 goto.253
-label.407
+label.207
 defaultWizForm.70.2.41
 goto.253
-label.408
+label.208
 defaultWizForm.70.2.41
 goto.253
-label.409
+label.209
 defaultWizForm.61.2.41
 goto.253
-label.410
+label.210
 defaultWizForm.17.2.41
 goto.253
-label.411
+label.211
 defaultWizForm.18.2.41
 goto.253
-label.412
+label.212
 defaultWizForm.59.2.41
 goto.253
-label.413
+label.213
 defaultWizForm.36.2.41
 goto.253
-label.414
+label.214
 defaultWizForm.42.2.41
 goto.253
-label.415
+label.215
 defaultWizForm.32.2.41
 goto.253
-label.416
+label.216
 defaultWizForm.49.2.41
 goto.253
-label.417
+label.217
 defaultWizForm.80.2.42
 goto.253
-label.418
+label.218
 defaultWizForm.63.2.42
 goto.253
-label.419
+label.219
 defaultWizForm.70.2.42
 goto.253
-label.420
+label.220
 defaultWizForm.70.2.42
 goto.253
-label.421
+label.221
 defaultWizForm.61.2.42
 goto.253
-label.422
+label.222
 defaultWizForm.17.2.42
 goto.253
-label.423
+label.223
 defaultWizForm.18.2.42
 goto.253
-label.424
+label.224
 defaultWizForm.59.2.42
 goto.253
-label.425
+label.225
 defaultWizForm.36.2.42
 goto.253
-label.426
+label.226
 defaultWizForm.42.2.42
 goto.253
-label.427
+label.227
 defaultWizForm.32.2.42
 goto.253
-label.428
+label.228
 defaultWizForm.49.2.42
 goto.253
-label.429
+label.229
 defaultWizForm.80.2.43
 goto.253
-label.430
+label.230
 defaultWizForm.63.2.43
 goto.253
-label.431
+label.231
 defaultWizForm.70.2.43
 goto.253
-label.432
+label.232
 defaultWizForm.70.2.43
 goto.253
-label.433
+label.233
 defaultWizForm.61.2.43
 goto.253
-label.434
+label.234
 defaultWizForm.17.2.43
 goto.253
-label.435
+label.235
 defaultWizForm.18.2.43
 goto.253
-label.436
+label.236
 defaultWizForm.59.2.43
 goto.253
-label.437
+label.237
 defaultWizForm.36.2.43
 goto.253
-label.438
+label.238
 defaultWizForm.42.2.43
 goto.253
-label.439
+label.239
 defaultWizForm.32.2.43
 goto.253
-label.440
+label.240
 defaultWizForm.49.2.43
 goto.253
-label.441
+label.241
 defaultWizForm.80.2.44
 goto.253
-label.442
+label.242
 defaultWizForm.63.2.44
 goto.253
-label.443
+label.243
 defaultWizForm.70.2.44
 goto.253
-label.444
+label.244
 defaultWizForm.70.2.44
 goto.253
-label.445
+label.245
 defaultWizForm.61.2.44
 goto.253
-label.446
+label.246
 defaultWizForm.17.2.44
 goto.253
-label.447
+label.247
 defaultWizForm.18.2.44
 goto.253
-label.448
+label.248
 defaultWizForm.59.2.44
 goto.253
-label.449
+label.249
 defaultWizForm.36.2.44
 goto.253
 label.250

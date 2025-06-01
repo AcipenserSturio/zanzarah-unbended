@@ -2,14 +2,18 @@ UID = "453A1534"
 Name = "7B2D8F91"
 TriggerScript = """
 removePlayerCards.1.0.102
+setNpcModifier.-1.-1.1
+exit
 """
 InitScript = """
 setNpcType.4
 setCollision.0"""
 UpdateScript = """
+ifNpcModifierHasValue.0
 label.0
 ifPlayerIsClose.10
 startPrelude
 endIf
 idle
-goto.0"""
+goto.0
+ifNpcModifierHasValue.1"""

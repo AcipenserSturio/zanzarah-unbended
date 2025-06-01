@@ -1,0 +1,13 @@
+UID = "453A1534"
+Name = "7B2D8F91"
+TriggerScript = """
+ifPlayerHasCards.1.0.102
+removePlayerCards.1.0.102
+exit
+else"""
+UpdateScript = """
+label.0
+ifPlayerIsClose.30
+startPrelude
+endIf
+goto.0"""

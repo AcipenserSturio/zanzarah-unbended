@@ -25,6 +25,15 @@ tradingItem.25.64979713
 waitForUser
 goto.0
 label.3
+ifPlayerHasCards.1.0.102
+setTalkLabels.-1.-1.0
+talk.<
+    Мне нужно какое-то время, чтобы заставить это работать снова...
+	Так что иди полови фей, подыши свежим воздухом или сходи там в магазин.
+>
+waitForUser
+goto.0
+else
 fight.-1.0
 label.4
 say.<
@@ -1477,4 +1486,23 @@ talk.<
     Возвращайся ко мне, если твои феи все ещё будут нуждаться в новых тренировках.
 >
 waitForUser
+givePlayerCards.1.0.239
+givePlayerCards.1.0.102
+ifPlayerHasCards.1.0.113
+goto.100
+else
+ifPlayerHasCards.1.0.209
+exit
+else
+label.100
 givePlayerCards.1.0.162"""
+VictoriousScript =  """
+setTalkLabels.-1.-1.0
+talk.<
+    Подожди, ты только что проиграла?
+	Ну, если честно, было бы странно, если ты смогла бы выиграть...
+	Возвращайся, если вдруг захочешь испытать свои силы снова.
+>
+waitForUser
+givePlayerCards.1.0.102"""
+

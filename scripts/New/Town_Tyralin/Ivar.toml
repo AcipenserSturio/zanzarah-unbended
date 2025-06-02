@@ -23,7 +23,7 @@ label.2
 ifPlayerHasCards.1.0.102
 setTalkLabels.-1.-1.0
 talk.<
-    Извини, но мои всё ещё не готовы для нового сражения.
+    Извини, но мои феи всё ещё не готовы для нового сражения.
 	Возвращайся ко мне позже.
 >
 waitForUser
@@ -1398,6 +1398,13 @@ talk.<
 waitForUser
 givePlayerCards.1.0.239
 givePlayerCards.1.0.102
+ifPlayerHasCards.1.0.113
+goto.100
+else
+ifPlayerHasCards.1.0.209
+goto.70
+else
+label.100
 gotoRandomLabel.20.50
 label.50
 givePlayerCards.3.0.0

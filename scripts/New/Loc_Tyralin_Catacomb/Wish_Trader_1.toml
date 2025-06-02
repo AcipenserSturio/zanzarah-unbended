@@ -133,7 +133,7 @@ givePlayerCards.5.0.1
 goto.10
 label.58
 setTalkLabels.-1.-1.2
-talk.<Диалог>
+talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х6)!>
 waitForUser
 givePlayerCards.6.0.1
 goto.10
@@ -165,7 +165,7 @@ label.63
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Средний Лечебный Бальзам} (х3)!>
 waitForUser
-givePlayerCards.3.0.13
+givePlayerCards.3.0.12
 goto.10
 label.64
 setTalkLabels.-1.-1.2
@@ -415,13 +415,13 @@ label.506
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х2)!>
 waitForUser
-givePlayerCards.2.0.92
+givePlayerCards.2.0.91
 goto.10
 label.507
 setTalkLabels.-1.-1.2
 talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
 waitForUser
-givePlayerCards.3.0.92
+givePlayerCards.3.0.91
 goto.10
 label.508
 setTalkLabels.-1.-1.2

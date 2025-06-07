@@ -37,14 +37,23 @@ label.0
 ifPlayerHasSpecials.1.1
 say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
 choice.3.<Диалог>
+choice.5.<Обмен>
 choice.1.<До встречи>
 waitForUser
 endIf
 say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
 choice.4.<Диалог>
-choice.2.<Обмен>
+choice.2.<Помошь>
 choice.1.<До встречи>
 waitForUser
+label.5
+tradingCurrency.2D3C51A3
+tradingItem.10.FE1E7303
+tradingItem.15.2D299A03
+tradingItem.15.292AB4A3
+tradingItem.70.F814B6A3
+waitForUser
+goto.0
 label.4
 setTalkLabels.-1.-1.0
 talk.<

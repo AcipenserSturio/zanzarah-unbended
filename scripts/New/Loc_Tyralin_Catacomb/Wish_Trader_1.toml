@@ -85,117 +85,136 @@ waitForUser
 gotoRandomLabel.26.50
 label.50
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Серебряный Шар} (х1), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.1.0.17
+givePlayerCards.1.0.237
 goto.10
 label.51
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х8)!>
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х8), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.8.0.0
+givePlayerCards.1.0.237
 goto.10
 label.52
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х9)!>
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х9), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.9.0.0
+givePlayerCards.1.0.237
 goto.10
 label.53
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х10)!>
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х10), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.10.0.0
+givePlayerCards.1.0.237
 goto.10
 label.54
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х11)!>
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х11), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.11.0.0
+givePlayerCards.1.0.237
 goto.10
 label.55
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х12)!>
+talk.<Ты находишь внутри {4*Щепотка Пыльцы фей} (х12), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.12.0.0
+givePlayerCards.1.0.237
 goto.10
 label.56
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х4)!>
+talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х4), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.4.0.1
+givePlayerCards.1.0.237
 goto.10
 label.57
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х5)!>
+talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х5), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.5.0.1
+givePlayerCards.1.0.237
 goto.10
 label.58
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Горсть Пыльцы фей} (х6), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.6.0.1
+givePlayerCards.1.0.237
 goto.10
 label.59
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х2)!>
+talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х2), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.2.0.11
+givePlayerCards.1.0.237
 goto.10
 label.60
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х3)!>
+talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х3), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.3.0.11
+givePlayerCards.1.0.237
 goto.10
 label.61
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х4)!>
+talk.<Ты находишь внутри {4*Малый Лечебный Бальзам} (х4), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.4.0.11
+givePlayerCards.1.0.237
 goto.10
 label.62
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Средний Лечебный Бальзам} (х2)!>
+talk.<Ты находишь внутри {4*Средний Лечебный Бальзам} (х2), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.2.0.12
+givePlayerCards.1.0.237
 goto.10
 label.63
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Средний Лечебный Бальзам} (х3)!>
+talk.<Ты находишь внутри {4*Средний Лечебный Бальзам} (х3), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.3.0.12
+givePlayerCards.1.0.237
 goto.10
 label.64
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Флакон Маны} (х2)!>
+talk.<Ты находишь внутри {4*Флакон Маны} (х2), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.2.0.61
+givePlayerCards.1.0.237
 goto.10
 label.65
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лекарство} (х2)!>
+talk.<Ты находишь внутри {4*Лекарство} (х2), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.2.0.74
+givePlayerCards.1.0.237
 goto.10
 label.66
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Чесночный Распылитель} (х1)!>
+talk.<Ты находишь внутри {4*Чесночный Распылитель} (х1), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.1.0.20
+givePlayerCards.1.0.237
 goto.10
 label.67
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лесные Травы} (х3)!>
+talk.<Ты находишь внутри {4*Лесные Травы} (х3), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.3.0.5
+givePlayerCards.1.0.237
 goto.10
 label.68
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лесные Травы} (х4)!>
+talk.<Ты находишь внутри {4*Лесные Травы} (х4), {4*Печать Страны Заката} (х1)!>
 waitForUser
 givePlayerCards.4.0.5
+givePlayerCards.1.0.237
 goto.10
 label.6
 setTalkLabels.-1.-1.2
@@ -204,171 +223,199 @@ waitForUser
 gotoRandomLabel.28.100
 label.100
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотой Шар} (х1)!>
+talk.<Ты находишь внутри {4*Золотой Шар} (х1), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.1.0.18
+givePlayerCards.3.0.237
 goto.10
 label.101
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х3)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х3), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.3.0.2
+givePlayerCards.3.0.237
 goto.10
 label.102
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х4)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х4), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.4.0.2
+givePlayerCards.3.0.237
 goto.10
 label.103
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х5)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х5), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.5.0.2
+givePlayerCards.3.0.237
 goto.10
 label.104
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х6), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.6.0.2
+givePlayerCards.3.0.237
 goto.10
 label.105
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х7)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х7), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.7.0.2
+givePlayerCards.3.0.237
 goto.10
 label.106
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х8)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х8), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.8.0.2
+givePlayerCards.3.0.237
 goto.10
 label.107
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х9)!>
+talk.<Ты находишь внутри {4*Пригоршня Пыльцы фей} (х9), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.9.0.2
+givePlayerCards.3.0.237
 goto.10
 label.108
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Очищенный Нектар} (х1), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.1.0.9
+givePlayerCards.3.0.237
 goto.10
 label.109
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х2)!>
+talk.<Ты находишь внутри {4*Очищенный Нектар} (х2), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.2.0.9
+givePlayerCards.3.0.237
 goto.10
 label.110
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Очищенный Нектар} (х3)!>
+talk.<Ты находишь внутри {4*Очищенный Нектар} (х3), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.3.0.9
+givePlayerCards.3.0.237
 goto.10
 label.111
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х3)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х3), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.3.0.13
+givePlayerCards.3.0.237
 goto.10
 label.112
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х4)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х4), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.4.0.13
+givePlayerCards.3.0.237
 goto.10
 label.113
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х5)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х5), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.5.0.13
+givePlayerCards.3.0.237
 goto.10
 label.114
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х6)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х6), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.6.0.13
+givePlayerCards.3.0.237
 goto.10
 label.115
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7)!>
+talk.<Ты находишь внутри {4*Большой Лечебный Бальзам} (х7), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.7.0.13
+givePlayerCards.3.0.237
 goto.10
 label.116
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Маны} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Маны} (х1), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.1.0.90
+givePlayerCards.3.0.237
 goto.10
 label.117
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х3)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х3), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.3.0.60
+givePlayerCards.3.0.237
 goto.10
 label.118
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х4)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х4), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.4.0.60
+givePlayerCards.3.0.237
 goto.10
 label.119
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х5)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х5), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.5.0.60
+givePlayerCards.3.0.237
 goto.10
 label.120
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х6)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х6), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.6.0.60
+givePlayerCards.3.0.237
 goto.10
 label.121
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х7)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х7), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.7.0.60
+givePlayerCards.3.0.237
 goto.10
 label.122
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х8)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х8), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.8.0.60
+givePlayerCards.3.0.237
 goto.10
 label.123
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Бронзовый Редис} (х9)!>
+talk.<Ты находишь внутри {4*Бронзовый Редис} (х9), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.9.0.60
+givePlayerCards.3.0.237
 goto.10
 label.124
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х2)!>
+talk.<Ты находишь внутри {4*Серебряный Лук} (х2), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.2.0.7
+givePlayerCards.3.0.237
 goto.10
 label.125
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х3)!>
+talk.<Ты находишь внутри {4*Серебряный Лук} (х3), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.3.0.7
+givePlayerCards.3.0.237
 goto.10
 label.126
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Серебряный Лук} (х4)!>
+talk.<Ты находишь внутри {4*Серебряный Лук} (х4), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.4.0.7
+givePlayerCards.3.0.237
 goto.10
 label.127
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Золотая Морковь} (х1)!>
+talk.<Ты находишь внутри {4*Золотая Морковь} (х1), {4*Печать Страны Заката} (х3)!>
 waitForUser
 givePlayerCards.1.0.3
+givePlayerCards.3.0.237
 goto.10
 label.7
 setTalkLabels.-1.-1.2
@@ -377,171 +424,199 @@ waitForUser
 gotoRandomLabel.28.500
 label.500
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Хрустальный Шар} (х1)!>
+talk.<Ты находишь внутри {4*Хрустальный Шар} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.19
+givePlayerCards.5.0.237
 goto.10
 label.501
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Насыщенный Нектар} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.88
+givePlayerCards.5.0.237
 goto.10
 label.502
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1)!>
+talk.<Ты находишь внутри {4*Концентрированный Нектар} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.89
+givePlayerCards.5.0.237
 goto.10
 label.503
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х1)!>
+talk.<Ты находишь внутри {4*Лечебный Эликсир} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.14
+givePlayerCards.5.0.237
 goto.10
 label.504
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Лечебный Эликсир} (х2)!>
+talk.<Ты находишь внутри {4*Лечебный Эликсир} (х2), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.2.0.14
+givePlayerCards.5.0.237
 goto.10
 label.505
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х1)!>
+talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.91
+givePlayerCards.5.0.237
 goto.10
 label.506
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х2)!>
+talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х2), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.2.0.91
+givePlayerCards.5.0.237
 goto.10
 label.507
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3)!>
+talk.<Ты находишь внутри {4*Большой Эликсир Маны} (х3), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.3.0.91
+givePlayerCards.5.0.237
 goto.10
 label.508
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х1)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.75
+givePlayerCards.5.0.237
 goto.10
 label.509
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х2)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х2), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.2.0.75
+givePlayerCards.5.0.237
 goto.10
 label.510
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х3)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х3), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.3.0.75
+givePlayerCards.5.0.237
 goto.10
 label.511
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х4)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х4), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.4.0.75
+givePlayerCards.5.0.237
 goto.10
 label.512
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х5)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х5), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.5.0.75
+givePlayerCards.5.0.237
 goto.10
 label.513
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х6)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х6), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.6.0.75
+givePlayerCards.5.0.237
 goto.10
 label.514
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х7)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х7), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.7.0.75
+givePlayerCards.5.0.237
 goto.10
 label.515
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Медовый Эликсир} (х8)!>
+talk.<Ты находишь внутри {4*Медовый Эликсир} (х8), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.8.0.75
+givePlayerCards.5.0.237
 goto.10
 label.516
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х1)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.76
+givePlayerCards.5.0.237
 goto.10
 label.517
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х2)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х2), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.2.0.76
+givePlayerCards.5.0.237
 goto.10
 label.518
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х3)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х3), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.3.0.76
+givePlayerCards.5.0.237
 goto.10
 label.519
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х4), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.4.0.76
+givePlayerCards.5.0.237
 goto.10
 label.520
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х5)!>
+talk.<Ты находишь внутри {4*Большой Медовый Эликсир} (х5), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.5.0.76
+givePlayerCards.5.0.237
 goto.10
 label.521
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Стихий} (х1)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х1), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.1.0.77
+givePlayerCards.5.0.237
 goto.10
 label.522
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Стихий} (х2)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х2), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.2.0.77
+givePlayerCards.5.0.237
 goto.10
 label.523
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Стихий} (х3)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х3), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.3.0.77
+givePlayerCards.5.0.237
 goto.10
 label.524
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Стихий} (х4)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х4), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.4.0.77
+givePlayerCards.5.0.237
 goto.10
 label.525
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Стихий} (х5)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х5), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.5.0.77
+givePlayerCards.5.0.237
 goto.10
 label.526
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Стихий} (х6)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х6), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.6.0.77
+givePlayerCards.5.0.237
 goto.10
 label.527
 setTalkLabels.-1.-1.2
-talk.<Ты находишь внутри {4*Эликсир Стихий} (х7)!>
+talk.<Ты находишь внутри {4*Эликсир Стихий} (х7), {4*Печать Страны Заката} (х5)!>
 waitForUser
 givePlayerCards.7.0.77
+givePlayerCards.5.0.237
 goto.10
 label.4
 exit"""

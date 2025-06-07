@@ -1,34 +1,19 @@
 UID = "ED367294"
 Name = "BDE38F91"
 TriggerScript = """
-gotoRandomLabel.2.0
-label.0
 say.<Добро пожаловать в Эндеву, деревню эльфов.>.0
-goto.2
-label.1
-say.<Добро пожаловать, странник.>.0
-label.2
 playAnimation.13.-1
 setCamera.1000
 waitForUser
 ifPlayerHasSpecials.1.1
-label.20
+label.0
 say.<Чем могу помочь?>.1
-choice.10.<Хочешь потренироваться?>
-choice.11.<Ловля диких фей>
-choice.12.<Не сейчас>
+choice.4.<Диалог>
+choice.3.<Тренировка>
+choice.2.<Обмен>
+choice.1.<До встречи>
 waitForUser
-label.10
-setCamera.1006
-fight.220.0
-exit
-else
-goto.100
-label.12
-exit
-endIf
-exit
-label.11
+label.4
 setTalkLabels.-1.-1.2
 talk.<
     Ты хочешь ловить диких фей?
@@ -43,7 +28,23 @@ talk.<
     Это тоскливо...
 >
 waitForUser
-goto.20
+goto.0
+label.3
+setCamera.1006
+fight.220.0
+exit
+else
+goto.100
+label.2
+tradingCurrency.2D3C51A3
+tradingItem.1.79064393
+tradingItem.5.EAD36213
+tradingItem.10.B99EF113
+tradingItem.70.F814B6A3
+waitForUser
+goto.0
+label.1
+exit
 label.100
 ifNpcModifierHasValue.0
 setTalkLabels.-1.-1.2

@@ -7,6 +7,9 @@ talk.<Счастливого путешествия, хе-хе!>
 waitForUser
 startEffect.0.-1
 exit"""
+InitScript = """
+setNpcType.4
+setCollision.0"""
 UpdateScript = """
 label.0
 lookAtPlayer.10.1

@@ -43,7 +43,7 @@ waitForUser
 endIf
 say.<Похоже, у тебя есть наш знак. Тебе нужна моя помощь?>.3
 choice.4.<Диалог>
-choice.2.<Помошь>
+choice.2.<Помощь>
 choice.1.<До встречи>
 waitForUser
 label.5

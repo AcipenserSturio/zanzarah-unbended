@@ -1,19 +1,16 @@
-UID = "11111111"
+UID = "32BF7DA4"
 Name = "910B1179"
 TriggerScript = """
-deployNpcAtTrigger.36.1
+deployNpcAtTrigger.61.1
 setTalkLabels.-1.-1.0
 talk.<Счастливого путешествия, хе-хе!>
 waitForUser
 startEffect.0.-1
-removeNpc"""
-InitScript = """
-setNpcType.3
-defaultWizForm.9.0.37"""
+exit"""
 UpdateScript = """
 label.0
 lookAtPlayer.10.1
-ifPlayerIsClose.50
+ifPlayerIsClose.5
 startPrelude
 endIf
 goto.0"""

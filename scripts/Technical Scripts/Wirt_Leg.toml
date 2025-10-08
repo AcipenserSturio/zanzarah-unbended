@@ -12,8 +12,8 @@ setNpcType.4
 setCollision.0"""
 UpdateScript = """
 label.0
-lookAtPlayer.10.1
 ifPlayerIsClose.5
 startPrelude
 endIf
+idle
 goto.0"""
